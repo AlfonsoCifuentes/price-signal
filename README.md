@@ -8,8 +8,8 @@ An independent data analytics case study on a fictional textbook catalogue: 362 
 
 ## Live
 
-- English: https://price-signal-alfonsocifuentes-projects.vercel.app/
-- Español: https://price-signal-alfonsocifuentes-projects.vercel.app/es/
+- English: https://pricingdemo-alfonsocifuentes.vercel.app/
+- Español: https://pricingdemo-alfonsocifuentes.vercel.app/es/
 
 The site lives in `03_WEBSITE/` (the root `vercel.json` points the Vercel build at it). Films, decks, CV and cover letter are downloadable from the page.
 
