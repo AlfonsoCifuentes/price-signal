@@ -6,6 +6,13 @@ An independent data analytics case study on a fictional textbook catalogue: 362 
 
 > All series, titles, products and EUR list prices are invented by a seeded script. Nothing here describes a real company, product or market, and the project has no connection with any publisher or employer.
 
+## Live
+
+- English: https://price-signal-alfonsocifuentes-projects.vercel.app/
+- Español: https://price-signal-alfonsocifuentes-projects.vercel.app/es/
+
+The site lives in `03_WEBSITE/` (the root `vercel.json` points the Vercel build at it). Films, decks, CV and cover letter are downloadable from the page.
+
 ## The finding
 
 Matched like for like, **54 of 60** comparable groups hold one price at every level. Of the six exceptions, four are cheaper Starter levels, a plausible pricing choice. The other two aren't pricing at all: each group contains a record from another series, filed under the wrong name. Re-filed by title prefix in a reporting view, with the source untouched, the result is **56 of 60**.
