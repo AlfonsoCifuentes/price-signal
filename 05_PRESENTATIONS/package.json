@@ -1,0 +1,13 @@
+{
+  "name": "price-signal-decks",
+  "private": true,
+  "scripts": {
+    "build": "node build_public_deck.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "4.0.1"
+  },
+  "overrides": {
+    "image-size": "^2.0.4"
+  }
+}

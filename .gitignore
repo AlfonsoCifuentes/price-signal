@@ -1,0 +1,7 @@
+node_modules/
+out/
+__pycache__/
+.vercel/
+*.log
+*.wav
+04_VIDEO_PRODUCTION/remotion/public/voice/

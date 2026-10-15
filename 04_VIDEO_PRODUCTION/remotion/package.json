@@ -1,0 +1,33 @@
+{
+  "name": "price-signal-film",
+  "version": "2.0.0",
+  "private": true,
+  "description": "PRICE / SIGNAL motion film: 2:36 horizontal + 0:45 vertical, data-driven scenes, voice-ready timeline. All data fictional.",
+  "scripts": {
+    "sync": "python ../tools/sync_film_data.py",
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "render:film": "remotion render src/index.ts Film out/price-signal-film.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709",
+    "render:film-captioned": "remotion render src/index.ts FilmCaptioned out/price-signal-film-captioned.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709",
+    "render:film-voice": "remotion render src/index.ts FilmVoice out/price-signal-film-voice.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709 --audio-codec aac",
+    "render:vertical": "remotion render src/index.ts Vertical out/price-signal-vertical.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709",
+    "render:vertical-voice": "remotion render src/index.ts VerticalVoice out/price-signal-vertical-voice.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709 --audio-codec aac",
+    "render:stills": "remotion still src/index.ts Thumbnail out/youtube-thumbnail.png && remotion still src/index.ts OgCover out/og-cover.png && remotion still src/index.ts Square out/linkedin-1080.png && remotion still src/index.ts Film out/film-poster.png --frame=3190",
+    "render:film-es": "remotion render src/index.ts FilmEs out/price-signal-film-es.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709",
+    "render:film-captioned-es": "remotion render src/index.ts FilmCaptionedEs out/price-signal-film-captioned-es.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709",
+    "render:vertical-es": "remotion render src/index.ts VerticalEs out/price-signal-vertical-es.mp4 --codec h264 --crf 18 --pixel-format yuv420p --color-space=bt709",
+    "render:stills-es": "remotion still src/index.ts ThumbnailEs out/youtube-thumbnail-es.png && remotion still src/index.ts OgCoverEs out/og-cover-es.png && remotion still src/index.ts SquareEs out/linkedin-1080-es.png && remotion still src/index.ts FilmEs out/film-poster-es.png --frame=3190",
+    "render:all": "npm run render:stills && npm run render:film && npm run render:vertical && npm run render:stills-es && npm run render:film-es && npm run render:vertical-es"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.534",
+    "remotion": "4.0.534",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "typescript": "5.6.3"
+  }
+}

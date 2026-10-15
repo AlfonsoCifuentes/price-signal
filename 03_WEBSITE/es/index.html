@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRICE / SIGNAL — Caso de análisis de precios con datos ficticios</title>
+  <meta name="description" content="Caso de estudio independiente de análisis de datos: 362 productos de libro de texto ficticios, un método reproducible para comparar precios entre productos equivalentes y diez trampas de calidad de datos documentadas en lugar de corregirlas en silencio.">
+  <meta name="author" content="Alfonso Cifuentes">
+  <meta name="theme-color" content="#f3f4ef">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PRICE / SIGNAL — Antes de comparar precios, compara productos">
+  <meta property="og:description" content="362 productos inventados. 54 de 60 grupos comparables tienen un único precio, y dos de las seis excepciones resultaron ser errores de archivo.">
+  <meta property="og:image" content="../public/media/og-cover-es.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PRICE / SIGNAL — el precio de la claridad. Una fila de catálogo revisada con una discrepancia de serie marcada en un círculo.">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="es" href="./">
+  <link rel="alternate" hreflang="en" href="../">
+  <link rel="icon" href="../public/media/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../public/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../site.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "PRICE / SIGNAL — catálogo editorial educativo ficticio",
+    "inLanguage": "es",
+    "description": "362 productos de libro de texto inventados en 12 series inventadas, con problemas de calidad de datos introducidos a propósito, para practicar el análisis de precios comparables. No contiene datos reales de ninguna empresa, producto ni mercado.",
+    "creator": {"@type": "Person", "name": "Alfonso Cifuentes"},
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "keywords": ["análisis de datos", "análisis de precios", "calidad de datos", "business intelligence", "datos sintéticos"],
+    "variableMeasured": "Precio de lista ficticio en euros",
+    "distribution": [
+      {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "../public/data/catalogue.csv"},
+      {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "../public/data/catalogue_raw.csv"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="slug" id="top">
+  <a class="mark" href="#top" aria-label="PRICE / SIGNAL — volver arriba"><span>PRICE</span><i aria-hidden="true">/</i><span>SIGNAL</span></a>
+  <nav class="lang" aria-label="Idioma">
+    <a href="../" hreflang="en" lang="en">EN</a><span lang="es" aria-current="page">ES</span>
+  </nav>
+  <nav class="nav" aria-label="Secciones">
+    <a href="#question">Pregunta</a>
+    <a href="#method">Método</a>
+    <a href="#explorer">Explorador</a>
+    <a href="#exceptions">Excepciones</a>
+    <a href="#register">Registro</a>
+    <a href="#film">Película</a>
+    <a href="#files" class="nav-files">Ficheros</a>
+  </nav>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+</header>
+
+<main id="main">
+
+<!-- ============================================================ HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <span class="crop tl" aria-hidden="true"></span><span class="crop tr" aria-hidden="true"></span>
+  <span class="crop bl" aria-hidden="true"></span><span class="crop br" aria-hidden="true"></span>
+
+  <p class="ticket">
+    <span>Caso de estudio independiente</span>
+    <span><b data-k="headline.products">362</b> registros · semilla 20261011</span>
+    <span>Todos los productos y precios son inventados</span>
+  </p>
+
+  <h1 id="hero-title" class="hero-title">
+    <span class="h-narrow">El precio</span>
+    <span class="h-wide">de la claridad.</span>
+  </h1>
+
+  <div class="hero-body">
+    <p class="lede">Antes de comparar precios, compara productos. Este es un catálogo ficticio de libros de texto, un método que cualquiera puede repetir y un registro de cada incertidumbre que encontré por el camino.</p>
+
+    <figure class="proof" aria-labelledby="proof-cap">
+      <figcaption id="proof-cap" class="proof-cap"><span>Prueba · Premium Pack with Digital · tal como consta</span><span>Campo de serie / Título / Precio</span></figcaption>
+      <div class="proof-sheet">
+        <div class="proof-row"><span class="c-series">Glasshouse English</span><span class="c-title">Glasshouse English A2 Premium Pack with Digital</span><span class="c-price">€86.49</span></div>
+        <div class="proof-row"><span class="c-series">Glasshouse English</span><span class="c-title">Glasshouse English B1 Premium Pack with Digital</span><span class="c-price">€86.49</span></div>
+        <div class="proof-row is-queried"><span class="c-series"><span class="ring">Glasshouse English<svg class="ring-svg" viewBox="0 0 200 56" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M10 30 C 8 10, 70 4, 110 6 C 170 8, 196 16, 192 32 C 188 50, 120 54, 70 52 C 26 50, 4 42, 14 22"/></svg></span></span><span class="c-title"><mark>Mosaic English</mark> B1 Premium Pack with Digital</span><span class="c-price"><mark>€69.49</mark></span></div>
+        <div class="proof-row"><span class="c-series">Glasshouse English</span><span class="c-title">Glasshouse English B2 Premium Pack with Digital</span><span class="c-price">€86.49</span></div>
+      </div>
+      <p class="proof-note"><span class="q" aria-hidden="true">?</span><span><strong>Consulta, fila 20.</strong> El título dice Mosaic English. Parece una rebaja de 17 €, pero es un producto de otra serie archivado en el lugar equivocado. <em>Se mantiene el dato original; se reubica en la vista de informe.</em></span></p>
+    </figure>
+  </div>
+
+  <dl class="proof-line">
+    <div><dt>Grupos comparables con un único precio en todos los niveles</dt><dd><b data-k="headline.consistent">54</b><small>/</small><b data-k="headline.comparables">60</b></dd></div>
+    <div><dt>De las seis excepciones, errores de archivo y no de precio</dt><dd><b data-k="headline.exceptions_misfiled">2</b></dd></div>
+    <div><dt>Productos reales, editoriales o cifras de venta</dt><dd><b>0</b></dd></div>
+  </dl>
+
+  <p class="hero-actions">
+    <a class="btn" href="#question">Leer el caso <span aria-hidden="true">↓</span></a>
+    <a class="btn ghost" href="#explorer">Explorar los precios</a>
+  </p>
+</section>
+
+<!-- ============================================================ QUESTION -->
+<section class="sec" id="question" aria-labelledby="q-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">La pregunta</p>
+      <p class="note">¿Un producto tiene un precio distinto o es un producto distinto?</p>
+    </div>
+    <div class="main">
+      <h2 id="q-title">Una lista de precios es una lista de <em>supuestos.</em></h2>
+      <div class="prose cols">
+        <p>Un catálogo parece sencillo: una serie, un título, un precio. Detrás de cada título hay un tipo de producto, un nivel, una edición, un pack, una clave de respuestas, un derecho de acceso y, a veces, un libro dividido en dos partes.</p>
+        <p>Promediarlo todo da una respuesta falsa con aire de seguridad. La media global aquí es <b data-k="headline.mean" data-f="eur">€44.04</b>, una cifra que no describe ningún producto: los cuadernos de ejercicios (<i>Workbook</i>) promedian <b data-k="type.Workbook.mean" data-f="eur">€24.72</b> y los libros del alumno (<i>Student Book</i>) <b data-k="type.Student Book.mean" data-f="eur">€60.51</b>.</p>
+      </div>
+      <figure class="fig" aria-labelledby="fig-strip-cap">
+        <figcaption id="fig-strip-cap" class="fig-cap"><span class="label">Fig. 1</span> Cada producto, un punto, agrupado por tipo. Precios de lista ficticios en euros.</figcaption>
+        <div class="strip" id="strip" role="img" aria-label="Gráfico de puntos con los 362 precios de lista ficticios por tipo de producto. Los cuadernos van de 16.49 a 32.49 euros; los libros del alumno, de 26.48 a 54.49; los libros del alumno y packs, de 33.49 a 86.49; los cuadernos digitales, de 46.49 a 63.49. Un recurso aislado cuesta 14.49 euros y un pack TB aislado, 108.49."></div>
+        <div class="sr-table"><table>
+          <caption>Rango de precios por tipo de producto</caption>
+          <thead><tr><th scope="col">Tipo</th><th scope="col">Recuento</th><th scope="col">Mín.</th><th scope="col">Mediana</th><th scope="col">Máx.</th></tr></thead>
+          <tbody id="type-table"><tr><td colspan="5">Ver type_stats en public/data/analysis.json</td></tr></tbody>
+        </table></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CATALOGUE -->
+<section class="sec" id="catalogue" aria-labelledby="c-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">El material</p>
+      <p class="note">Cada nombre y precio de abajo fue inventado por un generador con semilla. Misma semilla, mismo fichero, byte a byte.</p>
+    </div>
+    <div class="main">
+      <h2 id="c-title">Cinco columnas dentro. <em>Diecinueve</em> fuera.</h2>
+      <div class="prose cols">
+        <p>El fichero original tiene <b data-k="headline.products">362</b> filas en <b data-k="headline.series">12</b> series inventadas, en dos sistemas de niveles: MCER para adultos y adolescentes, y cursos para primaria. Cada fila lleva solo cinco campos.</p>
+        <p>El enriquecimiento añade catorce atributos que la comparación necesita. Algunos se leen en el título; otros, como la edición o la duración del acceso, nunca aparecen en él y deben venir de los metadatos. Esa diferencia importará más adelante.</p>
+      </div>
+      <div class="schema" aria-label="Esquema: 5 columnas originales se convierten en 19 columnas enriquecidas">
+        <ol class="schema-raw">
+          <li>Series</li><li>Segment</li><li>Sub-Segment</li><li>Title</li><li>Price_EUR</li>
+        </ol>
+        <svg class="schema-arrow" viewBox="0 0 48 24" aria-hidden="true" focusable="false"><path d="M2 12h42M33 3l11 9-11 9"/></svg>
+        <ol class="schema-new">
+          <li>Edition</li><li>Level</li><li>Level_System</li><li>Product_Type</li><li>Product_Role</li><li>Book_Part</li><li>Pack_Type</li><li>Answer_Support</li><li>Digital_Main_Book_Access</li><li>Digital_Practice_Book_Access</li><li>Audio_Access</li><li>App_Access</li><li>Additional_Resources</li><li>Access_Duration</li>
+        </ol>
+      </div>
+      <ul class="colophon" id="series-list" aria-label="Las doce series inventadas">
+        <li>Amber Path</li><li>Compass Junction</li><li>Driftwood Dialogues</li><li>Fable Road</li><li>Glasshouse English</li><li>Kindred Horizons</li><li>Little Lanterns</li><li>Mosaic English</li><li>Northstar Language Lab</li><li>Orion Exam Prep</li><li>Silverline Skills</li><li>Wildflower Words</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ METHOD -->
+<section class="sec" id="method" aria-labelledby="m-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">El método</p>
+      <p class="note">Cuatro pasos, en este orden. Saltarse el primero es la forma en que el análisis destruye la evidencia en silencio.</p>
+    </div>
+    <div class="main">
+      <h2 id="m-title">Fija el producto. <em>Después</em> mira el precio.</h2>
+      <ol class="steps">
+        <li>
+          <h3>Conserva el origen.</h3>
+          <p>El fichero original nunca se edita. Cada corrección vive en una vista de informe aparte que puede desactivarse, así que cualquier cifra se puede rastrear hasta el registro del que procede.</p>
+        </li>
+        <li>
+          <h3>Recupera la estructura.</h3>
+          <p>Un analizador basado en reglas lee solo los títulos. Acertó las etiquetas de nivel, pack, clave de respuestas, parte del libro, audio y acceso digital en las <b data-k="headline.products">362</b> filas. En el tipo de producto <em>se abstuvo</em> dos veces, con «TB» y «Gleebook», en lugar de adivinar. Las reglas se escribieron para los patrones de títulos de este catálogo, así que esa puntuación comprueba las reglas; no es un benchmark para datos reales.</p>
+          <p class="aside-mono">No recuperable de los títulos: edición · duración del acceso · recursos extra · segmento</p>
+        </li>
+        <li>
+          <h3>Compara lo comparable.</h3>
+          <p>Los productos se agrupan por diez atributos: serie, tipo, función, parte, pack, clave de respuestas, ambos derechos digitales, recursos y edición. Solo puede cambiar el nivel. Eso da <b data-k="headline.groups_total">68</b> grupos, de los cuales <b data-k="headline.comparables">60</b> abarcan dos o más niveles.</p>
+        </li>
+        <li>
+          <h3>Separa el hecho de la suposición.</h3>
+          <p>Una diferencia de precio es una pregunta para el equipo comercial, no un veredicto. Cada excepción se clasifica, se explica y se deja en los datos, para que el lector pueda discrepar.</p>
+        </li>
+      </ol>
+      <div class="versus" aria-label="Análisis ingenuo frente a análisis por límites de palabra">
+        <div>
+          <p class="label">Regla ingenua por subcadena</p>
+          <p class="code">"ebook" en el título</p>
+          <p class="verdict bad"><b data-k="traps.ebook_naive">1</b> falso eBook: <span class="mono">Fable Road Level 3 Gle<mark>ebook</mark> Resource</span></p>
+        </div>
+        <div>
+          <p class="label">Regla con límites de palabra</p>
+          <p class="code">\be-?book\b</p>
+          <p class="verdict good"><b data-k="traps.ebook_bounded">0</b> coincidencias. Un recurso impreso sigue siendo impreso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ EXPLORER -->
+<section class="sec sec-sheet" id="explorer" aria-labelledby="x-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Explorador</p>
+      <p class="note">Cada fila es una configuración. Lee de izquierda a derecha: si el precio cambia con el nivel, la celda se resalta.</p>
+      <ul class="legend" aria-label="Leyenda">
+        <li><mark class="sw">€0.00</mark> difiere del precio habitual de la fila</li>
+        <li><span class="flag f-misfiled">M</span> serie mal archivada</li>
+        <li><span class="flag f-edition">E</span> etiqueta de edición</li>
+        <li><span class="flag f-outlier">O</span> precio atípico</li>
+        <li><span class="flag f-ebook-trap">G</span> falso positivo de eBook</li>
+        <li><span class="flag f-taxonomy">T</span> deriva de taxonomía</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2 id="x-title">Lee el catálogo <em>tú mismo.</em></h2>
+      <p class="prose">Elige una serie. La cuadrícula muestra cada producto inventado de esa serie, con su precio por nivel. Aquí nada está agregado.</p>
+      <div class="picker" id="picker" role="radiogroup" aria-label="Elige una serie"></div>
+      <p class="picker-meta" id="picker-meta" aria-live="polite"></p>
+      <div class="matrix-wrap" id="matrix-wrap" tabindex="0" aria-label="Cuadrícula de precios; se desplaza horizontalmente en pantallas pequeñas">
+        <noscript><p class="prose">La cuadrícula interactiva necesita JavaScript. Los mismos datos están en <a href="../public/data/catalogue.csv">catalogue.csv</a>.</p></noscript>
+        <table class="matrix" id="matrix"></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ EXCEPTIONS -->
+<section class="sec" id="exceptions" aria-labelledby="e-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Las excepciones</p>
+      <p class="note">Los errores interesantes no muestran dónde debería estar un registro. Muestran dónde ha acabado.</p>
+    </div>
+    <div class="main">
+      <h2 id="e-title">Seis excepciones. Cuatro precios Starter, <em>dos errores de archivo.</em></h2>
+      <p class="prose wide">De <b data-k="headline.comparables">60</b> grupos comparables, <b data-k="headline.consistent">54</b> tienen un único precio en todos los niveles. En cuatro de las seis que no lo tienen, solo el nivel Starter es más barato: un precio de entrada plausible. Las otras dos no son precios: cada una contiene un registro de otra serie, archivado con el nombre equivocado.</p>
+      <div class="multiples" id="multiples">
+        <noscript><p class="prose">Las pequeñas gráficas necesitan JavaScript; véase la hoja Exceptions del fichero de Excel.</p></noscript>
+      </div>
+      <div class="repair" aria-label="Coherencia antes y después de reubicar dos registros">
+        <div class="repair-cell"><p class="label">Tal como consta</p><p class="big"><b data-k="headline.consistent">54</b>/<b data-k="headline.comparables">60</b></p><p class="sub"><b data-k="headline.consistent_pct" data-f="pct1">90.0%</b> de los grupos tiene un único precio</p></div>
+        <div class="repair-arrow" aria-hidden="true"><span>reubica 2 registros por el prefijo del título</span></div>
+        <div class="repair-cell is-after"><p class="label">Vista de informe</p><p class="big"><b data-k="headline.consistent_after_series_repair">56</b>/<b data-k="headline.comparables_after_series_repair">60</b></p><p class="sub"><b data-k="headline.consistent_pct_after_series_repair" data-f="pct1">93.3%</b>, fichero original sin tocar</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FINDINGS -->
+<section class="sec" id="findings" aria-labelledby="f-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Comparaciones emparejadas</p>
+      <p class="note">Cada comparación fija la serie y el nivel, y comprueba las etiquetas de edición. Nada se compara con la media del catálogo.</p>
+    </div>
+    <div class="main">
+      <h2 id="f-title">Tres comparaciones que <em>resisten.</em></h2>
+      <div class="findings">
+        <article class="finding">
+          <p class="label">Volúmenes divididos</p>
+          <h3>La Parte A + Parte B cuesta más que el libro completo.</h3>
+          <div class="split-bars" id="split-bars" aria-hidden="true"></div>
+          <p>Little Lanterns: <b data-k="split.Little Lanterns.parts_total" data-f="eur">€62.00</b> por dos partes frente a <b data-k="split.Little Lanterns.complete" data-f="eur">€54.49</b> por un volumen, <b data-k="split.Little Lanterns.premium_pct" data-f="pctp">+13.8%</b>. Wildflower Words: <b data-k="split.Wildflower Words.premium_pct" data-f="pctp">+13.9%</b>. Igual en todos los niveles, incluidos los dos niveles de Little Lanterns donde las partes y el volumen completo llevan etiquetas de edición distintas.</p>
+        </article>
+        <article class="finding">
+          <p class="label">Nivel de entrada</p>
+          <h3>Starter es más barato en dos series, y solo ahí.</h3>
+          <p>Mosaic English y Silverline Skills ponen los libros del alumno Starter <b data-k="starter.0.gap_eur" data-f="eurneg">−€8.00</b> y los cuadernos <b data-k="starter.1.gap_eur" data-f="eurneg">−€4.00</b> por debajo de sus otros niveles (−14.0% a −19.5%). Las otras diez series no lo hacen. La estrategia es plausible; los precios de lista por sí solos no la pueden confirmar.</p>
+        </article>
+        <article class="finding">
+          <p class="label">Claves de respuesta</p>
+          <h3>Con clave o sin clave, el precio es el mismo.</h3>
+          <p><b data-k="traps.answer_parity">24</b> de <b data-k="traps.answer_pairs">24</b> pares de cuadernos, emparejados por serie, nivel y edición, comparten precio. La paridad solo significa algo porque el emparejamiento es estricto.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ REGISTER -->
+<section class="sec" id="register" aria-labelledby="r-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Registro de calidad</p>
+      <p class="note"><strong>Stet</strong>: que se mantenga. <strong>Consulta</strong>: preguntar al responsable. <strong>Normalizar</strong>: alias solo en el informe.</p>
+    </div>
+    <div class="main">
+      <h2 id="r-title">Diez cosas que <em>parecen hechos.</em></h2>
+      <p class="prose">Cada problema se introdujo a propósito en el generador, después se encontró, se midió y se registró. Ninguno se corrigió en silencio.</p>
+      <div class="register">
+        <details>
+          <summary><span class="r-name">El campo Series contradice el título</span><span class="r-ev"><b data-k="traps.series_mismatch">2</b> filas</span><span class="r-act a-query">Consulta</span></summary>
+          <div class="r-body"><p>Las filas 20 y 155 llevan el nombre de otra serie. Crean dos de las seis «excepciones» de precio. El origen conserva el valor registrado; la vista de informe las reubica por el prefijo del título.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Dos grafías de una misma edición</span><span class="r-ev">3 + 3 filas</span><span class="r-act a-norm">Normalizar</span></summary>
+          <div class="r-body"><p>«Second Edition» y «2nd Edition» aparecen en seis filas de Little Lanterns. Ponles alias en el informe. Como la edición forma parte de la clave de comparación, estas filas quedan fuera de todos los grupos entre niveles. Son seis de los <b data-k="headline.groups_single_level">8</b> grupos de un solo nivel; los otros dos son el pack TB y el recurso Gleebook, cada uno único en su especie.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">«Gleebook» no es un eBook</span><span class="r-ev">1 fila</span><span class="r-act a-stet">Stet</span></summary>
+          <div class="r-body"><p>Un recurso impreso cuyo nombre contiene las letras «ebook». Una regla por subcadena le concede acceso digital; una regla de límite de palabra no. El registro es correcto, así que se mantiene. El problema era el analizador.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Un pack, dos nombres</span><span class="r-ev">6 frente a 24 filas</span><span class="r-act a-query">Consulta</span></summary>
+          <div class="r-body"><p>Mosaic English llama «+ Online Access» a su pack de estudio; todas las demás series dicen «with Digital». Probablemente sea lo mismo, pero unirlos es una decisión de negocio, no de análisis.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Libro primario archivado como secundario</span><span class="r-ev">1 fila</span><span class="r-act a-query">Consulta</span></summary>
+          <div class="r-body"><p>Fila 61, Fable Road Level 1 Pupil Book: segmento Primary, subsegmento Secondary. Todas las demás filas de Fable Road dicen Primary. Es un error jerárquico que sesgaría cualquier informe por segmento.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">El valor atípico «TB»</span><span class="r-ev"><b data-k="trap.tb_price" data-f="eur">€108.49</b></span><span class="r-act a-inv">Investigar</span></summary>
+          <div class="r-body"><p>El único precio por encima del límite superior del IQR (unos 100 €). «TB» podría significar libro del profesor u otra cosa, así que su tipo sigue sin resolver. Se marca; no se borra para ordenar un gráfico.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Duración del acceso, casi siempre sin indicar</span><span class="r-ev"><b data-k="trap.access_stated">6</b> de <b data-k="trap.access_total">72</b></span><span class="r-act a-stet">Stet</span></summary>
+          <div class="r-body"><p>Seis cuadernos digitales indican 18 meses; sesenta y seis no dicen nada. Vacío significa desconocido, no ilimitado. Tratar el hueco como «sin límite» inventaría una característica del producto.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Prima de Parte A + B</span><span class="r-ev">12 de 12 niveles</span><span class="r-act a-inv">Investigar</span></summary>
+          <div class="r-body"><p>Comprar las dos mitades cuesta alrededor de un 14% más que el volumen completo, en cada nivel de ambas series divididas. En dos niveles de Little Lanterns, las partes y el volumen llevan etiquetas de edición distintas; la prima es la misma de todos modos. Quizá sea intencionada; conviene confirmarlo antes de llamarla error.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Starter con precio inferior a otros niveles</span><span class="r-ev">4 grupos</span><span class="r-act a-inv">Investigar</span></summary>
+          <div class="r-body"><p>Dos series, solo libro del alumno y cuaderno. Lo bastante coherente como para parecer deliberado. Los datos muestran el patrón; el motivo tiene que venir de una persona.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Paridad de la clave de respuestas</span><span class="r-ev">24 de 24 pares</span><span class="r-act a-stet">Stet</span></summary>
+          <div class="r-body"><p>Los cuadernos con clave y sin clave siempre comparten precio cuando se emparejan por serie, nivel y edición. Un resultado limpio, registrado porque un emparejamiento menos estricto lo habría ocultado.</p></div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ LIMITS -->
+<section class="sec sec-key" id="limits" aria-labelledby="l-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Límites</p>
+      <p class="note">Dicho claramente, para que nadie tenga que deducirlo.</p>
+    </div>
+    <div class="main">
+      <h2 id="l-title">Lo que un precio de lista <em>no puede</em> decir.</h2>
+      <p class="label">No está en los datos</p>
+      <ul class="nots" aria-label="No está en los datos: ventas, costes, márgenes, descuentos, elasticidad">
+        <li>Ventas</li><li>Costes</li><li>Márgenes</li><li>Descuentos</li><li>Elasticidad</li>
+      </ul>
+      <p class="prose">Así que aquí no hay precio recomendado ni afirmación alguna sobre rentabilidad. Lo que el análisis sí puede hacer es darle a un equipo comercial cuatro preguntas precisas:</p>
+      <ol class="asks">
+        <li>¿Es deliberado el descuento Starter en Mosaic English y Silverline Skills?</li>
+        <li>¿Quién es responsable de los metadatos de la serie, y cómo acabaron las filas 20 y 155 archivadas con el nombre equivocado?</li>
+        <li>¿Es intencionada la prima de alrededor del 14% por comprar un libro en dos partes?</li>
+        <li>¿Qué es «TB», y debe el precio de €108.49 pertenecer al mismo catálogo?</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FILM -->
+<section class="sec" id="film" aria-labelledby="v-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">La película</p>
+      <p class="note" id="film-status">Corte sin voz. Los subtítulos en español muestran el guion de la narración, que aún no está grabada.</p>
+    </div>
+    <div class="main">
+      <h2 id="v-title">El mismo caso, en <em>dos minutos y medio.</em></h2>
+      <div class="player" id="player">
+        <button class="player-start" id="player-start" type="button" aria-describedby="film-status">
+          <img src="../public/media/film-poster-es.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+          <span class="player-label"><span class="play" aria-hidden="true"></span>Reproducir la película <small>2:36 · solo se carga al pulsar reproducir</small></span>
+        </button>
+      </div>
+      <p class="aside-mono">También en formato vertical para móvil: <a href="../public/media/price-signal-vertical-es.mp4">versión vertical de 45 segundos (MP4)</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FILES -->
+<section class="sec" id="files" aria-labelledby="d-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Ficheros</p>
+      <p class="note">Todo lo que dice la página se puede comprobar en estos ficheros. Vuelve a ejecutar el generador y obtendrás los mismos bytes.</p>
+    </div>
+    <div class="main">
+      <h2 id="d-title">Comprueba <em>mi trabajo.</em></h2>
+      <ul class="files">
+        <li><a href="../public/downloads/PRICE_SIGNAL_Public_Case_EN.pdf" download><span class="f-name">Presentación del caso, inglés</span><span class="f-meta">PDF · 17 diapositivas</span></a></li>
+        <li><a href="../public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pdf" download><span class="f-name">Presentación del caso, español</span><span class="f-meta">PDF · 17 diapositivas</span></a></li>
+        <li><a href="../public/downloads/PRICE_SIGNAL_Public_Case_EN.pptx" download><span class="f-name">Presentación editable, inglés</span><span class="f-meta">PPTX</span></a></li>
+        <li><a href="../public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pptx" download><span class="f-name">Presentación editable, español</span><span class="f-meta">PPTX</span></a></li>
+        <li><a href="../public/downloads/PRICE_SIGNAL_Independent_Synthetic_Analysis.xlsx" download><span class="f-name">Libro de Excel, inglés, fórmulas en vivo (sin traducir)</span><span class="f-meta">XLSX · 11 hojas</span></a></li>
+        <li><a href="../public/downloads/Alfonso-Cifuentes-CV-EN.pdf" download><span class="f-name">Curriculum vitae, inglés</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="../public/downloads/Alfonso-Cifuentes-CV-ES.pdf" download><span class="f-name">Currículum vitae, español</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="../public/downloads/Alfonso-Cifuentes-Cover-Letter-EN.pdf" download><span class="f-name">Cover letter, inglés</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="../public/downloads/Alfonso-Cifuentes-Carta-ES.pdf" download><span class="f-name">Carta de presentación, español</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="../public/data/catalogue_raw.csv" download><span class="f-name">Catálogo original (datos)</span><span class="f-meta">CSV · 5 columnas</span></a></li>
+        <li><a href="../public/data/catalogue.csv" download><span class="f-name">Catálogo enriquecido (datos)</span><span class="f-meta">CSV · 19 columnas</span></a></li>
+        <li><a href="../public/data/analysis.json" download><span class="f-name">Resultado completo del análisis (datos)</span><span class="f-meta">JSON</span></a></li>
+        <li><a href="../public/data/challenges.json" download><span class="f-name">Registro de calidad (datos)</span><span class="f-meta">JSON</span></a></li>
+      </ul>
+      <div class="byline">
+        <p>Hecho por <strong>Alfonso Cifuentes</strong> como caso de estudio independiente para portfolio: Python para la generación y el análisis, Excel para la verificación con fórmulas en vivo, HTML, CSS y JavaScript para esta página, Remotion para la película.</p>
+        <p class="byline-links">
+          <a class="btn" href="https://github.com/AlfonsoCifuentes" rel="me noopener">Perfil de GitHub <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+          <a class="btn ghost" href="https://alfonsocifuentes.vercel.app/" rel="me noopener">Portfolio <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/alfonsocifuentesalonso/" rel="me noopener">LinkedIn <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="bars" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></div>
+  <p><strong>Nota sobre los datos.</strong> Caso de estudio educativo construido de forma independiente. Todas las series, títulos, productos y precios de lista en euros son ficticios, generados por un script con semilla. Los hallazgos ilustran métodos de calidad de datos y comparabilidad, no condiciones de mercado, y no implican ninguna relación con ninguna editorial ni empleador.</p>
+  <p class="colophon-line">Código MIT · datos y texto CC BY 4.0, con crédito a Alfonso Cifuentes. Tipografía Archivo y Martian Mono (SIL Open Font License). Sin cookies ni rastreadores. <a href="#top">Volver arriba ↑</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "prefix",
+    "label": "Mislabelled collections",
+    "severity": "data integrity",
+    "count": 2,
+    "rule": "Check the title prefix against the assigned product family. Investigate; never auto-correct the source."
+  },
+  {
+    "id": "edition",
+    "label": "Edition aliases",
+    "severity": "normalisation",
+    "rule": "Second Edition and 2nd Edition are parallel labels; make reporting alias without overwriting input."
+  },
+  {
+    "id": "ebook",
+    "label": "False digital-access match",
+    "severity": "parsing",
+    "rule": "Gleebook is a print resource name containing the substring ebook. Token-agnostic matching is unsafe."
+  },
+  {
+    "id": "packs",
+    "label": "Inconsistent bundle wording",
+    "severity": "classification",
+    "rule": "Study Pack with Digital and Study Pack + Online Access may require business validation before merging."
+  },
+  {
+    "id": "segment",
+    "label": "Taxonomy drift",
+    "severity": "hierarchy",
+    "rule": "A Primary product is mistakenly labelled Secondary in the subsegment field."
+  },
+  {
+    "id": "tb",
+    "label": "Premium TB outlier",
+    "severity": "commercial QA",
+    "rule": "TB is an ambiguous abbreviation and carries a price outlier; investigate, do not automatically exclude."
+  },
+  {
+    "id": "access",
+    "label": "Incomplete access duration",
+    "severity": "missingness",
+    "rule": "Only some products explicitly say 18 months; blank is unspecified, not unlimited."
+  },
+  {
+    "id": "split",
+    "label": "Part A + B premium",
+    "severity": "like-for-like",
+    "rule": "Buying parts individually costs more than a single full volume; compare only matched product families and levels."
+  },
+  {
+    "id": "starter",
+    "label": "Level-specific starter prices",
+    "severity": "exceptions",
+    "rule": "Starter differs from upper levels for two selected product families; may reflect strategy rather than error."
+  },
+  {
+    "id": "solutions",
+    "label": "Answer support parity",
+    "severity": "matched pairs",
+    "rule": "The solution-key pairs are the same fictional list price; verify matching on edition and level."
+  }
+]

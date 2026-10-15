@@ -1,0 +1,55 @@
+1
+00:00:00,450 --> 00:00:03,144
+¿Este libro tiene mal el precio?
+
+2
+00:00:03,194 --> 00:00:08,200
+¿O lo estamos comparando con un producto completamente distinto?
+
+3
+00:00:09,450 --> 00:00:12,386
+Construí un caso de precios con trescientos
+
+4
+00:00:12,436 --> 00:00:15,189
+sesenta y dos libros de texto ficticios.
+
+5
+00:00:15,239 --> 00:00:17,200
+Lo difícil no era la media.
+
+6
+00:00:18,450 --> 00:00:21,181
+Eran las trampas: series mal archivadas,
+
+7
+00:00:21,231 --> 00:00:23,781
+packs ambiguos y un «Gleebook» que un
+
+8
+00:00:23,831 --> 00:00:26,200
+parser ingenuo toma por un e-book.
+
+9
+00:00:27,450 --> 00:00:28,991
+Comparando lo comparable,
+
+10
+00:00:29,041 --> 00:00:32,224
+cincuenta y cuatro de sesenta grupos mantienen un precio.
+
+11
+00:00:32,274 --> 00:00:35,200
+Dos de las seis excepciones eran errores de archivo.
+
+12
+00:00:36,450 --> 00:00:39,387
+El dataset, el método y el recorrido interactivo
+
+13
+00:00:39,437 --> 00:00:41,600
+están enlazados en la publicación.
+
+14
+00:00:41,650 --> 00:00:44,200
+Todo es inventado y todo es reproducible.

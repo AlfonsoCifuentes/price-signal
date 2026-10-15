@@ -1,0 +1,135 @@
+WEBVTT
+
+NOTE Script captions on the planned 12-second grid. Not word-accurate until the narration is recorded.
+
+00:00:00.450 --> 00:00:05.092
+What if the biggest pricing mistake isn't a wrong number,
+
+00:00:05.142 --> 00:00:08.519
+but comparing two things that were never
+
+00:00:08.569 --> 00:00:11.200
+equivalent in the first place?
+
+00:00:12.450 --> 00:00:15.698
+A publishing catalogue looks simple: a title,
+
+00:00:15.748 --> 00:00:17.444
+a series and a price.
+
+00:00:17.494 --> 00:00:21.260
+But behind every title sit formats, levels, editions,
+
+00:00:21.310 --> 00:00:23.200
+packs and access rights.
+
+00:00:24.450 --> 00:00:27.624
+For this case study I generated a fictional catalogue:
+
+00:00:27.674 --> 00:00:30.740
+three hundred and sixty-two products, twelve series,
+
+00:00:30.790 --> 00:00:33.051
+and data problems planted on purpose.
+
+00:00:33.101 --> 00:00:35.200
+No real publisher, no real prices.
+
+00:00:36.450 --> 00:00:41.239
+First, I recovered structure from the titles, without guessing.
+
+00:00:41.289 --> 00:00:44.675
+If a title doesn't mention access duration,
+
+00:00:44.725 --> 00:00:47.200
+that's unknown, not unlimited.
+
+00:00:48.450 --> 00:00:50.792
+The raw file stays untouched.
+
+00:00:50.842 --> 00:00:55.577
+Every correction lives in a separate, reversible reporting view,
+
+00:00:55.627 --> 00:00:59.200
+so any number traces back to its source record.
+
+00:01:00.450 --> 00:01:03.133
+Two records carry a series name that
+
+00:01:03.183 --> 00:01:05.345
+contradicts their own title.
+
+00:01:05.395 --> 00:01:09.053
+They're flagged and re-filed in the reporting view,
+
+00:01:09.103 --> 00:01:11.200
+never silently overwritten.
+
+00:01:12.450 --> 00:01:17.116
+A printed resource called Gleebook contains the letters e-book.
+
+00:01:17.166 --> 00:01:20.808
+A naive substring rule grants it digital access.
+
+00:01:20.858 --> 00:01:23.200
+A word-boundary rule doesn't.
+
+00:01:24.450 --> 00:01:27.576
+Only then did I compare prices: same series,
+
+00:01:27.626 --> 00:01:29.927
+type, pack, edition and access.
+
+00:01:29.977 --> 00:01:32.595
+Only the level is allowed to change.
+
+00:01:32.645 --> 00:01:35.200
+That gives sixty comparable groups.
+
+00:01:36.450 --> 00:01:40.124
+Fifty-four of the sixty hold one price at every level.
+
+00:01:40.174 --> 00:01:43.166
+Four exceptions are cheaper Starter levels.
+
+00:01:43.216 --> 00:01:47.200
+The other two aren't pricing at all: they're filing errors.
+
+00:01:48.450 --> 00:01:51.009
+Matched comparisons show more.
+
+00:01:51.059 --> 00:01:55.431
+Buying a book in two parts costs about fourteen percent
+
+00:01:55.481 --> 00:01:59.200
+more than the complete volume, at every level.
+
+00:02:00.450 --> 00:02:05.039
+But list prices alone can't show demand, costs or margins.
+
+00:02:05.089 --> 00:02:07.793
+Without sales and discount data,
+
+00:02:07.843 --> 00:02:11.200
+a recommended price would be speculation.
+
+00:02:12.450 --> 00:02:15.031
+So the result isn't a dashboard.
+
+00:02:15.081 --> 00:02:19.185
+It's a method: keep the source, recover the structure,
+
+00:02:19.235 --> 00:02:23.200
+compare like with like, and say what you don't know.
+
+00:02:24.450 --> 00:02:26.348
+The interactive case study,
+
+00:02:26.398 --> 00:02:29.770
+the dataset and the Excel workbook are linked below.
+
+00:02:29.820 --> 00:02:33.666
+Everything in it is invented, and all of it is reproducible.
+
+00:02:33.716 --> 00:02:35.200
+Thanks for watching.

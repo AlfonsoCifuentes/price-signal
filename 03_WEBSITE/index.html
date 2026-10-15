@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRICE / SIGNAL — A pricing analytics case study on invented catalogue data</title>
+  <meta name="description" content="An independent data analytics case study: 362 fictional textbook products, a reproducible method for like-for-like price comparison, and ten data-quality traps documented instead of silently fixed.">
+  <meta name="author" content="Alfonso Cifuentes">
+  <meta name="theme-color" content="#f3f4ef">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PRICE / SIGNAL — Before you compare prices, compare products">
+  <meta property="og:description" content="362 invented products. 54 of 60 comparable groups hold one price — and two of the six exceptions turned out to be filing errors.">
+  <meta property="og:image" content="public/media/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PRICE / SIGNAL — the price of clarity. A proofread catalogue row with a series mismatch circled.">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- SITE_URL_TAGS: canonical + absolute og:url/og:image are inserted by tools/set_site_url.py once a real domain exists -->
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="es" href="es/">
+  <link rel="icon" href="public/media/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="public/fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "PRICE / SIGNAL — fictional educational publishing catalogue",
+    "description": "362 invented textbook products across 12 invented series with deliberately planted data-quality issues, for practising like-for-like price analysis. Contains no real company, product or market data.",
+    "creator": {"@type": "Person", "name": "Alfonso Cifuentes"},
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "keywords": ["data analytics", "pricing analytics", "data quality", "business intelligence", "synthetic data"],
+    "variableMeasured": "Fictional EUR list price",
+    "distribution": [
+      {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "public/data/catalogue.csv"},
+      {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "public/data/catalogue_raw.csv"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="slug" id="top">
+  <a class="mark" href="#top" aria-label="PRICE / SIGNAL — back to top"><span>PRICE</span><i aria-hidden="true">/</i><span>SIGNAL</span></a>
+  <nav class="lang" aria-label="Language">
+    <span lang="en" aria-current="page">EN</span><a href="es/" hreflang="es" lang="es">ES</a>
+  </nav>
+  <nav class="nav" aria-label="Sections">
+    <a href="#question">Question</a>
+    <a href="#method">Method</a>
+    <a href="#explorer">Explorer</a>
+    <a href="#exceptions">Exceptions</a>
+    <a href="#register">Register</a>
+    <a href="#film">Film</a>
+    <a href="#files" class="nav-files">Files</a>
+  </nav>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+</header>
+
+<main id="main">
+
+<!-- ============================================================ HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <span class="crop tl" aria-hidden="true"></span><span class="crop tr" aria-hidden="true"></span>
+  <span class="crop bl" aria-hidden="true"></span><span class="crop br" aria-hidden="true"></span>
+
+  <p class="ticket">
+    <span>Independent case study</span>
+    <span><b data-k="headline.products">362</b> records · seed 20261011</span>
+    <span>All products and prices are invented</span>
+  </p>
+
+  <h1 id="hero-title" class="hero-title">
+    <span class="h-narrow">The price</span>
+    <span class="h-wide">of clarity.</span>
+  </h1>
+
+  <div class="hero-body">
+    <p class="lede">Before you compare prices, compare products. This is a fictional textbook catalogue, a method anyone can rerun, and a record of every uncertainty I found on the way.</p>
+
+    <figure class="proof" aria-labelledby="proof-cap">
+      <figcaption id="proof-cap" class="proof-cap"><span>Proof · Premium Pack with Digital · as recorded</span><span>Series field / Title / Price</span></figcaption>
+      <div class="proof-sheet">
+        <div class="proof-row"><span class="c-series">Glasshouse English</span><span class="c-title">Glasshouse English A2 Premium Pack with Digital</span><span class="c-price">€86.49</span></div>
+        <div class="proof-row"><span class="c-series">Glasshouse English</span><span class="c-title">Glasshouse English B1 Premium Pack with Digital</span><span class="c-price">€86.49</span></div>
+        <div class="proof-row is-queried"><span class="c-series"><span class="ring">Glasshouse English<svg class="ring-svg" viewBox="0 0 200 56" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M10 30 C 8 10, 70 4, 110 6 C 170 8, 196 16, 192 32 C 188 50, 120 54, 70 52 C 26 50, 4 42, 14 22"/></svg></span></span><span class="c-title"><mark>Mosaic English</mark> B1 Premium Pack with Digital</span><span class="c-price"><mark>€69.49</mark></span></div>
+        <div class="proof-row"><span class="c-series">Glasshouse English</span><span class="c-title">Glasshouse English B2 Premium Pack with Digital</span><span class="c-price">€86.49</span></div>
+      </div>
+      <p class="proof-note"><span class="q" aria-hidden="true">?</span><span><strong>Query, row 20.</strong> The title says Mosaic English. This looks like a €17 price cut, but it's another series' product filed in the wrong place. <em>Stet source; re-file in the reporting view.</em></span></p>
+    </figure>
+  </div>
+
+  <dl class="proof-line">
+    <div><dt>Comparable groups with one price at every level</dt><dd><b data-k="headline.consistent">54</b><small>/</small><b data-k="headline.comparables">60</b></dd></div>
+    <div><dt>Of the six exceptions, filing errors rather than pricing</dt><dd><b data-k="headline.exceptions_misfiled">2</b></dd></div>
+    <div><dt>Real products, publishers or sales figures</dt><dd><b>0</b></dd></div>
+  </dl>
+
+  <p class="hero-actions">
+    <a class="btn" href="#question">Read the case <span aria-hidden="true">↓</span></a>
+    <a class="btn ghost" href="#explorer">Explore the prices</a>
+  </p>
+</section>
+
+<!-- ============================================================ QUESTION -->
+<section class="sec" id="question" aria-labelledby="q-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">The question</p>
+      <p class="note">Is a product priced differently, or is it a different product?</p>
+    </div>
+    <div class="main">
+      <h2 id="q-title">A price list is a list of <em>assumptions.</em></h2>
+      <div class="prose cols">
+        <p>A catalogue looks simple: a series, a title, a price. Behind each title sit a product type, a level, an edition, a pack, an answer key, an access licence and sometimes a book split into two parts.</p>
+        <p>Average across all that and you get a confident wrong answer. The pooled mean here is <b data-k="headline.mean" data-f="eur">€44.04</b>, a number that describes no product at all: a workbook averages <b data-k="type.Workbook.mean" data-f="eur">€24.72</b>, a student book <b data-k="type.Student Book.mean" data-f="eur">€60.51</b>.</p>
+      </div>
+      <figure class="fig" aria-labelledby="fig-strip-cap">
+        <figcaption id="fig-strip-cap" class="fig-cap"><span class="label">Fig. 1</span> Every product, one dot, grouped by type. Fictional EUR list prices.</figcaption>
+        <div class="strip" id="strip" role="img" aria-label="Strip plot of all 362 fictional list prices by product type. Workbooks run from 16.49 to 32.49 euros, pupil books from 26.48 to 54.49, student books and packs from 33.49 to 86.49, digital workbooks from 46.49 to 63.49. One resource sits alone at 14.49 euros and one TB pack alone at 108.49."></div>
+        <div class="sr-table"><table>
+          <caption>Price range by product type</caption>
+          <thead><tr><th scope="col">Type</th><th scope="col">Count</th><th scope="col">Min</th><th scope="col">Median</th><th scope="col">Max</th></tr></thead>
+          <tbody id="type-table"><tr><td colspan="5">See type_stats in public/data/analysis.json</td></tr></tbody>
+        </table></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CATALOGUE -->
+<section class="sec" id="catalogue" aria-labelledby="c-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">The material</p>
+      <p class="note">Every name and price below was invented by a seeded generator. Same seed, same file, byte for byte.</p>
+    </div>
+    <div class="main">
+      <h2 id="c-title">Five columns in. <em>Nineteen</em> out.</h2>
+      <div class="prose cols">
+        <p>The raw file has <b data-k="headline.products">362</b> rows across <b data-k="headline.series">12</b> invented series, in two level systems: CEFR for adults and teens, grades for primary. Each row carries only five fields.</p>
+        <p>Enrichment adds fourteen attributes that the comparison needs. Some can be read from the title; others, like edition and access duration, never appear there and have to come from metadata. That difference matters later.</p>
+      </div>
+      <div class="schema" aria-label="Schema: 5 raw columns expand to 19 enriched columns">
+        <ol class="schema-raw">
+          <li>Series</li><li>Segment</li><li>Sub-Segment</li><li>Title</li><li>Price_EUR</li>
+        </ol>
+        <svg class="schema-arrow" viewBox="0 0 48 24" aria-hidden="true" focusable="false"><path d="M2 12h42M33 3l11 9-11 9"/></svg>
+        <ol class="schema-new">
+          <li>Edition</li><li>Level</li><li>Level_System</li><li>Product_Type</li><li>Product_Role</li><li>Book_Part</li><li>Pack_Type</li><li>Answer_Support</li><li>Digital_Main_Book_Access</li><li>Digital_Practice_Book_Access</li><li>Audio_Access</li><li>App_Access</li><li>Additional_Resources</li><li>Access_Duration</li>
+        </ol>
+      </div>
+      <ul class="colophon" id="series-list" aria-label="The twelve invented series">
+        <li>Amber Path</li><li>Compass Junction</li><li>Driftwood Dialogues</li><li>Fable Road</li><li>Glasshouse English</li><li>Kindred Horizons</li><li>Little Lanterns</li><li>Mosaic English</li><li>Northstar Language Lab</li><li>Orion Exam Prep</li><li>Silverline Skills</li><li>Wildflower Words</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ METHOD -->
+<section class="sec" id="method" aria-labelledby="m-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">The method</p>
+      <p class="note">Four steps, in this order. Skipping the first is how analysis quietly destroys evidence.</p>
+    </div>
+    <div class="main">
+      <h2 id="m-title">Hold the product still. <em>Then</em> look at the price.</h2>
+      <ol class="steps">
+        <li>
+          <h3>Keep the source.</h3>
+          <p>The raw file is never edited. Every correction lives in a separate reporting view that can be switched off, so any number can be traced back to the record it came from.</p>
+        </li>
+        <li>
+          <h3>Recover the structure.</h3>
+          <p>A rule-based parser reads titles only. It matched the reference labels on level, pack, answer key, book part, audio and digital access for all <b data-k="headline.products">362</b> rows. On product type it <em>abstained</em> twice, on “TB” and “Gleebook”, rather than guess. The rules were written for this catalogue’s own title patterns, so that score checks the rules; it is not a benchmark for real data.</p>
+          <p class="aside-mono">Not recoverable from titles: edition · access duration · extra resources · segment</p>
+        </li>
+        <li>
+          <h3>Compare like with like.</h3>
+          <p>Products are grouped on ten attributes: series, type, role, part, pack, answer key, both digital rights, resources and edition. Only the level may change. That yields <b data-k="headline.groups_total">68</b> groups, of which <b data-k="headline.comparables">60</b> span two or more levels.</p>
+        </li>
+        <li>
+          <h3>Separate fact from guess.</h3>
+          <p>A price difference is a question for the commercial team, not a verdict. Each exception is classified, explained and left in the data, so the reader can disagree.</p>
+        </li>
+      </ol>
+      <div class="versus" aria-label="Naive versus word-boundary parsing">
+        <div>
+          <p class="label">Naive substring rule</p>
+          <p class="code">"ebook" in title</p>
+          <p class="verdict bad"><b data-k="traps.ebook_naive">1</b> false eBook: <span class="mono">Fable Road Level 3 Gle<mark>ebook</mark> Resource</span></p>
+        </div>
+        <div>
+          <p class="label">Word-boundary rule</p>
+          <p class="code">\be-?book\b</p>
+          <p class="verdict good"><b data-k="traps.ebook_bounded">0</b> matches. A printed resource stays printed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ EXPLORER -->
+<section class="sec sec-sheet" id="explorer" aria-labelledby="x-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Explorer</p>
+      <p class="note">Each row is one configuration. Read across: if the price changes with the level, the cell is highlighted.</p>
+      <ul class="legend" aria-label="Legend">
+        <li><mark class="sw">€0.00</mark> differs from the row’s usual price</li>
+        <li><span class="flag f-misfiled">M</span> misfiled series</li>
+        <li><span class="flag f-edition">E</span> edition label</li>
+        <li><span class="flag f-outlier">O</span> price outlier</li>
+        <li><span class="flag f-ebook-trap">G</span> eBook false match</li>
+        <li><span class="flag f-taxonomy">T</span> taxonomy drift</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2 id="x-title">Read the catalogue <em>yourself.</em></h2>
+      <p class="prose">Pick a series. The grid shows every invented product in it, priced by level. Nothing here is aggregated.</p>
+      <div class="picker" id="picker" role="radiogroup" aria-label="Choose a series"></div>
+      <p class="picker-meta" id="picker-meta" aria-live="polite"></p>
+      <div class="matrix-wrap" id="matrix-wrap" tabindex="0" aria-label="Price grid, scrolls horizontally on small screens">
+        <noscript><p class="prose">The interactive grid needs JavaScript. The same data is in <a href="public/data/catalogue.csv">catalogue.csv</a>.</p></noscript>
+        <table class="matrix" id="matrix"></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ EXCEPTIONS -->
+<section class="sec" id="exceptions" aria-labelledby="e-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">The exceptions</p>
+      <p class="note">The interesting errors don’t show where a record belongs. They show where it landed.</p>
+    </div>
+    <div class="main">
+      <h2 id="e-title">Six exceptions. Four Starter prices, <em>two filing errors.</em></h2>
+      <p class="prose wide">Of <b data-k="headline.comparables">60</b> comparable groups, <b data-k="headline.consistent">54</b> hold one price at every level. In four of the six that don’t, only the Starter level is cheaper, a plausible entry-level price. The other two aren’t prices at all: each contains a record from another series, filed under the wrong name.</p>
+      <div class="multiples" id="multiples">
+        <noscript><p class="prose">Small multiples need JavaScript; see the Exceptions sheet in the Excel file.</p></noscript>
+      </div>
+      <div class="repair" aria-label="Consistency before and after re-filing two records">
+        <div class="repair-cell"><p class="label">As recorded</p><p class="big"><b data-k="headline.consistent">54</b>/<b data-k="headline.comparables">60</b></p><p class="sub"><b data-k="headline.consistent_pct" data-f="pct1">90.0%</b> of groups hold one price</p></div>
+        <div class="repair-arrow" aria-hidden="true"><span>re-file 2 records by title prefix</span></div>
+        <div class="repair-cell is-after"><p class="label">Reporting view</p><p class="big"><b data-k="headline.consistent_after_series_repair">56</b>/<b data-k="headline.comparables_after_series_repair">60</b></p><p class="sub"><b data-k="headline.consistent_pct_after_series_repair" data-f="pct1">93.3%</b>, source file untouched</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FINDINGS -->
+<section class="sec" id="findings" aria-labelledby="f-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Matched comparisons</p>
+      <p class="note">Each comparison below holds series and level fixed, and checks edition labels. Nothing is compared to the catalogue average.</p>
+    </div>
+    <div class="main">
+      <h2 id="f-title">Three comparisons that <em>hold up.</em></h2>
+      <div class="findings">
+        <article class="finding">
+          <p class="label">Split volumes</p>
+          <h3>Part A + Part B costs more than the complete book.</h3>
+          <div class="split-bars" id="split-bars" aria-hidden="true"></div>
+          <p>Little Lanterns: <b data-k="split.Little Lanterns.parts_total" data-f="eur">€62.00</b> for two parts against <b data-k="split.Little Lanterns.complete" data-f="eur">€54.49</b> for one volume, <b data-k="split.Little Lanterns.premium_pct" data-f="pctp">+13.8%</b>. Wildflower Words: <b data-k="split.Wildflower Words.premium_pct" data-f="pctp">+13.9%</b>. Same at every level, including the two Little Lanterns levels where the parts and the complete volume carry different edition labels.</p>
+        </article>
+        <article class="finding">
+          <p class="label">Entry level</p>
+          <h3>Starter is cheaper in two series, and only there.</h3>
+          <p>Mosaic English and Silverline Skills price Starter student books <b data-k="starter.0.gap_eur" data-f="eurneg">−€8.00</b> and workbooks <b data-k="starter.1.gap_eur" data-f="eurneg">−€4.00</b> below their other levels (−14.0% to −19.5%). The other ten series don’t. Strategy is plausible; list prices alone can’t confirm it.</p>
+        </article>
+        <article class="finding">
+          <p class="label">Answer keys</p>
+          <h3>With key or without, the price is the same.</h3>
+          <p><b data-k="traps.answer_parity">24</b> of <b data-k="traps.answer_pairs">24</b> workbook pairs, matched on series, level and edition, share one price. Parity only means something because the match is strict.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ REGISTER -->
+<section class="sec" id="register" aria-labelledby="r-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Quality register</p>
+      <p class="note"><strong>Stet</strong>: let it stand. <strong>Query</strong>: ask the owner. <strong>Normalise</strong>: alias in reporting only.</p>
+    </div>
+    <div class="main">
+      <h2 id="r-title">Ten things that <em>look like facts.</em></h2>
+      <p class="prose">Each issue was planted in the generator on purpose, then found, measured and logged. None was silently fixed.</p>
+      <div class="register">
+        <details>
+          <summary><span class="r-name">Series field contradicts the title</span><span class="r-ev"><b data-k="traps.series_mismatch">2</b> rows</span><span class="r-act a-query">Query</span></summary>
+          <div class="r-body"><p>Rows 20 and 155 carry another series’ name. They create two of the six price “exceptions”. The source keeps the recorded value; the reporting view re-files them by title prefix.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Two spellings of one edition</span><span class="r-ev">3 + 3 rows</span><span class="r-act a-norm">Normalise</span></summary>
+          <div class="r-body"><p>“Second Edition” and “2nd Edition” appear on six Little Lanterns rows. Alias them for reporting. Because edition is part of the comparison key, these rows sit outside every cross-level group. They are six of the <b data-k="headline.groups_single_level">8</b> single-level groups; the other two are the TB pack and the Gleebook resource, each the only product of its kind.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">“Gleebook” is not an eBook</span><span class="r-ev">1 row</span><span class="r-act a-stet">Stet</span></summary>
+          <div class="r-body"><p>A printed resource whose name contains the letters “ebook”. A substring rule grants it digital access; a word-boundary rule doesn’t. The record is correct, so it stands. The parser was the problem.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">One pack, two names</span><span class="r-ev">6 vs 24 rows</span><span class="r-act a-query">Query</span></summary>
+          <div class="r-body"><p>Mosaic English calls its study pack “+ Online Access”; every other series says “with Digital”. Probably the same thing, but merging them is a business decision, not a parsing one.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Primary book filed as Secondary</span><span class="r-ev">1 row</span><span class="r-act a-query">Query</span></summary>
+          <div class="r-body"><p>Row 61, Fable Road Level 1 Pupil Book: segment Primary, sub-segment Secondary. Every other Fable Road row says Primary. A hierarchy error that would skew any segment report.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">The “TB” outlier</span><span class="r-ev"><b data-k="trap.tb_price" data-f="eur">€108.49</b></span><span class="r-act a-inv">Investigate</span></summary>
+          <div class="r-body"><p>The only price above the upper IQR fence (about €100). “TB” could mean teacher’s book or something else entirely, so its type stays unresolved. Flag it; don’t delete it to tidy a chart.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Access duration, mostly unstated</span><span class="r-ev"><b data-k="trap.access_stated">6</b> of <b data-k="trap.access_total">72</b></span><span class="r-act a-stet">Stet</span></summary>
+          <div class="r-body"><p>Six digital workbooks state 18 months; sixty-six say nothing. Blank means unknown, not unlimited. Treating the gap as “no limit” would invent a product feature.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Part A + B premium</span><span class="r-ev">12 of 12 levels</span><span class="r-act a-inv">Investigate</span></summary>
+          <div class="r-body"><p>Buying both halves costs about 14% more than the complete volume, at every level of both split series. At two Little Lanterns levels the parts and the volume carry different edition labels; the premium is the same either way. Possibly intended; worth confirming before anyone calls it an error.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Starter priced below other levels</span><span class="r-ev">4 groups</span><span class="r-act a-inv">Investigate</span></summary>
+          <div class="r-body"><p>Two series, student book and workbook only. Consistent enough to look deliberate. The data shows the pattern; the reason has to come from a person.</p></div>
+        </details>
+        <details>
+          <summary><span class="r-name">Answer-key parity</span><span class="r-ev">24 of 24 pairs</span><span class="r-act a-stet">Stet</span></summary>
+          <div class="r-body"><p>With-key and without-key workbooks always share a price when matched on series, level and edition. A clean result, logged because a looser match would have hidden it.</p></div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ LIMITS -->
+<section class="sec sec-key" id="limits" aria-labelledby="l-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Limits</p>
+      <p class="note">Said plainly, so nobody has to infer it.</p>
+    </div>
+    <div class="main">
+      <h2 id="l-title">What a list price <em>can’t</em> tell you.</h2>
+      <p class="label">Not in the data</p>
+      <ul class="nots" aria-label="Not in the data: sales, costs, margins, discounts, elasticity">
+        <li>Sales</li><li>Costs</li><li>Margins</li><li>Discounts</li><li>Elasticity</li>
+      </ul>
+      <p class="prose">So there is no recommended price here, and no claim about profitability. What the analysis can do is hand a commercial team four precise questions:</p>
+      <ol class="asks">
+        <li>Is the Starter discount in Mosaic English and Silverline Skills deliberate?</li>
+        <li>Who owns series metadata, and how did rows 20 and 155 get filed under the wrong name?</li>
+        <li>Is the premium of about 14% for buying a book in two parts intended?</li>
+        <li>What is “TB”, and does €108.49 belong in the same catalogue?</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FILM -->
+<section class="sec" id="film" aria-labelledby="v-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">The film</p>
+      <p class="note" id="film-status">Silent cut. My English narration is still to be recorded; captions show the script.</p>
+    </div>
+    <div class="main">
+      <h2 id="v-title">The same case, in <em>two and a half minutes.</em></h2>
+      <div class="player" id="player">
+        <button class="player-start" id="player-start" type="button" aria-describedby="film-status">
+          <img src="public/media/film-poster.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+          <span class="player-label"><span class="play" aria-hidden="true"></span>Play the film <small>2:36 · loads only when you press play</small></span>
+        </button>
+      </div>
+      <p class="aside-mono">Also cut for phones: <a href="public/media/price-signal-vertical.mp4">45-second vertical version (MP4)</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ FILES -->
+<section class="sec" id="files" aria-labelledby="d-title">
+  <div class="galley">
+    <div class="margin">
+      <p class="label">Files</p>
+      <p class="note">Everything the page says can be checked in these files. Rerun the generator and you get the same bytes.</p>
+    </div>
+    <div class="main">
+      <h2 id="d-title">Check my <em>work.</em></h2>
+      <ul class="files">
+        <li><a href="public/downloads/PRICE_SIGNAL_Public_Case_EN.pdf" download><span class="f-name">Case study deck, English</span><span class="f-meta">PDF · 17 slides</span></a></li>
+        <li><a href="public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pdf" download><span class="f-name">Case study deck, Spanish</span><span class="f-meta">PDF · 17 slides</span></a></li>
+        <li><a href="public/downloads/PRICE_SIGNAL_Public_Case_EN.pptx" download><span class="f-name">Editable deck, English</span><span class="f-meta">PPTX</span></a></li>
+        <li><a href="public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pptx" download><span class="f-name">Editable deck, Spanish</span><span class="f-meta">PPTX</span></a></li>
+        <li><a href="public/downloads/PRICE_SIGNAL_Independent_Synthetic_Analysis.xlsx" download><span class="f-name">Excel workbook, English, live formulas</span><span class="f-meta">XLSX · 11 sheets</span></a></li>
+        <li><a href="public/downloads/Alfonso-Cifuentes-CV-EN.pdf" download><span class="f-name">Curriculum vitae, English</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="public/downloads/Alfonso-Cifuentes-CV-ES.pdf" download><span class="f-name">Currículum vitae, español</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="public/downloads/Alfonso-Cifuentes-Cover-Letter-EN.pdf" download><span class="f-name">Cover letter, English</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="public/downloads/Alfonso-Cifuentes-Carta-ES.pdf" download><span class="f-name">Carta de presentación, español</span><span class="f-meta">PDF</span></a></li>
+        <li><a href="public/data/catalogue_raw.csv" download><span class="f-name">Raw catalogue (data)</span><span class="f-meta">CSV · 5 columns</span></a></li>
+        <li><a href="public/data/catalogue.csv" download><span class="f-name">Enriched catalogue (data)</span><span class="f-meta">CSV · 19 columns</span></a></li>
+        <li><a href="public/data/analysis.json" download><span class="f-name">Full analysis output (data)</span><span class="f-meta">JSON</span></a></li>
+        <li><a href="public/data/challenges.json" download><span class="f-name">Quality register (data)</span><span class="f-meta">JSON</span></a></li>
+      </ul>
+      <div class="byline">
+        <p>Made by <strong>Alfonso Cifuentes</strong> as an independent portfolio case study: Python for generation and analysis, Excel for live-formula verification, HTML, CSS and JavaScript for this page, Remotion for the film.</p>
+        <p class="byline-links">
+          <a class="btn" href="https://github.com/AlfonsoCifuentes" rel="me noopener">GitHub profile <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+          <a class="btn ghost" href="https://alfonsocifuentes.vercel.app/" rel="me noopener">Portfolio <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/alfonsocifuentesalonso/" rel="me noopener">LinkedIn <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="bars" aria-hidden="true"><i class="c"></i><i class="m"></i><i class="y"></i><i class="k"></i></div>
+  <p><strong>Data note.</strong> An independently built educational case study. All series, titles, products and EUR list prices are fictional, generated by a seeded script. Findings illustrate data-quality and comparability methods, not market conditions, and imply no relationship with any publisher or employer.</p>
+  <p class="colophon-line">Code MIT · data and text CC BY 4.0, credit Alfonso Cifuentes. Set in Archivo and Martian Mono (SIL Open Font License). No cookies, no trackers. <a href="#top">Back to top ↑</a></p>
+</footer>
+</body>
+</html>

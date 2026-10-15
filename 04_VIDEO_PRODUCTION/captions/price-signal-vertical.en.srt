@@ -1,0 +1,51 @@
+1
+00:00:00,450 --> 00:00:02,973
+Is this book priced wrong?
+
+2
+00:00:03,023 --> 00:00:08,200
+Or are we comparing it with a completely different product?
+
+3
+00:00:09,450 --> 00:00:12,460
+I built a pricing case study on three hundred
+
+4
+00:00:12,510 --> 00:00:14,860
+and sixty-two fictional textbooks.
+
+5
+00:00:14,910 --> 00:00:17,200
+The hard part wasn't the average.
+
+6
+00:00:18,450 --> 00:00:22,267
+It was the traps: misfiled series, ambiguous bundles,
+
+7
+00:00:22,317 --> 00:00:26,200
+and a Gleebook that a naive parser reads as an e-book.
+
+8
+00:00:27,450 --> 00:00:29,120
+Matched like for like,
+
+9
+00:00:29,170 --> 00:00:32,068
+fifty-four of sixty groups hold one price.
+
+10
+00:00:32,118 --> 00:00:35,200
+Two of the six exceptions were filing errors.
+
+11
+00:00:36,450 --> 00:00:38,652
+The dataset, method and interactive
+
+12
+00:00:38,702 --> 00:00:40,904
+walkthrough are linked in the post.
+
+13
+00:00:40,954 --> 00:00:44,200
+Everything is invented, and all of it is reproducible.
