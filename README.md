@@ -9,7 +9,7 @@ This project grew out of a technical assessment I completed during a recruitment
 ## Live
 
 - English: https://pricingdemo-alfonsocifuentes.vercel.app/
-- Español: https://pricingdemo-alfonsocifuentes.vercel.app/es/
+- Español: https://pricingdemo-alfonsocifuentes.vercel.app/es
 
 The site lives in `03_WEBSITE/` (the root `vercel.json` points the Vercel build at it). Videos, decks, the Excel workbook and the data are downloadable from the page.
 

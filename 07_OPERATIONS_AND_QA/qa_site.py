@@ -26,7 +26,7 @@ results = []
 # what differs between the two languages; everything else is the same page
 SITE_URL = 'https://pricingdemo-alfonsocifuentes.vercel.app/'
 PAGES = {
-    'en': dict(path='', prefix='site', lang='en', other=('es/', 'es'), video='horizontal_en', short='vertical_en',
+    'en': dict(path='', prefix='site', lang='en', other=('es', 'es'), video='horizontal_en', short='vertical_en',
                og='public/media/og-pricing-demo-en.png', nojs='Ten things that',
                title='Pricing Demo — Publishing Pricing Analytics | Alfonso Cifuentes',
                first_screen=('Pricing', 'Alfonso Cifuentes', 'technical assessment', 'fictional', 'are the prices different'),
@@ -123,8 +123,8 @@ async def run_page(b, base, cfg):
         og: document.querySelector('meta[property="og:image"]')?.content, locale: document.querySelector('meta[property="og:locale"]')?.content,
         desc: document.querySelector('meta[name=description]')?.content})''')
     check(meta['title'] == cfg['title'], f'[{tag}] title is the agreed Pricing Demo title', meta['title'])
-    check(meta['canonical'] == SITE_URL + cfg['path'], f'[{tag}] canonical is absolute and points to this edition', str(meta['canonical']))
-    check(sorted(meta['hreflang']) == sorted([f'en={SITE_URL}', f'es={SITE_URL}es/', f'x-default={SITE_URL}']), f'[{tag}] hreflang en/es/x-default absolute', str(meta['hreflang']))
+    check(meta['canonical'] == SITE_URL + cfg['path'].rstrip('/'), f'[{tag}] canonical is absolute and points to this edition', str(meta['canonical']))
+    check(sorted(meta['hreflang']) == sorted([f'en={SITE_URL}', f'es={SITE_URL}es', f'x-default={SITE_URL}']), f'[{tag}] hreflang en/es/x-default absolute', str(meta['hreflang']))
     check(meta['og'] == SITE_URL + cfg['og'] and meta['locale'] == ('es_ES' if cfg['lang'] == 'es' else 'en_GB'), f'[{tag}] Open Graph image and locale localised', f"{meta['og']} {meta['locale']}")
     body = await pg.inner_text('body')
     check(not re.search(r'PRICE\s*/\s*SIGNAL|PRICE_SIGNAL', body + meta['title'] + (meta['desc'] or '')), f'[{tag}] no old brand in visible text or metadata')

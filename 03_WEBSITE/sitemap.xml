@@ -3,11 +3,11 @@
   <url>
     <loc>https://pricingdemo-alfonsocifuentes.vercel.app/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pricingdemo-alfonsocifuentes.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pricingdemo-alfonsocifuentes.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pricingdemo-alfonsocifuentes.vercel.app/es"/>
   </url>
   <url>
-    <loc>https://pricingdemo-alfonsocifuentes.vercel.app/es/</loc>
+    <loc>https://pricingdemo-alfonsocifuentes.vercel.app/es</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pricingdemo-alfonsocifuentes.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://pricingdemo-alfonsocifuentes.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pricingdemo-alfonsocifuentes.vercel.app/es"/>
   </url>
 </urlset>
