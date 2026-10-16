@@ -1,5 +1,5 @@
-// PRICE / SIGNAL — 17-slide public deck, EN + ES, built only from public_analysis.json.
-// node build_public_deck.js  →  PRICE_SIGNAL_Public_Case_EN.pptx + PRICE_SIGNAL_Caso_Publico_ES.pptx
+// Pricing Demo — 17-slide public deck, EN + ES, built only from public_analysis.json.
+// node build_public_deck.js  →  Pricing_Demo_Case_Study_EN.pptx + Pricing_Demo_Caso_de_Estudio_ES.pptx
 // PDFs are exported by PowerPoint: python export_decks_pdf.py
 const pptxgen = require('pptxgenjs');
 const fs = require('fs');
@@ -16,11 +16,11 @@ const T = (en, es) => ({en, es});
 const typeName = {en: t => t, es: t => ({'Workbook': 'Cuaderno', 'Student Book': 'Libro del alumno', 'Digital Workbook': 'Cuaderno digital', 'Pupil Book': 'Libro (primaria)', 'TB': 'TB (sin resolver)', 'Resource': 'Recurso'}[t] || t)};
 
 const slides = [
-  {layout: 'title', kicker: T('Independent case study', 'Caso de estudio independiente'),
-   notes: T('Open with the question, not the tools. Everything in this deck is fictional and reproducible.', 'Empieza por la pregunta, no por las herramientas. Todo es ficticio y reproducible.')},
+  {layout: 'title', kicker: T('Data analytics case study', 'Caso de estudio de análisis de datos'),
+   notes: T('Start with where the case comes from: a real recruitment technical assessment, rebuilt independently with fictional data. Then the question. Nothing here is employer data.', 'Empieza por el origen: una prueba técnica real de un proceso de selección, reconstruida de forma independiente con datos ficticios. Después, la pregunta. Nada de esto son datos de la empresa.')},
   {layout: 'statement', kicker: T('The question', 'La pregunta'), head: T('A price list is a', 'Una lista de precios es'), em: T('list of assumptions.', 'una lista de supuestos.'),
-   body: l => T(`The pooled mean list price is ${eur(H.mean, 'en')}, a number that describes no product: workbooks average ${eur(A.type_stats[0].mean, 'en')}, student books ${eur(A.type_stats[1].mean, 'en')}.`,
-                `El precio medio global es ${eur(H.mean, 'es')}, una cifra que no describe ningún producto: los cuadernos promedian ${eur(A.type_stats[0].mean, 'es')} y los libros del alumno ${eur(A.type_stats[1].mean, 'es')}.`)[l],
+   body: l => T(`The pooled mean of this fictional catalogue is ${eur(H.mean, 'en')}, a number that describes no product: workbooks average ${eur(A.type_stats[0].mean, 'en')}, student books ${eur(A.type_stats[1].mean, 'en')}.`,
+                `La media global de este catálogo ficticio es ${eur(H.mean, 'es')}, una cifra que no describe ningún producto: los cuadernos promedian ${eur(A.type_stats[0].mean, 'es')} y los libros del alumno ${eur(A.type_stats[1].mean, 'es')}.`)[l],
    notes: T('Averages across unlike products produce confident wrong answers.', 'Promediar productos distintos produce respuestas erróneas con aspecto seguro.')},
   {layout: 'big', kicker: T('The material', 'El material'), big: String(H.products),
    head: T('fictional products,', 'productos ficticios,'), em: T(`${H.series} invented series.`, `${H.series} series inventadas.`),
@@ -87,7 +87,7 @@ function create(lang) {
   const pptx = new pptxgen();
   pptx.layout = 'LAYOUT_WIDE';
   pptx.author = 'Alfonso Cifuentes';
-  pptx.title = lang === 'es' ? 'PRICE / SIGNAL — Caso de estudio independiente (datos ficticios)' : 'PRICE / SIGNAL — Independent case study (fictional data)';
+  pptx.title = lang === 'es' ? 'Pricing Demo — Caso de estudio de análisis de precios editoriales (datos ficticios)' : 'Pricing Demo — A publishing-pricing analytics case study (fictional data)';
   pptx.subject = 'Pricing analytics and data quality on an invented catalogue';
   pptx.lang = lang === 'es' ? 'es-ES' : 'en-GB';
   const L = o => (o && typeof o === 'object' && 'en' in o) ? o[lang] : o;
@@ -112,7 +112,7 @@ function create(lang) {
       s.addShape('line', {x: dx > 0 ? x : x - .22, y, w: .22, h: 0, line: {color: fg, width: .75}});
       s.addShape('line', {x, y: dy > 0 ? y : y - .22, w: 0, h: .22, line: {color: fg, width: .75}});
     });
-    s.addText([{text: 'PRICE', options: {bold: true}}, {text: ' / ', options: {color: dark ? P.pink : P.magenta}}, {text: 'SIGNAL', options: {bold: true}}],
+    s.addText([{text: 'Pricing', options: {bold: true}}, {text: ' / ', options: {color: dark ? P.pink : P.magenta}}, {text: 'Demo', options: {bold: true}}],
       {x: X, y: 0.42, w: 4, h: 0.3, fontFace: FD, fontSize: 13, color: fg, margin: 0, charSpacing: 1});
     label(s, L(spec.kicker), W - X - 5, 0.45, 5, dark ? P.pink : P.magenta, {align: 'right'});
     tx(s, `${String(i + 1).padStart(2, '0')} / ${slides.length}`, X, HT - 0.55, 2, 0.25, {fontFace: FM, fontSize: 10, color: sub});
@@ -122,12 +122,13 @@ function create(lang) {
 
     switch (spec.layout) {
       case 'title': {
-        tx(s, L(T('THE PRICE', 'EL PRECIO')), X, 1.0, 12, 1.6, {fontFace: FD, bold: true, fontSize: 96, color: P.paper, charSpacing: -2});
-        tx(s, L(T('OF CLARITY.', 'DE LA CLARIDAD.')), X, 2.45, 12, 1.2, {fontFace: FD, bold: true, fontSize: 64, color: P.paper, charSpacing: 2});
-        tx(s, L(T('Before you compare prices, compare products.', 'Antes de comparar precios, compara productos.')), X, 4.0, 11, .6, {fontFace: FT, italic: true, fontSize: 26, color: '9AA6FF'});
-        tx(s, L(T(`${H.products} invented products · ${H.consistent} of ${H.comparables} comparable groups hold one price · two of the six exceptions were filing errors.`,
-                  `${H.products} productos inventados · ${H.consistent} de ${H.comparables} grupos comparables mantienen un precio · dos de las seis excepciones eran errores de archivo.`)), X, 4.9, 11.5, .9, {fontSize: 18, color: 'E3E4E8'});
-        label(s, L(T('Alfonso Cifuentes · data analytics portfolio · all data fictional', 'Alfonso Cifuentes · portfolio de análisis de datos · todos los datos son ficticios')), X, 6.2, 11, P.pink);
+        tx(s, 'Pricing Demo', X, 0.95, 12, 1.4, {fontFace: FD, bold: true, fontSize: 88, color: P.paper, charSpacing: -1});
+        tx(s, L(T('by Alfonso Cifuentes · a publishing-pricing analytics case study', 'por Alfonso Cifuentes · caso de estudio de análisis de precios editoriales')), X, 2.3, 12, .5, {fontFace: FT, italic: true, fontSize: 24, color: '9AA6FF'});
+        tx(s, L(T('This project grew out of a technical assessment I completed during a recruitment process for a data analyst role at an international educational publisher. The task: structure a product catalogue, compare genuinely equivalent items and explain which price differences deserved investigation. I rebuilt it with entirely fictional titles, series and prices so the approach can be shared.',
+                  'Este proyecto nace de una prueba técnica que realicé en un proceso de selección para un puesto de análisis de datos en una editorial educativa internacional. El reto: organizar un catálogo, comparar precios de productos realmente equivalentes y explicar qué diferencias merecían investigarse. Lo reconstruí con títulos, colecciones y precios ficticios para poder compartirlo.')), X, 3.15, 11.6, 1.8, {fontSize: 17, color: 'E3E4E8'});
+        tx(s, L(T(`${H.products} simulated products, ${H.series} series and one question: are the prices different, or are the products different?`,
+                  `${H.products} productos simulados, ${H.series} colecciones y una pregunta: ¿hay diferencias de precio o estamos comparando cosas distintas?`)), X, 5.05, 11.6, .8, {fontSize: 19, bold: true, color: P.paper});
+        label(s, L(T('Independent reconstruction · fictional data · no employer catalogue or prices', 'Adaptación independiente · datos ficticios · ningún producto ni precio de la empresa de selección')), X, 6.2, 12, P.pink);
         break;
       }
       case 'statement':
@@ -235,7 +236,7 @@ function create(lang) {
         const max = Math.max(...TR.split_volumes.map(v => v.parts_total)) * 1.05, Wb = 6.4;
         TR.split_volumes.forEach((v, j) => {
           const y = 2.85 + j * 1.25;
-          label(s, `${v.series} · ${L(T('same level, same edition', 'mismo nivel y edición'))}`, X, y, 7, P.ink2);
+          label(s, `${v.series} · ${L(T(`same level · strict at ${v.levels_strict} of ${v.levels} levels`, `mismo nivel · estricta en ${v.levels_strict} de ${v.levels} niveles`))}${v.levels_edition_mixed ? L(T(` · ${v.levels_edition_mixed} indicative (edition labels differ)`, ` · ${v.levels_edition_mixed} orientativas (edición distinta)`)) : ''}`, X, y, 11, P.ink2);
           rect(s, X, y + .35, Wb * v.complete / max, .3, P.key);
           tx(s, `${L(T('Complete', 'Completo'))} ${eur(v.complete, lang)}`, X + Wb * v.complete / max + .15, y + .37, 2.5, .3, {fontFace: FM, fontSize: 12});
           rect(s, X, y + .72, Wb * v.parts_total / max / 2, .3, P.blue);
@@ -264,17 +265,17 @@ function create(lang) {
         break;
       }
       case 'end': {
-        tx(s, 'PRICE / SIGNAL', X, 1.1, 12, 1.4, {fontFace: FD, bold: true, fontSize: 80, color: P.paper, charSpacing: 1});
+        tx(s, 'Pricing Demo', X, 1.1, 12, 1.4, {fontFace: FD, bold: true, fontSize: 80, color: P.paper, charSpacing: 1});
         tx(s, L(T('Keep the source. Recover the structure. Compare like with like. Say what you don’t know.', 'Conserva el origen. Recupera la estructura. Compara lo comparable. Di lo que no sabes.')), X, 2.8, 11.5, 1.1, {fontFace: FT, italic: true, fontSize: 26, color: '9AA6FF'});
-        tx(s, L(T('Files: synthetic dataset (raw + enriched CSV), analysis JSON, Excel workbook with live formulas, this deck, and a 2:36 film. Generator, analysis and tests are reproducible from seed 20261011.',
-                  'Ficheros: dataset sintético (CSV de origen y enriquecido), JSON de análisis, Excel con fórmulas vivas, esta presentación y una película de 2:36. Generador, análisis y tests reproducibles con la semilla 20261011.')), X, 4.2, 11.6, 1.2, {fontSize: 17, color: 'E3E4E8'});
-        label(s, 'github.com/AlfonsoCifuentes', X, 5.7, 6, P.pink);
-        tx(s, L(T('All series, products and prices are invented. Not affiliated with any publisher or employer.', 'Todas las series, productos y precios son inventados. Sin relación con ninguna editorial ni empleador.')), X, 6.1, 11.6, .4, {fontFace: FM, fontSize: 11, color: '9FA2AD'});
+        tx(s, L(T('Files: synthetic dataset (raw + enriched CSV), analysis JSON, Excel workbook with live formulas, this deck, and four narrated videos (EN/ES, long and short). Generator, analysis and tests are reproducible from seed 20261011.',
+                  'Ficheros: dataset sintético (CSV de origen y enriquecido), JSON de análisis, Excel con fórmulas vivas, esta presentación y cuatro vídeos narrados (ES/EN, largo y corto). Generador, análisis y tests reproducibles con la semilla 20261011.')), X, 4.2, 11.6, 1.2, {fontSize: 17, color: 'E3E4E8'});
+        label(s, 'pricingdemo-alfonsocifuentes.vercel.app · github.com/AlfonsoCifuentes', X, 5.7, 11, P.pink);
+        tx(s, L(T('Inspired by a recruitment technical assessment; all series, products and prices are invented. Not affiliated with any publisher or employer.', 'Inspirado en una prueba técnica de selección; todas las series, productos y precios son inventados. Sin relación con ninguna editorial ni empleador.')), X, 6.1, 11.6, .4, {fontFace: FM, fontSize: 11, color: '9FA2AD'});
         break;
       }
     }
   });
-  const name = lang === 'es' ? 'PRICE_SIGNAL_Caso_Publico_ES.pptx' : 'PRICE_SIGNAL_Public_Case_EN.pptx';
+  const name = lang === 'es' ? 'Pricing_Demo_Caso_de_Estudio_ES.pptx' : 'Pricing_Demo_Case_Study_EN.pptx';
   return pptx.writeFile({fileName: path.join(__dirname, name)}).then(() => console.log('wrote', name, slides.length, 'slides'));
 }
 Promise.all([create('en'), create('es')]).catch(e => { console.error(e); process.exit(1); });

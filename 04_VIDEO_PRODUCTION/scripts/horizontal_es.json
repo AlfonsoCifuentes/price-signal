@@ -1,0 +1,53 @@
+{
+  "id": "horizontal_es",
+  "lang": "es",
+  "format": "horizontal",
+  "version": "3.0",
+  "title": "Pricing Demo — por Alfonso Cifuentes",
+  "notes": "Sintaxis: {#ancla} marca el instante en que empieza la palabra siguiente (sincroniza animaciones). [texto en pantalla|texto hablado] separa lo que leen los subtítulos de lo que pronuncia la voz.",
+  "scenes": [
+    {
+      "id": "origin",
+      "kicker": "Origen",
+      "narration": "Este proyecto nació de una {#test}prueba técnica que hice durante un proceso de selección para un puesto de análisis de datos en una empresa internacional de libros educativos. {#task}Tenía que estudiar un catálogo de productos, entender cómo estaban organizados sus precios y explicar qué conclusiones se podían sacar. {#rebuild}Para convertir aquel trabajo en un caso de estudio público, reconstruí el ejercicio con nombres, colecciones y precios {#fictional}completamente ficticios.",
+      "screen": "Título PRICING DEMO / por Alfonso Cifuentes. Ficha: prueba técnica real → caso independiente con datos ficticios. Sin marcas reales."
+    },
+    {
+      "id": "problem",
+      "kicker": "El problema",
+      "narration": "Parece sencillo: tienes una lista de libros y sus precios. {#variants}Pero un mismo curso puede tener libro del alumno, cuaderno, versiones con soluciones, diferentes niveles, ediciones o acceso digital. {#wrong}Si comparas dos precios sin tener todo eso en cuenta, puedes ver una anomalía donde no la hay. {#question}Así que la primera pregunta no era qué producto era más caro, sino {#real}cuáles se podían comparar de verdad.",
+      "screen": "Un curso se ramifica en variantes. Comparación incorrecta tachada; comparación válida marcada."
+    },
+    {
+      "id": "method",
+      "kicker": "El trabajo",
+      "narration": "Para la versión pública construí un catálogo ficticio de {#n362}[362|trescientos sesenta y dos] registros, repartidos en [12|doce] colecciones. {#fields}Partí de cinco campos y lo enriquecí hasta diecinueve, separando tipo de producto, nivel, edición, complementos y derechos digitales. {#layers}Conservé siempre el archivo de origen y dejé las correcciones en una vista de análisis separada. {#groups}Después agrupé los productos con la misma configuración, de modo que {#level}solo cambiara el nivel.",
+      "screen": "5 → 19 atributos; capas origen / vista de análisis; clave de agrupación con el nivel como única variable."
+    },
+    {
+      "id": "exceptions",
+      "kicker": "Seis excepciones",
+      "narration": "Al agrupar los productos comparables aparecieron {#g60}[60|sesenta] conjuntos con varios niveles. {#u54}En [54|cincuenta y cuatro], el precio no cambiaba. {#x6}En [6|seis], sí. {#starter}Cuatro casos correspondían a niveles Starter con un precio inferior. {#policy}Puede ser una política comercial de entrada, pero los datos por sí solos no demuestran la intención. {#two}Quedaban otros dos casos que merecían una investigación distinta.",
+      "screen": "60 celdas: 54 uniformes, 6 marcadas. Cuatro «Starter: posible política», dos «Investigar». Sin revelar la solución."
+    },
+    {
+      "id": "finding",
+      "kicker": "El hallazgo",
+      "narration": "{#clue}La pista estaba en los propios grupos: en cada uno, el mismo nivel aparecía dos veces. {#mismatch}El título del libro apuntaba a una colección, y el campo de serie indicaba otra. {#looked}Agrupado con ese campo, parecía una diferencia de precio. {#real}Contrastado con la identidad del producto, era un problema de clasificación. {#move}Reubiqué esos dos registros solo en la vista de análisis, sin tocar los datos originales. {#result}Con los mismos [60|sesenta] grupos comparables, los que tenían un precio uniforme pasaron de [54|cincuenta y cuatro] {#r56}a [56|cincuenta y seis].",
+      "screen": "Grupo Glasshouse con B1 duplicado; el registro «Mosaic English B1» se mueve a su serie; segundo caso Kindred Horizons → Glasshouse. 54/60 → 56/60, denominador fijo."
+    },
+    {
+      "id": "limits",
+      "kicker": "Límites",
+      "narration": "Aparecieron otras trampas: {#edition}dos formas de escribir la misma edición, {#gleebook}un título que contiene la palabra «[ebook|i-book]» sin ser un libro digital, {#tb}un precio atípico con una abreviatura sin definir {#ab}y libros en dos partes que, juntas, cuestan más que el volumen completo. {#questions}El análisis las detecta y las convierte en preguntas claras para un equipo comercial. {#cannot}Pero no pretende fijar el precio correcto: aquí no hay datos de ventas, costes, márgenes ni demanda. {#fake}Y todo este catálogo, de principio a fin, es inventado.",
+      "screen": "Fichas de investigación: edición, Gleebook, TB, partes A + B. Después: lo que los datos no permiten saber.",
+      "take": 2
+    },
+    {
+      "id": "close",
+      "kicker": "Conclusión",
+      "narration": "Para mí, lo interesante de este caso es que el dato más llamativo no siempre es el problema real. {#rule}A veces, antes de decidir sobre un precio, hay que revisar cómo hemos definido el producto. {#web}En la web puedes explorar los datos, comprobar las fórmulas y descargar las presentaciones. {#sign}Soy Alfonso Cifuentes, y esto es Pricing Demo.",
+      "screen": "«Primero, la comparabilidad. Después, el precio.» Firma, URL, nota de datos ficticios y voz sintética."
+    }
+  ]
+}

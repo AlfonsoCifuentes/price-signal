@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-"""Copy public data + downloads into the site and keep every bound number in index.html true.
+"""Copy public data, documents and media into the site and keep every bound value in both pages true.
 
-    python tools/sync_site_data.py           # copy files, rewrite data-k values in index.html
+    python tools/sync_site_data.py           # copy files, rewrite bound values in index.html and es/index.html
     python tools/sync_site_data.py --check   # change nothing; exit 1 if any value or file is stale
 
-A bound number looks like <b data-k="headline.consistent">54</b>, optionally with data-f="eur|pct1|pctp|eurneg".
+Bound values:
+  <b data-k="headline.consistent">54</b>, optionally data-f="eur|eurneg|pct1|pctp|dur", formatted per page language
+  (English: €44.04, 90.0%; Spanish: 44,04 €, 90,0 %). media.<video> keys are the real durations of the delivered MP4s.
+  <span data-size="public/downloads/x.pdf">250 KB</span> is the real size of that file.
 """
 from pathlib import Path
-import json, re, sys, shutil, hashlib
+import json, re, sys, shutil, hashlib, subprocess, tempfile
 
 SITE = Path(__file__).resolve().parents[1]
 ROOT = SITE.parent
-DATA, PRES = ROOT / '02_PUBLIC_CASE_STUDY', ROOT / '05_PRESENTATIONS'
+DATA, PRES, FILM = ROOT / '02_PUBLIC_CASE_STUDY', ROOT / '05_PRESENTATIONS', ROOT / '04_VIDEO_PRODUCTION'
 CHECK = '--check' in sys.argv
+VIDEOS = ('horizontal_es', 'horizontal_en', 'vertical_es', 'vertical_en')
 
 A = json.loads((DATA / 'public_analysis.json').read_text(encoding='utf-8'))
 T = A['traps']
@@ -34,16 +38,29 @@ VALUES.update({
 })
 
 
-def fmt(v, f):
+def fmt(v, f, es):
+    dec = (lambda x: x.replace(',', ' ').replace('.', ',').replace(' ', '.')) if es else (lambda x: x)
     if f == 'eur':
-        return f'€{v:,.2f}'
+        return f'{dec(f"{v:,.2f}")} €' if es else f'€{v:,.2f}'
     if f == 'eurneg':
-        return ('−' if v < 0 else '+') + f'€{abs(v):,.2f}'
+        sign = '−' if v < 0 else '+'
+        return f'{sign}{dec(f"{abs(v):,.2f}")} €' if es else f'{sign}€{abs(v):,.2f}'
     if f == 'pct1':
-        return f'{v:.1f}%'
+        return f'{dec(f"{v:.1f}")} %' if es else f'{v:.1f}%'
     if f == 'pctp':
-        return f'+{v:.1f}%' if v >= 0 else f'−{abs(v):.1f}%'
-    return f'{v:,}' if isinstance(v, int) else str(v)
+        sign = '+' if v >= 0 else '−'
+        return f'{sign}{dec(f"{abs(v):.1f}")} %' if es else f'{sign}{abs(v):.1f}%'
+    if f == 'dur':
+        s = int(round(v))
+        return f'{s // 60}:{s % 60:02d}'
+    return f'{v:,}'.replace(',', '.' if es else ',') if isinstance(v, int) else str(v)
+
+
+def size(n, es):
+    if n < 1024 * 1024:
+        return f'{max(1, round(n / 1024))} KB'
+    t = f'{n / 1024 / 1024:.1f}'
+    return f'{t.replace(".", ",") if es else t} MB'
 
 
 COPIES = {
@@ -51,67 +68,58 @@ COPIES = {
     DATA / 'public_findings.json': SITE / 'public/data/challenges.json',
     DATA / 'public_enriched_catalogue.csv': SITE / 'public/data/catalogue.csv',
     DATA / 'public_raw_catalogue.csv': SITE / 'public/data/catalogue_raw.csv',
-    PRES / 'PRICE_SIGNAL_Independent_Synthetic_Analysis.xlsx': SITE / 'public/downloads/PRICE_SIGNAL_Independent_Synthetic_Analysis.xlsx',
-    PRES / 'PRICE_SIGNAL_Public_Case_EN.pdf': SITE / 'public/downloads/PRICE_SIGNAL_Public_Case_EN.pdf',
-    PRES / 'PRICE_SIGNAL_Caso_Publico_ES.pdf': SITE / 'public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pdf',
-    PRES / 'PRICE_SIGNAL_Public_Case_EN.pptx': SITE / 'public/downloads/PRICE_SIGNAL_Public_Case_EN.pptx',
 }
-FILM = ROOT / '04_VIDEO_PRODUCTION'
+for name in ('Pricing_Demo_Analysis_Workbook.xlsx', 'Pricing_Demo_Case_Study_EN.pdf', 'Pricing_Demo_Caso_de_Estudio_ES.pdf',
+             'Pricing_Demo_Case_Study_EN.pptx', 'Pricing_Demo_Caso_de_Estudio_ES.pptx'):
+    COPIES[PRES / name] = SITE / 'public/downloads' / name
+for v in VIDEOS:
+    slug = v.replace('_', '-')
+    COPIES[FILM / 'final' / f'pricing-demo-{slug}.mp4'] = SITE / f'public/media/pricing-demo-{slug}.mp4'
+    COPIES[FILM / 'subtitles' / f'{v}.vtt'] = SITE / f'public/media/pricing-demo-{slug}.vtt'
+# stills are converted to JPEG for the posters (smaller), Open Graph cards stay PNG
+STILLS = FILM / 'final' / 'stills'
+JPEGS = {STILLS / f'poster-{k}.png': SITE / f'public/media/poster-{k}.jpg' for k in ('horizontal-es', 'horizontal-en', 'vertical-es', 'vertical-en')}
+for l in ('en', 'es'):
+    COPIES[STILLS / f'og-pricing-demo-{l}.png'] = SITE / f'public/media/og-pricing-demo-{l}.png'
+KEEP_MEDIA = {'favicon.svg'}
 
-
-def render(name):
-    """The narrated render wins once it exists, so a later sync never puts the silent cut back."""
-    voiced = FILM / 'remotion/out' / name.replace('.mp4', '-voice.mp4')
-    return voiced if voiced.exists() else FILM / 'remotion/out' / name
-
-
-COPIES.update({
-    render('price-signal-film.mp4'): SITE / 'public/media/price-signal-film.mp4',
-    render('price-signal-vertical.mp4'): SITE / 'public/media/price-signal-vertical.mp4',
-    FILM / 'remotion/out/og-cover.png': SITE / 'public/media/og-cover.png',
-    FILM / 'captions/price-signal-film.en.vtt': SITE / 'public/media/price-signal-film.en.vtt',
-    # Spanish edition: same cut and timing, Spanish on-screen text and captions
-    render('price-signal-film-es.mp4'): SITE / 'public/media/price-signal-film-es.mp4',
-    render('price-signal-vertical-es.mp4'): SITE / 'public/media/price-signal-vertical-es.mp4',
-    FILM / 'remotion/out/og-cover-es.png': SITE / 'public/media/og-cover-es.png',
-    FILM / 'captions/price-signal-film.es.vtt': SITE / 'public/media/price-signal-film.es.vtt',
-    # documents: every downloadable exists in both languages
-    PRES / 'PRICE_SIGNAL_Caso_Publico_ES.pptx': SITE / 'public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pptx',
-    PRES / 'documents/Alfonso-Cifuentes-CV-EN.pdf': SITE / 'public/downloads/Alfonso-Cifuentes-CV-EN.pdf',
-    PRES / 'documents/Alfonso-Cifuentes-Cover-Letter-EN.pdf': SITE / 'public/downloads/Alfonso-Cifuentes-Cover-Letter-EN.pdf',
-    ROOT / 'ALFONSO CIFUENTES ALONSO - Data & AI, Business Intelligence.pdf': SITE / 'public/downloads/Alfonso-Cifuentes-CV-ES.pdf',
-    ROOT / 'Alfonso Cifuentes - Carta de presentacion.pdf': SITE / 'public/downloads/Alfonso-Cifuentes-Carta-ES.pdf',
-})
-# the Spanish poster is a still of the Spanish film, converted the same way as the English one
-POSTERS = {FILM / 'remotion/out/film-poster-es.png': SITE / 'public/media/film-poster-es.jpg'}
 problems = []
-POSTERS[FILM / 'remotion/out/film-poster.png'] = SITE / 'public/media/film-poster.jpg'
-for poster_src, poster in POSTERS.items():
-    if poster_src.exists():
-        # Compare bytes, not mtimes: unzipping or copying can reorder timestamps without changing content.
-        # The ffmpeg conversion is deterministic (same bytes on every run), so a fresh conversion is the reference.
-        import subprocess, tempfile
-        with tempfile.TemporaryDirectory() as tmp:
-            fresh = Path(tmp) / poster.name
-            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(poster_src), '-q:v', '3', str(fresh)], check=True)
-            if not poster.exists() or poster.read_bytes() != fresh.read_bytes():
-                if CHECK:
-                    problems.append(f'stale public/media/{poster.name}')
-                else:
-                    shutil.copyfile(fresh, poster)
+for src, dst in JPEGS.items():
+    if not src.exists():
+        if not dst.exists():  # renders and stills aren't versioned; in the public repo the site copy is the reference
+            problems.append(f'missing source {src.relative_to(ROOT)}')
+        continue
+    with tempfile.TemporaryDirectory() as tmp:
+        fresh = Path(tmp) / dst.name
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(src), '-q:v', '3', str(fresh)], check=True)
+        if not dst.exists() or dst.read_bytes() != fresh.read_bytes():
+            if CHECK:
+                problems.append(f'stale {dst.relative_to(SITE)}')
+            else:
+                shutil.copyfile(fresh, dst)
 for src, dst in COPIES.items():
     if not src.exists():
-        if dst.exists() and FILM in src.parents:
-            continue  # renders aren't versioned; the published copy in the site is the reference
-        problems.append(f'missing source {src.relative_to(ROOT)}')
+        if not (dst.exists() and FILM in src.parents):
+            problems.append(f'missing source {src.relative_to(ROOT)}')
         continue
-    same = dst.exists() and hashlib.sha256(src.read_bytes()).digest() == hashlib.sha256(dst.read_bytes()).digest()
-    if not same:
+    if not (dst.exists() and hashlib.sha256(src.read_bytes()).digest() == hashlib.sha256(dst.read_bytes()).digest()):
         if CHECK:
             problems.append(f'stale copy {dst.relative_to(SITE)}')
         else:
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(src, dst)
+
+# anything else in media/ or downloads/ is a leftover of the old brand or an old cut
+wanted = {d.resolve() for d in list(COPIES.values()) + list(JPEGS.values())}
+for folder in ('public/media', 'public/downloads'):
+    for f in (SITE / folder).iterdir():
+        if f.name in KEEP_MEDIA or f.resolve() in wanted:
+            continue
+        if CHECK:
+            problems.append(f'unexpected file {f.relative_to(SITE)}')
+        else:
+            f.unlink()
+            print('removed', f.relative_to(SITE))
 
 compact = json.dumps(A, ensure_ascii=False, separators=(',', ':'))
 target = SITE / 'public/data/analysis.json'
@@ -121,29 +129,56 @@ if not target.exists() or target.read_text(encoding='utf-8') != compact:
     else:
         target.write_text(compact, encoding='utf-8', newline='\n')
 
-pat =re.compile(r'(<(\w+)\b[^>]*\bdata-k="([^"]+)"(?:[^>]*\bdata-f="([^"]+)")?[^>]*>)([^<]*)(</\2>)')
+for v in VIDEOS:
+    mp4 = SITE / f"public/media/pricing-demo-{v.replace('_', '-')}.mp4"
+    if mp4.exists():
+        out = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', str(mp4)], capture_output=True, text=True).stdout
+        VALUES[f'media.{v}'] = float(out)
+
+K = re.compile(r'(<(\w+)\b[^>]*\bdata-k="([^"]+)"(?:[^>]*\bdata-f="([^"]+)")?[^>]*>)([^<]*)(</\2>)')
+S = re.compile(r'(<span data-size="([^"]+)">)([^<]*)(</span>)')
 seen = 0
-
-
-def sub(m):
-    global seen
-    key, f, cur = m.group(3), m.group(4), m.group(5)
-    if key not in VALUES:
-        problems.append(f'unknown data-k "{key}"')
-        return m.group(0)
-    seen += 1
-    want = fmt(VALUES[key], f)
-    if cur != want:
-        problems.append(f'{key}: page says "{cur}", data says "{want}"') if CHECK else None
-    return m.group(1) + want + m.group(6)
-
-
-for html_path in (SITE / 'index.html', SITE / 'es/index.html'):  # both languages bind the same numbers
+for html_path in (SITE / 'index.html', SITE / 'es/index.html'):
+    es = html_path.parent.name == 'es'
     html = html_path.read_text(encoding='utf-8')
-    new = pat.sub(sub, html)
+
+    def sub(m):
+        global seen
+        key, f, cur = m.group(3), m.group(4), m.group(5)
+        if key not in VALUES:
+            problems.append(f'unknown data-k "{key}"')
+            return m.group(0)
+        seen += 1
+        want = fmt(VALUES[key], f, es)
+        if cur != want and CHECK:
+            problems.append(f'{html_path.relative_to(SITE)} {key}: page says "{cur}", data says "{want}"')
+        return m.group(1) + want + m.group(6)
+
+    def sub_size(m):
+        global seen
+        f = SITE / m.group(2)
+        if not f.exists():
+            problems.append(f'data-size points to missing {m.group(2)}')
+            return m.group(0)
+        seen += 1
+        want = size(f.stat().st_size, es)
+        if m.group(3) != want and CHECK:
+            problems.append(f'{html_path.relative_to(SITE)} size of {m.group(2)}: page says "{m.group(3)}", file is "{want}"')
+        return m.group(1) + want + m.group(4)
+
+    new = S.sub(sub_size, K.sub(sub, html))
+    # every local link and asset the page references must exist
+    for ref in re.findall(r'(?:href|src|data-video|data-poster|data-vtt)="([^"#:]+)"', new):
+        if ref.endswith('/') or ref.startswith('mailto'):
+            continue
+        base = html_path.parent
+        if ref.startswith('pricing-demo-') or ref.startswith('poster-'):
+            base = SITE / 'public/media'
+        if not (base / ref).resolve().exists():
+            problems.append(f'{html_path.relative_to(SITE)} references missing {ref}')
     if not CHECK and new != html:
         html_path.write_text(new, encoding='utf-8', newline='\n')
-print(f'{seen} bound values checked on both pages, {len(COPIES) + 1} data/download files {"verified" if CHECK else "synced"}')
+print(f'{seen} bound values checked on both pages, {len(COPIES) + len(JPEGS) + 1} data/document/media files {"verified" if CHECK else "synced"}')
 for p in problems:
     print('FAIL', p)
 sys.exit(1 if problems else 0)

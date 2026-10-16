@@ -1,0 +1,88 @@
+WEBVTT
+
+00:00:01.200 --> 00:00:04.467
+Este caso de estudio viene
+de una prueba técnica
+
+00:00:04.500 --> 00:00:08.367
+real que hice para un
+puesto de analista de datos.
+
+00:00:08.400 --> 00:00:11.300
+Lo he recreado con libros
+y precios completamente
+
+00:00:11.333 --> 00:00:15.067
+ficticios para poder
+enseñarte el proceso.
+
+00:00:15.933 --> 00:00:18.333
+El objetivo era analizar
+los precios de un
+
+00:00:18.367 --> 00:00:20.067
+catálogo editorial.
+
+00:00:20.067 --> 00:00:21.200
+Y había una trampa:
+
+00:00:21.233 --> 00:00:24.233
+no puedes comparar dos
+libros sin comprobar antes su
+
+00:00:24.267 --> 00:00:27.900
+nivel, su edición,
+su formato y lo que incluyen.
+
+00:00:28.800 --> 00:00:32.267
+Al agrupar productos
+equivalentes aparecieron seis
+
+00:00:32.300 --> 00:00:33.667
+posibles excepciones.
+
+00:00:33.700 --> 00:00:37.333
+Cuatro tenían un precio
+Starter más bajo.
+
+00:00:37.367 --> 00:00:39.967
+Pero las otras dos
+eran algo diferente:
+
+00:00:40.000 --> 00:00:43.000
+libros archivados bajo
+la serie equivocada.
+
+00:00:43.033 --> 00:00:44.933
+Parecían errores de precio,
+
+00:00:44.967 --> 00:00:47.800
+y en realidad eran
+errores de datos.
+
+00:00:48.667 --> 00:00:51.067
+Sin alterar el archivo original,
+
+00:00:51.100 --> 00:00:53.767
+corregí la clasificación
+en el análisis y lo
+
+00:00:53.800 --> 00:00:55.300
+volví a calcular.
+
+00:00:55.300 --> 00:01:01.633
+Los grupos con precio uniforme
+pasaron de 54 a 56 de 60.
+
+00:01:01.667 --> 00:01:05.500
+El caso completo,
+los datos ficticios y las fórmulas
+
+00:01:05.533 --> 00:01:06.767
+están en la web.
+
+00:01:06.800 --> 00:01:08.200
+Soy Alfonso Cifuentes.
+
+00:01:08.233 --> 00:01:10.300
+Esto es Pricing Demo.

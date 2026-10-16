@@ -8,7 +8,7 @@ import win32com.client as win32
 import openpyxl
 
 HERE = Path(__file__).resolve().parent
-XLSX = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / 'PRICE_SIGNAL_Independent_Synthetic_Analysis.xlsx'  # optional: the Spanish edition
+XLSX = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / 'Pricing_Demo_Analysis_Workbook.xlsx'  # optional: the Spanish edition
 A = json.loads((HERE.parent / '02_PUBLIC_CASE_STUDY' / 'public_analysis.json').read_text(encoding='utf-8'))
 h, t = A['headline'], A['traps']
 

@@ -1,0 +1,217 @@
+1
+00:00:02,400 --> 00:00:06,300
+I first worked on this kind of problem
+during a technical assessment for a data
+
+2
+00:00:06,333 --> 00:00:10,333
+analyst position at an international
+educational publishing company.
+
+3
+00:00:10,800 --> 00:00:15,300
+The task was to examine a product catalogue,
+make sense of its pricing structure,
+
+4
+00:00:15,333 --> 00:00:18,200
+and explain which findings were worth pursuing.
+
+5
+00:00:18,800 --> 00:00:23,600
+I later rebuilt the exercise as an
+independent case study, with fictional titles,
+
+6
+00:00:23,633 --> 00:00:28,933
+series and prices, so I could share
+the analytical process publicly.
+
+7
+00:00:30,300 --> 00:00:33,300
+A price list looks simple
+until you look closely.
+
+8
+00:00:33,767 --> 00:00:38,033
+A single course might have a student book,
+a workbook, an answer-key version,
+
+9
+00:00:38,067 --> 00:00:41,733
+a digital licence, several
+levels and multiple editions.
+
+10
+00:00:42,200 --> 00:00:45,133
+Two similar names can
+describe different products.
+
+11
+00:00:45,300 --> 00:00:48,867
+If you compare their prices without
+accounting for those differences,
+
+12
+00:00:48,867 --> 00:00:53,367
+an apparent anomaly may tell you more
+about the catalogue than about the pricing.
+
+13
+00:00:53,833 --> 00:00:56,733
+So the first question was
+not which product costs more,
+
+14
+00:00:56,767 --> 00:01:00,367
+but which products can fairly be compared.
+
+15
+00:01:01,700 --> 00:01:08,600
+For this public version, I generated 362 fictional
+product records across 12 fictional series.
+
+16
+00:01:08,767 --> 00:01:12,300
+I took five raw fields and enriched
+them into nineteen attributes,
+
+17
+00:01:12,333 --> 00:01:17,267
+covering product type, level, edition,
+bundle content and digital access.
+
+18
+00:01:17,733 --> 00:01:22,067
+I preserved the source and kept every
+correction in a separate reporting view.
+
+19
+00:01:22,300 --> 00:01:28,600
+Then I grouped products by their actual
+configuration, so that only the level could change.
+
+20
+00:01:29,933 --> 00:01:34,200
+That gave me 60 comparable product
+groups spanning more than one level.
+
+21
+00:01:34,667 --> 00:01:37,200
+54 had the same price throughout.
+
+22
+00:01:37,233 --> 00:01:40,933
+Six did not. Four involved
+a cheaper Starter level.
+
+23
+00:01:41,400 --> 00:01:44,767
+That could reflect an
+intentional entry-level policy,
+
+24
+00:01:44,800 --> 00:01:47,833
+but a list price cannot prove why it exists.
+
+25
+00:01:48,300 --> 00:01:53,000
+The remaining two differences called
+for a different kind of investigation.
+
+26
+00:01:54,333 --> 00:01:56,833
+The clue was inside the groups themselves:
+
+27
+00:01:56,867 --> 00:01:59,467
+each one listed the same level twice.
+
+28
+00:01:59,633 --> 00:02:04,800
+In both cases, the product title named one
+series while the series field named another.
+
+29
+00:02:05,267 --> 00:02:08,333
+Grouped by that field,
+it looked like a price difference.
+
+30
+00:02:08,667 --> 00:02:13,800
+Checked against the product's identity,
+it was a filing mismatch, not a pricing decision.
+
+31
+00:02:14,267 --> 00:02:19,367
+I reassigned those two records in the reporting
+view, leaving the original data untouched.
+
+32
+00:02:19,833 --> 00:02:27,000
+With the same 60 comparable groups, the number
+with consistent prices rose from 54 to 56.
+
+33
+00:02:28,333 --> 00:02:30,733
+The catalogue had other traps too:
+
+34
+00:02:30,833 --> 00:02:33,033
+two spellings of the same edition,
+
+35
+00:02:33,067 --> 00:02:36,367
+a title that contains the
+letters e-book but is printed,
+
+36
+00:02:36,400 --> 00:02:40,367
+an unusually high price attached
+to an ambiguous product code,
+
+37
+00:02:40,400 --> 00:02:44,500
+and books sold in two parts that
+cost more than the complete volume.
+
+38
+00:02:44,967 --> 00:02:49,533
+They were prompts for investigation,
+not excuses to invent an explanation.
+
+39
+00:02:50,000 --> 00:02:54,000
+There are no sales, cost,
+margin or demand data here,
+
+40
+00:02:54,033 --> 00:02:58,367
+so the analysis does not recommend
+a price or claim a financial impact.
+
+41
+00:02:58,633 --> 00:03:02,300
+Every figure in this demonstration is fictional.
+
+42
+00:03:03,633 --> 00:03:04,700
+The lesson is simple:
+
+43
+00:03:04,733 --> 00:03:09,367
+before making a decision about a price,
+make sure you know what product you are looking at.
+
+44
+00:03:09,833 --> 00:03:14,067
+You can explore the dataset, inspect the
+calculations and download the case study
+
+45
+00:03:14,100 --> 00:03:15,467
+materials on the website.
+
+46
+00:03:15,500 --> 00:03:19,000
+I'm Alfonso Cifuentes, and this is Pricing Demo.

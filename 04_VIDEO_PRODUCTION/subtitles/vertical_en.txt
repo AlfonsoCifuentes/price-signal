@@ -1,0 +1,9 @@
+Pricing Demo — vertical cut
+
+This case study grew out of a real technical assessment for a data analyst role. I rebuilt the challenge with fictional books and prices, so I could show the process publicly.
+
+The task was to analyse a publishing price list. The catch? You cannot compare two books fairly until you account for the level, the edition, the format and everything included.
+
+Six product groups initially looked inconsistent. Four had a cheaper Starter level. But two were different: the books had been filed under the wrong series. What looked like pricing problems were actually classification problems.
+
+I left the raw data untouched, corrected the reporting view and reran the comparison. Consistently priced groups went from 54 to 56 out of 60. The interactive case, the fictional dataset and the calculations are on the website. I'm Alfonso Cifuentes. This is Pricing Demo.

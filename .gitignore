@@ -4,4 +4,6 @@ __pycache__/
 .vercel/
 *.log
 *.wav
-04_VIDEO_PRODUCTION/remotion/public/voice/
+.env*
+04_VIDEO_PRODUCTION/narration/config.json
+04_VIDEO_PRODUCTION/remotion/public/narration/

@@ -1,0 +1,34 @@
+{
+  "id": "vertical_es",
+  "lang": "es",
+  "format": "vertical",
+  "version": "3.0",
+  "title": "Pricing Demo — pieza vertical",
+  "notes": "Pieza autónoma para LinkedIn y Shorts. Abre con el contexto, no con una cifra.",
+  "scenes": [
+    {
+      "id": "v_origin",
+      "kicker": "Origen",
+      "narration": "Este caso de estudio viene de una {#test}prueba técnica real que hice para un puesto de analista de datos. {#rebuild}Lo he recreado con libros y precios {#fictional}completamente ficticios para poder enseñarte el proceso.",
+      "screen": "PRICING DEMO / por Alfonso Cifuentes. Prueba técnica real → caso independiente con datos ficticios."
+    },
+    {
+      "id": "v_challenge",
+      "kicker": "El reto",
+      "narration": "El objetivo era analizar los precios de un catálogo editorial. {#trap}Y había una trampa: no puedes comparar dos libros sin comprobar antes {#attrs}su nivel, su edición, su formato y lo que incluyen.",
+      "screen": "Dos fichas que parecen iguales; los atributos las separan."
+    },
+    {
+      "id": "v_discovery",
+      "kicker": "El hallazgo",
+      "narration": "Al agrupar productos equivalentes aparecieron {#six}seis posibles excepciones. {#four}Cuatro tenían un precio Starter más bajo. {#two}Pero las otras dos eran algo diferente: libros archivados bajo la serie equivocada. {#reveal}Parecían errores de precio, y en realidad eran errores de datos.",
+      "screen": "Seis señales; cuatro Starter; dos con serie equivocada; revelación con pausa."
+    },
+    {
+      "id": "v_result",
+      "kicker": "Resultado",
+      "narration": "Sin alterar el archivo original, corregí la clasificación en el análisis y lo volví a calcular. {#result}Los grupos con precio uniforme pasaron de [54|cincuenta y cuatro] {#r56}a [56|cincuenta y seis] de [60|sesenta]. {#web}El caso completo, los datos ficticios y las fórmulas están en la web. {#sign}Soy Alfonso Cifuentes. Esto es Pricing Demo.",
+      "screen": "54/60 → 56/60 con el origen intacto; firma y URL."
+    }
+  ]
+}

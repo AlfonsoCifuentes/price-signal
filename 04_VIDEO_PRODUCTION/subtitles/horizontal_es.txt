@@ -1,0 +1,15 @@
+Pricing Demo — por Alfonso Cifuentes
+
+Este proyecto nació de una prueba técnica que hice durante un proceso de selección para un puesto de análisis de datos en una empresa internacional de libros educativos. Tenía que estudiar un catálogo de productos, entender cómo estaban organizados sus precios y explicar qué conclusiones se podían sacar. Para convertir aquel trabajo en un caso de estudio público, reconstruí el ejercicio con nombres, colecciones y precios completamente ficticios.
+
+Parece sencillo: tienes una lista de libros y sus precios. Pero un mismo curso puede tener libro del alumno, cuaderno, versiones con soluciones, diferentes niveles, ediciones o acceso digital. Si comparas dos precios sin tener todo eso en cuenta, puedes ver una anomalía donde no la hay. Así que la primera pregunta no era qué producto era más caro, sino cuáles se podían comparar de verdad.
+
+Para la versión pública construí un catálogo ficticio de 362 registros, repartidos en 12 colecciones. Partí de cinco campos y lo enriquecí hasta diecinueve, separando tipo de producto, nivel, edición, complementos y derechos digitales. Conservé siempre el archivo de origen y dejé las correcciones en una vista de análisis separada. Después agrupé los productos con la misma configuración, de modo que solo cambiara el nivel.
+
+Al agrupar los productos comparables aparecieron 60 conjuntos con varios niveles. En 54, el precio no cambiaba. En 6, sí. Cuatro casos correspondían a niveles Starter con un precio inferior. Puede ser una política comercial de entrada, pero los datos por sí solos no demuestran la intención. Quedaban otros dos casos que merecían una investigación distinta.
+
+La pista estaba en los propios grupos: en cada uno, el mismo nivel aparecía dos veces. El título del libro apuntaba a una colección, y el campo de serie indicaba otra. Agrupado con ese campo, parecía una diferencia de precio. Contrastado con la identidad del producto, era un problema de clasificación. Reubiqué esos dos registros solo en la vista de análisis, sin tocar los datos originales. Con los mismos 60 grupos comparables, los que tenían un precio uniforme pasaron de 54 a 56.
+
+Aparecieron otras trampas: dos formas de escribir la misma edición, un título que contiene la palabra «ebook» sin ser un libro digital, un precio atípico con una abreviatura sin definir y libros en dos partes que, juntas, cuestan más que el volumen completo. El análisis las detecta y las convierte en preguntas claras para un equipo comercial. Pero no pretende fijar el precio correcto: aquí no hay datos de ventas, costes, márgenes ni demanda. Y todo este catálogo, de principio a fin, es inventado.
+
+Para mí, lo interesante de este caso es que el dato más llamativo no siempre es el problema real. A veces, antes de decidir sobre un precio, hay que revisar cómo hemos definido el producto. En la web puedes explorar los datos, comprobar las fórmulas y descargar las presentaciones. Soy Alfonso Cifuentes, y esto es Pricing Demo.

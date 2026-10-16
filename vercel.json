@@ -56,5 +56,102 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/public/media/price-signal-film.mp4",
+      "destination": "/public/media/pricing-demo-horizontal-en.mp4",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/price-signal-film-es.mp4",
+      "destination": "/public/media/pricing-demo-horizontal-es.mp4",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/price-signal-vertical.mp4",
+      "destination": "/public/media/pricing-demo-vertical-en.mp4",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/price-signal-vertical-es.mp4",
+      "destination": "/public/media/pricing-demo-vertical-es.mp4",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/price-signal-film.en.vtt",
+      "destination": "/public/media/pricing-demo-horizontal-en.vtt",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/price-signal-film.es.vtt",
+      "destination": "/public/media/pricing-demo-horizontal-es.vtt",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/og-cover.png",
+      "destination": "/public/media/og-pricing-demo-en.png",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/og-cover-es.png",
+      "destination": "/public/media/og-pricing-demo-es.png",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/film-poster.jpg",
+      "destination": "/public/media/poster-horizontal-en.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/public/media/film-poster-es.jpg",
+      "destination": "/public/media/poster-horizontal-es.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/public/downloads/PRICE_SIGNAL_Public_Case_EN.pdf",
+      "destination": "/public/downloads/Pricing_Demo_Case_Study_EN.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pdf",
+      "destination": "/public/downloads/Pricing_Demo_Caso_de_Estudio_ES.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/public/downloads/PRICE_SIGNAL_Public_Case_EN.pptx",
+      "destination": "/public/downloads/Pricing_Demo_Case_Study_EN.pptx",
+      "permanent": true
+    },
+    {
+      "source": "/public/downloads/PRICE_SIGNAL_Caso_Publico_ES.pptx",
+      "destination": "/public/downloads/Pricing_Demo_Caso_de_Estudio_ES.pptx",
+      "permanent": true
+    },
+    {
+      "source": "/public/downloads/PRICE_SIGNAL_Independent_Synthetic_Analysis.xlsx",
+      "destination": "/public/downloads/Pricing_Demo_Analysis_Workbook.xlsx",
+      "permanent": true
+    },
+    {
+      "source": "/public/downloads/Alfonso-Cifuentes-CV-EN.pdf",
+      "destination": "https://alfonsocifuentes.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/public/downloads/Alfonso-Cifuentes-CV-ES.pdf",
+      "destination": "https://alfonsocifuentes.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/public/downloads/Alfonso-Cifuentes-Cover-Letter-EN.pdf",
+      "destination": "https://alfonsocifuentes.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/public/downloads/Alfonso-Cifuentes-Carta-ES.pdf",
+      "destination": "https://alfonsocifuentes.vercel.app/",
+      "permanent": false
+    }
+  ],
   "outputDirectory": "03_WEBSITE"
 }

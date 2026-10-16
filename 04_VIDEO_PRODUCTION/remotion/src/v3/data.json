@@ -1,0 +1,1645 @@
+{
+ "headline": {
+  "products": 362,
+  "series": 12,
+  "price_points": 36,
+  "mean": 44.04,
+  "median": 44.49,
+  "min": 14.49,
+  "max": 108.49,
+  "groups_total": 68,
+  "groups_single_level": 8,
+  "comparables": 60,
+  "consistent": 54,
+  "consistent_pct": 90.0,
+  "exceptions": 6,
+  "exceptions_starter": 4,
+  "exceptions_misfiled": 2,
+  "comparables_after_series_repair": 60,
+  "consistent_after_series_repair": 56,
+  "consistent_pct_after_series_repair": 93.3,
+  "groups_total_after_series_repair": 68,
+  "groups_with_duplicate_level": 2,
+  "groups_with_duplicate_level_after_series_repair": 0,
+  "split_levels": 12,
+  "split_levels_strict": 10,
+  "split_levels_edition_mixed": 2
+ },
+ "exceptions": [
+  {
+   "series": "Mosaic English",
+   "configuration": "Student Book",
+   "kind": "starter-pricing",
+   "explanation": "Only the Starter level is cheaper; every other level shares one price. A deliberate entry-level price is plausible, but list prices alone cannot confirm the strategy.",
+   "modal_price": 41.49,
+   "levels": 6,
+   "records": 6,
+   "points": [
+    {
+     "row_id": 1,
+     "level": "Starter",
+     "price": 33.49,
+     "title": "Mosaic English Starter Student Book",
+     "series_field": "Mosaic English",
+     "off_modal": true
+    },
+    {
+     "row_id": 6,
+     "level": "A1",
+     "price": 41.49,
+     "title": "Mosaic English A1 Student Book",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 11,
+     "level": "A2",
+     "price": 41.49,
+     "title": "Mosaic English A2 Student Book",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 16,
+     "level": "B1",
+     "price": 41.49,
+     "title": "Mosaic English B1 Student Book",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 21,
+     "level": "B2",
+     "price": 41.49,
+     "title": "Mosaic English B2 Student Book",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 26,
+     "level": "C1",
+     "price": 41.49,
+     "title": "Mosaic English C1 Student Book",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    }
+   ],
+   "gap_eur": -8.0
+  },
+  {
+   "series": "Mosaic English",
+   "configuration": "Workbook · with Audio",
+   "kind": "starter-pricing",
+   "explanation": "Only the Starter level is cheaper; every other level shares one price. A deliberate entry-level price is plausible, but list prices alone cannot confirm the strategy.",
+   "modal_price": 20.49,
+   "levels": 6,
+   "records": 6,
+   "points": [
+    {
+     "row_id": 2,
+     "level": "Starter",
+     "price": 16.49,
+     "title": "Mosaic English Starter Workbook with Audio",
+     "series_field": "Mosaic English",
+     "off_modal": true
+    },
+    {
+     "row_id": 7,
+     "level": "A1",
+     "price": 20.49,
+     "title": "Mosaic English A1 Workbook with Audio",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 12,
+     "level": "A2",
+     "price": 20.49,
+     "title": "Mosaic English A2 Workbook with Audio",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 17,
+     "level": "B1",
+     "price": 20.49,
+     "title": "Mosaic English B1 Workbook with Audio",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 22,
+     "level": "B2",
+     "price": 20.49,
+     "title": "Mosaic English B2 Workbook with Audio",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    },
+    {
+     "row_id": 27,
+     "level": "C1",
+     "price": 20.49,
+     "title": "Mosaic English C1 Workbook with Audio",
+     "series_field": "Mosaic English",
+     "off_modal": false
+    }
+   ],
+   "gap_eur": -4.0
+  },
+  {
+   "series": "Silverline Skills",
+   "configuration": "Student Book",
+   "kind": "starter-pricing",
+   "explanation": "Only the Starter level is cheaper; every other level shares one price. A deliberate entry-level price is plausible, but list prices alone cannot confirm the strategy.",
+   "modal_price": 47.49,
+   "levels": 6,
+   "records": 6,
+   "points": [
+    {
+     "row_id": 223,
+     "level": "Starter",
+     "price": 39.49,
+     "title": "Silverline Skills Starter Student Book",
+     "series_field": "Silverline Skills",
+     "off_modal": true
+    },
+    {
+     "row_id": 228,
+     "level": "A1",
+     "price": 47.49,
+     "title": "Silverline Skills A1 Student Book",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 233,
+     "level": "A2",
+     "price": 47.49,
+     "title": "Silverline Skills A2 Student Book",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 238,
+     "level": "B1",
+     "price": 47.49,
+     "title": "Silverline Skills B1 Student Book",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 243,
+     "level": "B2",
+     "price": 47.49,
+     "title": "Silverline Skills B2 Student Book",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 248,
+     "level": "C1",
+     "price": 47.49,
+     "title": "Silverline Skills C1 Student Book",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    }
+   ],
+   "gap_eur": -8.0
+  },
+  {
+   "series": "Silverline Skills",
+   "configuration": "Workbook · with Audio",
+   "kind": "starter-pricing",
+   "explanation": "Only the Starter level is cheaper; every other level shares one price. A deliberate entry-level price is plausible, but list prices alone cannot confirm the strategy.",
+   "modal_price": 28.49,
+   "levels": 6,
+   "records": 6,
+   "points": [
+    {
+     "row_id": 224,
+     "level": "Starter",
+     "price": 24.49,
+     "title": "Silverline Skills Starter Workbook with Audio",
+     "series_field": "Silverline Skills",
+     "off_modal": true
+    },
+    {
+     "row_id": 229,
+     "level": "A1",
+     "price": 28.49,
+     "title": "Silverline Skills A1 Workbook with Audio",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 234,
+     "level": "A2",
+     "price": 28.49,
+     "title": "Silverline Skills A2 Workbook with Audio",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 239,
+     "level": "B1",
+     "price": 28.49,
+     "title": "Silverline Skills B1 Workbook with Audio",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 244,
+     "level": "B2",
+     "price": 28.49,
+     "title": "Silverline Skills B2 Workbook with Audio",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    },
+    {
+     "row_id": 249,
+     "level": "C1",
+     "price": 28.49,
+     "title": "Silverline Skills C1 Workbook with Audio",
+     "series_field": "Silverline Skills",
+     "off_modal": false
+    }
+   ],
+   "gap_eur": -4.0
+  },
+  {
+   "series": "Glasshouse English",
+   "configuration": "Student Book · Premium Pack",
+   "kind": "misfiled-record",
+   "explanation": "Row 20 is titled 'Mosaic English B1 Premium Pack with Digital' but its Series field says Glasshouse English. It is another collection's product sitting in this group, not a price decision.",
+   "modal_price": 86.49,
+   "levels": 6,
+   "records": 7,
+   "points": [
+    {
+     "row_id": 131,
+     "level": "Starter",
+     "price": 86.49,
+     "title": "Glasshouse English Starter Premium Pack with Digital",
+     "series_field": "Glasshouse English",
+     "off_modal": false
+    },
+    {
+     "row_id": 136,
+     "level": "A1",
+     "price": 86.49,
+     "title": "Glasshouse English A1 Premium Pack with Digital",
+     "series_field": "Glasshouse English",
+     "off_modal": false
+    },
+    {
+     "row_id": 141,
+     "level": "A2",
+     "price": 86.49,
+     "title": "Glasshouse English A2 Premium Pack with Digital",
+     "series_field": "Glasshouse English",
+     "off_modal": false
+    },
+    {
+     "row_id": 20,
+     "level": "B1",
+     "price": 69.49,
+     "title": "Mosaic English B1 Premium Pack with Digital",
+     "series_field": "Glasshouse English",
+     "off_modal": true
+    },
+    {
+     "row_id": 146,
+     "level": "B1",
+     "price": 86.49,
+     "title": "Glasshouse English B1 Premium Pack with Digital",
+     "series_field": "Glasshouse English",
+     "off_modal": false
+    },
+    {
+     "row_id": 151,
+     "level": "B2",
+     "price": 86.49,
+     "title": "Glasshouse English B2 Premium Pack with Digital",
+     "series_field": "Glasshouse English",
+     "off_modal": false
+    },
+    {
+     "row_id": 156,
+     "level": "C1",
+     "price": 86.49,
+     "title": "Glasshouse English C1 Premium Pack with Digital",
+     "series_field": "Glasshouse English",
+     "off_modal": false
+    }
+   ],
+   "gap_eur": -17.0
+  },
+  {
+   "series": "Kindred Horizons",
+   "configuration": "Student Book · Study Pack",
+   "kind": "misfiled-record",
+   "explanation": "Row 155 is titled 'Glasshouse English C1 Study Pack with Digital' but its Series field says Kindred Horizons. It is another collection's product sitting in this group, not a price decision.",
+   "modal_price": 69.49,
+   "levels": 6,
+   "records": 7,
+   "points": [
+    {
+     "row_id": 286,
+     "level": "Starter",
+     "price": 69.49,
+     "title": "Kindred Horizons Starter Study Pack with Digital",
+     "series_field": "Kindred Horizons",
+     "off_modal": false
+    },
+    {
+     "row_id": 291,
+     "level": "A1",
+     "price": 69.49,
+     "title": "Kindred Horizons A1 Study Pack with Digital",
+     "series_field": "Kindred Horizons",
+     "off_modal": false
+    },
+    {
+     "row_id": 296,
+     "level": "A2",
+     "price": 69.49,
+     "title": "Kindred Horizons A2 Study Pack with Digital",
+     "series_field": "Kindred Horizons",
+     "off_modal": false
+    },
+    {
+     "row_id": 301,
+     "level": "B1",
+     "price": 69.49,
+     "title": "Kindred Horizons B1 Study Pack with Digital",
+     "series_field": "Kindred Horizons",
+     "off_modal": false
+    },
+    {
+     "row_id": 306,
+     "level": "B2",
+     "price": 69.49,
+     "title": "Kindred Horizons B2 Study Pack with Digital",
+     "series_field": "Kindred Horizons",
+     "off_modal": false
+    },
+    {
+     "row_id": 155,
+     "level": "C1",
+     "price": 67.49,
+     "title": "Glasshouse English C1 Study Pack with Digital",
+     "series_field": "Kindred Horizons",
+     "off_modal": true
+    },
+    {
+     "row_id": 311,
+     "level": "C1",
+     "price": 69.49,
+     "title": "Kindred Horizons C1 Study Pack with Digital",
+     "series_field": "Kindred Horizons",
+     "off_modal": false
+    }
+   ],
+   "gap_eur": -2.0
+  }
+ ],
+ "starter": [
+  {
+   "series": "Mosaic English",
+   "configuration": "Student Book",
+   "starter": 33.49,
+   "other_levels": 41.49,
+   "gap_eur": -8.0,
+   "gap_pct": -19.3
+  },
+  {
+   "series": "Mosaic English",
+   "configuration": "Workbook · with Audio",
+   "starter": 16.49,
+   "other_levels": 20.49,
+   "gap_eur": -4.0,
+   "gap_pct": -19.5
+  },
+  {
+   "series": "Silverline Skills",
+   "configuration": "Student Book",
+   "starter": 39.49,
+   "other_levels": 47.49,
+   "gap_eur": -8.0,
+   "gap_pct": -16.8
+  },
+  {
+   "series": "Silverline Skills",
+   "configuration": "Workbook · with Audio",
+   "starter": 24.49,
+   "other_levels": 28.49,
+   "gap_eur": -4.0,
+   "gap_pct": -14.0
+  }
+ ],
+ "traps": {
+  "series_mismatch": [
+   {
+    "row_id": 20,
+    "title": "Mosaic English B1 Premium Pack with Digital",
+    "series_field": "Glasshouse English",
+    "title_prefix": "Mosaic English"
+   },
+   {
+    "row_id": 155,
+    "title": "Glasshouse English C1 Study Pack with Digital",
+    "series_field": "Kindred Horizons",
+    "title_prefix": "Glasshouse English"
+   }
+  ],
+  "split_volumes": [
+   {
+    "series": "Little Lanterns",
+    "levels": 6,
+    "complete": 54.49,
+    "parts_total": 62.0,
+    "premium_eur": 7.51,
+    "premium_pct": 13.8,
+    "uniform": true,
+    "levels_strict": 4,
+    "levels_edition_mixed": 2
+   },
+   {
+    "series": "Wildflower Words",
+    "levels": 6,
+    "complete": 46.49,
+    "parts_total": 52.96,
+    "premium_eur": 6.47,
+    "premium_pct": 13.9,
+    "uniform": true,
+    "levels_strict": 6,
+    "levels_edition_mixed": 0
+   }
+  ],
+  "split_volume_levels": [
+   {
+    "series": "Little Lanterns",
+    "level": "Level 1",
+    "complete": 54.49,
+    "part_a": 31.0,
+    "part_b": 31.0,
+    "parts_total": 62.0,
+    "premium_eur": 7.51,
+    "premium_pct": 13.8,
+    "edition_mixed": false
+   },
+   {
+    "series": "Little Lanterns",
+    "level": "Level 2",
+    "complete": 54.49,
+    "part_a": 31.0,
+    "part_b": 31.0,
+    "parts_total": 62.0,
+    "premium_eur": 7.51,
+    "premium_pct": 13.8,
+    "edition_mixed": true
+   },
+   {
+    "series": "Little Lanterns",
+    "level": "Level 3",
+    "complete": 54.49,
+    "part_a": 31.0,
+    "part_b": 31.0,
+    "parts_total": 62.0,
+    "premium_eur": 7.51,
+    "premium_pct": 13.8,
+    "edition_mixed": true
+   },
+   {
+    "series": "Little Lanterns",
+    "level": "Level 4",
+    "complete": 54.49,
+    "part_a": 31.0,
+    "part_b": 31.0,
+    "parts_total": 62.0,
+    "premium_eur": 7.51,
+    "premium_pct": 13.8,
+    "edition_mixed": false
+   },
+   {
+    "series": "Little Lanterns",
+    "level": "Level 5",
+    "complete": 54.49,
+    "part_a": 31.0,
+    "part_b": 31.0,
+    "parts_total": 62.0,
+    "premium_eur": 7.51,
+    "premium_pct": 13.8,
+    "edition_mixed": false
+   },
+   {
+    "series": "Little Lanterns",
+    "level": "Level 6",
+    "complete": 54.49,
+    "part_a": 31.0,
+    "part_b": 31.0,
+    "parts_total": 62.0,
+    "premium_eur": 7.51,
+    "premium_pct": 13.8,
+    "edition_mixed": false
+   },
+   {
+    "series": "Wildflower Words",
+    "level": "Level 1",
+    "complete": 46.49,
+    "part_a": 26.48,
+    "part_b": 26.48,
+    "parts_total": 52.96,
+    "premium_eur": 6.47,
+    "premium_pct": 13.9,
+    "edition_mixed": false
+   },
+   {
+    "series": "Wildflower Words",
+    "level": "Level 2",
+    "complete": 46.49,
+    "part_a": 26.48,
+    "part_b": 26.48,
+    "parts_total": 52.96,
+    "premium_eur": 6.47,
+    "premium_pct": 13.9,
+    "edition_mixed": false
+   },
+   {
+    "series": "Wildflower Words",
+    "level": "Level 3",
+    "complete": 46.49,
+    "part_a": 26.48,
+    "part_b": 26.48,
+    "parts_total": 52.96,
+    "premium_eur": 6.47,
+    "premium_pct": 13.9,
+    "edition_mixed": false
+   },
+   {
+    "series": "Wildflower Words",
+    "level": "Level 4",
+    "complete": 46.49,
+    "part_a": 26.48,
+    "part_b": 26.48,
+    "parts_total": 52.96,
+    "premium_eur": 6.47,
+    "premium_pct": 13.9,
+    "edition_mixed": false
+   },
+   {
+    "series": "Wildflower Words",
+    "level": "Level 5",
+    "complete": 46.49,
+    "part_a": 26.48,
+    "part_b": 26.48,
+    "parts_total": 52.96,
+    "premium_eur": 6.47,
+    "premium_pct": 13.9,
+    "edition_mixed": false
+   },
+   {
+    "series": "Wildflower Words",
+    "level": "Level 6",
+    "complete": 46.49,
+    "part_a": 26.48,
+    "part_b": 26.48,
+    "parts_total": 52.96,
+    "premium_eur": 6.47,
+    "premium_pct": 13.9,
+    "edition_mixed": false
+   }
+  ],
+  "tb_outlier": {
+   "row_id": 361,
+   "title": "Orion Exam Prep B2 TB Premium Pack",
+   "price": 108.49,
+   "q1": 26.48,
+   "median": 44.49,
+   "q3": 55.99,
+   "iqr": 29.51,
+   "upper_fence": 100.25,
+   "outliers_above_fence": [
+    {
+     "row_id": 361,
+     "title": "Orion Exam Prep B2 TB Premium Pack",
+     "price": 108.49
+    }
+   ],
+   "role": "unresolved"
+  },
+  "ebook_substring": {
+   "naive_hits": [
+    {
+     "row_id": 362,
+     "title": "Fable Road Level 3 Gleebook Resource"
+    }
+   ],
+   "word_boundary_hits": []
+  },
+  "edition_alias": {
+   "rows": [
+    {
+     "row_id": 101,
+     "title": "Little Lanterns Level 2 Pupil Book Part A",
+     "edition": "Second Edition",
+     "level": "Level 2"
+    },
+    {
+     "row_id": 102,
+     "title": "Little Lanterns Level 2 Pupil Book Part B",
+     "edition": "Second Edition",
+     "level": "Level 2"
+    },
+    {
+     "row_id": 103,
+     "title": "Little Lanterns Level 3 Pupil Book",
+     "edition": "Second Edition",
+     "level": "Level 3"
+    },
+    {
+     "row_id": 104,
+     "title": "Little Lanterns Level 3 Workbook with Audio",
+     "edition": "2nd Edition",
+     "level": "Level 3"
+    },
+    {
+     "row_id": 105,
+     "title": "Little Lanterns Level 3 Digital Workbook Access",
+     "edition": "2nd Edition",
+     "level": "Level 3"
+    },
+    {
+     "row_id": 106,
+     "title": "Little Lanterns Level 3 Pupil Book Complete",
+     "edition": "2nd Edition",
+     "level": "Level 3"
+    }
+   ],
+   "labels": [
+    "2nd Edition",
+    "Second Edition"
+   ],
+   "normalised_to": "Second Edition",
+   "effect": "These six rows fall outside every cross-level group: they become single-level groups."
+  },
+  "access_duration": {
+   "digital_workbooks": 72,
+   "stated_18_months": 6,
+   "unspecified": 66,
+   "stated_rows": [
+    {
+     "row_id": 3,
+     "title": "Mosaic English Starter Digital Workbook Access",
+     "price": 48.49
+    },
+    {
+     "row_id": 18,
+     "title": "Mosaic English B1 Digital Workbook Access",
+     "price": 48.49
+    },
+    {
+     "row_id": 129,
+     "title": "Glasshouse English Starter Digital Workbook Access",
+     "price": 61.49
+    },
+    {
+     "row_id": 144,
+     "title": "Glasshouse English B1 Digital Workbook Access",
+     "price": 61.49
+    },
+    {
+     "row_id": 255,
+     "title": "Driftwood Dialogues Starter Digital Workbook Access",
+     "price": 54.49
+    },
+    {
+     "row_id": 270,
+     "title": "Driftwood Dialogues B1 Digital Workbook Access",
+     "price": 54.49
+    }
+   ],
+   "price_same_when_stated": true
+  },
+  "answer_support": {
+   "pairs": 24,
+   "parity": 24,
+   "series": [
+    "Amber Path",
+    "Compass Junction",
+    "Driftwood Dialogues",
+    "Northstar Language Lab"
+   ]
+  }
+ },
+ "series": [
+  {
+   "series": "Amber Path",
+   "records": 30,
+   "level_system": "Grades"
+  },
+  {
+   "series": "Compass Junction",
+   "records": 30,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Driftwood Dialogues",
+   "records": 30,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Fable Road",
+   "records": 31,
+   "level_system": "Grades"
+  },
+  {
+   "series": "Glasshouse English",
+   "records": 30,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Kindred Horizons",
+   "records": 31,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Little Lanterns",
+   "records": 36,
+   "level_system": "Grades"
+  },
+  {
+   "series": "Mosaic English",
+   "records": 29,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Northstar Language Lab",
+   "records": 30,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Orion Exam Prep",
+   "records": 19,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Silverline Skills",
+   "records": 30,
+   "level_system": "CEFR"
+  },
+  {
+   "series": "Wildflower Words",
+   "records": 36,
+   "level_system": "Grades"
+  }
+ ],
+ "focus": {
+  "Glasshouse English": {
+   "levels": [
+    "Starter",
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+   ],
+   "lines": [
+    {
+     "configuration": "Student Book · Premium Pack",
+     "cells": {
+      "B1": [
+       {
+        "row_id": 20,
+        "price": 69.49,
+        "title": "Mosaic English B1 Premium Pack with Digital",
+        "flags": [
+         "misfiled"
+        ]
+       },
+       {
+        "row_id": 146,
+        "price": 86.49,
+        "title": "Glasshouse English B1 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "Starter": [
+       {
+        "row_id": 131,
+        "price": 86.49,
+        "title": "Glasshouse English Starter Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 136,
+        "price": 86.49,
+        "title": "Glasshouse English A1 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 141,
+        "price": 86.49,
+        "title": "Glasshouse English A2 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 151,
+        "price": 86.49,
+        "title": "Glasshouse English B2 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 156,
+        "price": 86.49,
+        "title": "Glasshouse English C1 Premium Pack with Digital",
+        "flags": []
+       }
+      ]
+     },
+     "stable": false
+    },
+    {
+     "configuration": "Student Book",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 127,
+        "price": 56.49,
+        "title": "Glasshouse English Starter Student Book",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 132,
+        "price": 56.49,
+        "title": "Glasshouse English A1 Student Book",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 137,
+        "price": 56.49,
+        "title": "Glasshouse English A2 Student Book",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 142,
+        "price": 56.49,
+        "title": "Glasshouse English B1 Student Book",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 147,
+        "price": 56.49,
+        "title": "Glasshouse English B2 Student Book",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 152,
+        "price": 56.49,
+        "title": "Glasshouse English C1 Student Book",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Workbook · with Audio",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 128,
+        "price": 19.49,
+        "title": "Glasshouse English Starter Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 133,
+        "price": 19.49,
+        "title": "Glasshouse English A1 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 138,
+        "price": 19.49,
+        "title": "Glasshouse English A2 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 143,
+        "price": 19.49,
+        "title": "Glasshouse English B1 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 148,
+        "price": 19.49,
+        "title": "Glasshouse English B2 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 153,
+        "price": 19.49,
+        "title": "Glasshouse English C1 Workbook with Audio",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Digital Workbook",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 129,
+        "price": 61.49,
+        "title": "Glasshouse English Starter Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 134,
+        "price": 61.49,
+        "title": "Glasshouse English A1 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 139,
+        "price": 61.49,
+        "title": "Glasshouse English A2 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 144,
+        "price": 61.49,
+        "title": "Glasshouse English B1 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 149,
+        "price": 61.49,
+        "title": "Glasshouse English B2 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 154,
+        "price": 61.49,
+        "title": "Glasshouse English C1 Digital Workbook Access",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Student Book · Study Pack",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 130,
+        "price": 67.49,
+        "title": "Glasshouse English Starter Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 135,
+        "price": 67.49,
+        "title": "Glasshouse English A1 Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 140,
+        "price": 67.49,
+        "title": "Glasshouse English A2 Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 145,
+        "price": 67.49,
+        "title": "Glasshouse English B1 Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 150,
+        "price": 67.49,
+        "title": "Glasshouse English B2 Study Pack with Digital",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    }
+   ]
+  },
+  "Kindred Horizons": {
+   "levels": [
+    "Starter",
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+   ],
+   "lines": [
+    {
+     "configuration": "Student Book · Study Pack",
+     "cells": {
+      "C1": [
+       {
+        "row_id": 155,
+        "price": 67.49,
+        "title": "Glasshouse English C1 Study Pack with Digital",
+        "flags": [
+         "misfiled"
+        ]
+       },
+       {
+        "row_id": 311,
+        "price": 69.49,
+        "title": "Kindred Horizons C1 Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "Starter": [
+       {
+        "row_id": 286,
+        "price": 69.49,
+        "title": "Kindred Horizons Starter Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 291,
+        "price": 69.49,
+        "title": "Kindred Horizons A1 Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 296,
+        "price": 69.49,
+        "title": "Kindred Horizons A2 Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 301,
+        "price": 69.49,
+        "title": "Kindred Horizons B1 Study Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 306,
+        "price": 69.49,
+        "title": "Kindred Horizons B2 Study Pack with Digital",
+        "flags": []
+       }
+      ]
+     },
+     "stable": false
+    },
+    {
+     "configuration": "Student Book",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 283,
+        "price": 58.49,
+        "title": "Kindred Horizons Starter Student Book",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 288,
+        "price": 58.49,
+        "title": "Kindred Horizons A1 Student Book",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 293,
+        "price": 58.49,
+        "title": "Kindred Horizons A2 Student Book",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 298,
+        "price": 58.49,
+        "title": "Kindred Horizons B1 Student Book",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 303,
+        "price": 58.49,
+        "title": "Kindred Horizons B2 Student Book",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 308,
+        "price": 58.49,
+        "title": "Kindred Horizons C1 Student Book",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Workbook · with Audio",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 284,
+        "price": 23.49,
+        "title": "Kindred Horizons Starter Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 289,
+        "price": 23.49,
+        "title": "Kindred Horizons A1 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 294,
+        "price": 23.49,
+        "title": "Kindred Horizons A2 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 299,
+        "price": 23.49,
+        "title": "Kindred Horizons B1 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 304,
+        "price": 23.49,
+        "title": "Kindred Horizons B2 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 309,
+        "price": 23.49,
+        "title": "Kindred Horizons C1 Workbook with Audio",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Digital Workbook",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 285,
+        "price": 54.49,
+        "title": "Kindred Horizons Starter Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 290,
+        "price": 54.49,
+        "title": "Kindred Horizons A1 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 295,
+        "price": 54.49,
+        "title": "Kindred Horizons A2 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 300,
+        "price": 54.49,
+        "title": "Kindred Horizons B1 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 305,
+        "price": 54.49,
+        "title": "Kindred Horizons B2 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 310,
+        "price": 54.49,
+        "title": "Kindred Horizons C1 Digital Workbook Access",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Student Book · Premium Pack",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 287,
+        "price": 86.49,
+        "title": "Kindred Horizons Starter Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 292,
+        "price": 86.49,
+        "title": "Kindred Horizons A1 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 297,
+        "price": 86.49,
+        "title": "Kindred Horizons A2 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 302,
+        "price": 86.49,
+        "title": "Kindred Horizons B1 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 307,
+        "price": 86.49,
+        "title": "Kindred Horizons B2 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 312,
+        "price": 86.49,
+        "title": "Kindred Horizons C1 Premium Pack with Digital",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    }
+   ]
+  },
+  "Mosaic English": {
+   "levels": [
+    "Starter",
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+   ],
+   "lines": [
+    {
+     "configuration": "Student Book",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 1,
+        "price": 33.49,
+        "title": "Mosaic English Starter Student Book",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 6,
+        "price": 41.49,
+        "title": "Mosaic English A1 Student Book",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 11,
+        "price": 41.49,
+        "title": "Mosaic English A2 Student Book",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 16,
+        "price": 41.49,
+        "title": "Mosaic English B1 Student Book",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 21,
+        "price": 41.49,
+        "title": "Mosaic English B2 Student Book",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 26,
+        "price": 41.49,
+        "title": "Mosaic English C1 Student Book",
+        "flags": []
+       }
+      ]
+     },
+     "stable": false
+    },
+    {
+     "configuration": "Workbook · with Audio",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 2,
+        "price": 16.49,
+        "title": "Mosaic English Starter Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 7,
+        "price": 20.49,
+        "title": "Mosaic English A1 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 12,
+        "price": 20.49,
+        "title": "Mosaic English A2 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 17,
+        "price": 20.49,
+        "title": "Mosaic English B1 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 22,
+        "price": 20.49,
+        "title": "Mosaic English B2 Workbook with Audio",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 27,
+        "price": 20.49,
+        "title": "Mosaic English C1 Workbook with Audio",
+        "flags": []
+       }
+      ]
+     },
+     "stable": false
+    },
+    {
+     "configuration": "Digital Workbook",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 3,
+        "price": 48.49,
+        "title": "Mosaic English Starter Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 8,
+        "price": 48.49,
+        "title": "Mosaic English A1 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 13,
+        "price": 48.49,
+        "title": "Mosaic English A2 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 18,
+        "price": 48.49,
+        "title": "Mosaic English B1 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 23,
+        "price": 48.49,
+        "title": "Mosaic English B2 Digital Workbook Access",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 28,
+        "price": 48.49,
+        "title": "Mosaic English C1 Digital Workbook Access",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Student Book · Study Pack",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 4,
+        "price": 52.49,
+        "title": "Mosaic English Starter Study Pack + Online Access",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 9,
+        "price": 52.49,
+        "title": "Mosaic English A1 Study Pack + Online Access",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 14,
+        "price": 52.49,
+        "title": "Mosaic English A2 Study Pack + Online Access",
+        "flags": []
+       }
+      ],
+      "B1": [
+       {
+        "row_id": 19,
+        "price": 52.49,
+        "title": "Mosaic English B1 Study Pack + Online Access",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 24,
+        "price": 52.49,
+        "title": "Mosaic English B2 Study Pack + Online Access",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 29,
+        "price": 52.49,
+        "title": "Mosaic English C1 Study Pack + Online Access",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    },
+    {
+     "configuration": "Student Book · Premium Pack",
+     "cells": {
+      "Starter": [
+       {
+        "row_id": 5,
+        "price": 69.49,
+        "title": "Mosaic English Starter Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A1": [
+       {
+        "row_id": 10,
+        "price": 69.49,
+        "title": "Mosaic English A1 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "A2": [
+       {
+        "row_id": 15,
+        "price": 69.49,
+        "title": "Mosaic English A2 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "B2": [
+       {
+        "row_id": 25,
+        "price": 69.49,
+        "title": "Mosaic English B2 Premium Pack with Digital",
+        "flags": []
+       }
+      ],
+      "C1": [
+       {
+        "row_id": 30,
+        "price": 69.49,
+        "title": "Mosaic English C1 Premium Pack with Digital",
+        "flags": []
+       }
+      ]
+     },
+     "stable": true
+    }
+   ]
+  }
+ }
+}

@@ -6,7 +6,7 @@ import sys
 import win32com.client as win32
 
 HERE = Path(__file__).resolve().parent
-DECKS = ['PRICE_SIGNAL_Public_Case_EN', 'PRICE_SIGNAL_Caso_Publico_ES']
+DECKS = ['Pricing_Demo_Case_Study_EN', 'Pricing_Demo_Caso_de_Estudio_ES']
 preview = Path(sys.argv[1]) if len(sys.argv) > 1 else None
 
 app = win32.DispatchEx('PowerPoint.Application')

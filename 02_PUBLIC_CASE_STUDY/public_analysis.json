@@ -1,5 +1,5 @@
 {
- "name": "PRICE / SIGNAL — independent analysis",
+ "name": "Pricing Demo — independent analysis (by Alfonso Cifuentes)",
  "note": "All records, names and EUR list prices are invented. No sales, cost, margin, discount or demand data exist.",
  "inputs": {
   "public_raw_catalogue.csv": "5b653f19b8493e5dd1892921e56b781323fe5eec94dd4855fffd855a7bb3066c",
@@ -23,7 +23,13 @@
   "exceptions_misfiled": 2,
   "comparables_after_series_repair": 60,
   "consistent_after_series_repair": 56,
-  "consistent_pct_after_series_repair": 93.3
+  "consistent_pct_after_series_repair": 93.3,
+  "groups_total_after_series_repair": 68,
+  "groups_with_duplicate_level": 2,
+  "groups_with_duplicate_level_after_series_repair": 0,
+  "split_levels": 12,
+  "split_levels_strict": 10,
+  "split_levels_edition_mixed": 2
  },
  "exceptions": [
   {
@@ -584,7 +590,9 @@
     "parts_total": 62.0,
     "premium_eur": 7.51,
     "premium_pct": 13.8,
-    "uniform": true
+    "uniform": true,
+    "levels_strict": 4,
+    "levels_edition_mixed": 2
    },
    {
     "series": "Wildflower Words",
@@ -593,7 +601,9 @@
     "parts_total": 52.96,
     "premium_eur": 6.47,
     "premium_pct": 13.9,
-    "uniform": true
+    "uniform": true,
+    "levels_strict": 6,
+    "levels_edition_mixed": 0
    }
   ],
   "split_volume_levels": [

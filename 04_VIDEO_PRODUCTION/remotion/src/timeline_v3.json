@@ -1,0 +1,7519 @@
+{
+ "horizontal_es": {
+  "id": "horizontal_es",
+  "lang": "es",
+  "format": "horizontal",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "frames": 6767,
+  "seconds": 225.57,
+  "scenes": [
+   {
+    "id": "origin",
+    "kicker": "Origen",
+    "from": 0,
+    "frames": 1074,
+    "audio": "narration/horizontal_es/origin.wav",
+    "audioFrom": 72,
+    "speechFrames": 972,
+    "anchors": {
+     "test": 126,
+     "task": 432,
+     "rebuild": 723,
+     "fictional": 987
+    },
+    "cues": [
+     {
+      "text": "Este proyecto nació de una prueba técnica\nque hice durante un proceso de selección",
+      "from": 72,
+      "to": 241
+     },
+     {
+      "text": "para un puesto de análisis de datos en una\nempresa internacional de libros educativos.",
+      "from": 242,
+      "to": 431
+     },
+     {
+      "text": "Tenía que estudiar un catálogo de productos,",
+      "from": 432,
+      "to": 527
+     },
+     {
+      "text": "entender cómo estaban organizados sus precios\ny explicar qué conclusiones se podían sacar.",
+      "from": 528,
+      "to": 722
+     },
+     {
+      "text": "Para convertir aquel trabajo\nen un caso de estudio público,",
+      "from": 723,
+      "to": 863
+     },
+     {
+      "text": "reconstruí el ejercicio con nombres,\ncolecciones y precios completamente ficticios.",
+      "from": 864,
+      "to": 1049
+     }
+    ],
+    "words": [
+     {
+      "w": "Este",
+      "f": 72,
+      "t": 80
+     },
+     {
+      "w": "proyecto",
+      "f": 81,
+      "t": 94
+     },
+     {
+      "w": "nació",
+      "f": 95,
+      "t": 109
+     },
+     {
+      "w": "de",
+      "f": 114,
+      "t": 118
+     },
+     {
+      "w": "una",
+      "f": 120,
+      "t": 124
+     },
+     {
+      "w": "prueba",
+      "f": 126,
+      "t": 133
+     },
+     {
+      "w": "técnica",
+      "f": 134,
+      "t": 147
+     },
+     {
+      "w": "que",
+      "f": 149,
+      "t": 152
+     },
+     {
+      "w": "hice",
+      "f": 152,
+      "t": 158
+     },
+     {
+      "w": "durante",
+      "f": 160,
+      "t": 179
+     },
+     {
+      "w": "un",
+      "f": 192,
+      "t": 195
+     },
+     {
+      "w": "proceso",
+      "f": 196,
+      "t": 209
+     },
+     {
+      "w": "de",
+      "f": 210,
+      "t": 211
+     },
+     {
+      "w": "selección",
+      "f": 212,
+      "t": 232
+     },
+     {
+      "w": "para",
+      "f": 242,
+      "t": 249
+     },
+     {
+      "w": "un",
+      "f": 251,
+      "t": 253
+     },
+     {
+      "w": "puesto",
+      "f": 255,
+      "t": 268
+     },
+     {
+      "w": "de",
+      "f": 270,
+      "t": 272
+     },
+     {
+      "w": "análisis",
+      "f": 273,
+      "t": 292
+     },
+     {
+      "w": "de",
+      "f": 293,
+      "t": 295
+     },
+     {
+      "w": "datos",
+      "f": 297,
+      "t": 309
+     },
+     {
+      "w": "en",
+      "f": 313,
+      "t": 316
+     },
+     {
+      "w": "una",
+      "f": 320,
+      "t": 329
+     },
+     {
+      "w": "empresa",
+      "f": 331,
+      "t": 353
+     },
+     {
+      "w": "internacional",
+      "f": 358,
+      "t": 384
+     },
+     {
+      "w": "de",
+      "f": 389,
+      "t": 392
+     },
+     {
+      "w": "libros",
+      "f": 394,
+      "t": 402
+     },
+     {
+      "w": "educativos.",
+      "f": 404,
+      "t": 424
+     },
+     {
+      "w": "Tenía",
+      "f": 432,
+      "t": 440
+     },
+     {
+      "w": "que",
+      "f": 442,
+      "t": 444
+     },
+     {
+      "w": "estudiar",
+      "f": 445,
+      "t": 463
+     },
+     {
+      "w": "un",
+      "f": 475,
+      "t": 477
+     },
+     {
+      "w": "catálogo",
+      "f": 480,
+      "t": 500
+     },
+     {
+      "w": "de",
+      "f": 503,
+      "t": 506
+     },
+     {
+      "w": "productos,",
+      "f": 507,
+      "t": 527
+     },
+     {
+      "w": "entender",
+      "f": 528,
+      "t": 544
+     },
+     {
+      "w": "cómo",
+      "f": 546,
+      "t": 551
+     },
+     {
+      "w": "estaban",
+      "f": 551,
+      "t": 561
+     },
+     {
+      "w": "organizados",
+      "f": 562,
+      "t": 586
+     },
+     {
+      "w": "sus",
+      "f": 596,
+      "t": 603
+     },
+     {
+      "w": "precios",
+      "f": 605,
+      "t": 622
+     },
+     {
+      "w": "y",
+      "f": 633,
+      "t": 635
+     },
+     {
+      "w": "explicar",
+      "f": 637,
+      "t": 648
+     },
+     {
+      "w": "qué",
+      "f": 649,
+      "t": 651
+     },
+     {
+      "w": "conclusiones",
+      "f": 653,
+      "t": 672
+     },
+     {
+      "w": "se",
+      "f": 673,
+      "t": 676
+     },
+     {
+      "w": "podían",
+      "f": 678,
+      "t": 692
+     },
+     {
+      "w": "sacar.",
+      "f": 695,
+      "t": 716
+     },
+     {
+      "w": "Para",
+      "f": 723,
+      "t": 729
+     },
+     {
+      "w": "convertir",
+      "f": 730,
+      "t": 748
+     },
+     {
+      "w": "aquel",
+      "f": 749,
+      "t": 754
+     },
+     {
+      "w": "trabajo",
+      "f": 756,
+      "t": 773
+     },
+     {
+      "w": "en",
+      "f": 786,
+      "t": 791
+     },
+     {
+      "w": "un",
+      "f": 793,
+      "t": 796
+     },
+     {
+      "w": "caso",
+      "f": 798,
+      "t": 810
+     },
+     {
+      "w": "de",
+      "f": 812,
+      "t": 814
+     },
+     {
+      "w": "estudio",
+      "f": 814,
+      "t": 831
+     },
+     {
+      "w": "público,",
+      "f": 833,
+      "t": 855
+     },
+     {
+      "w": "reconstruí",
+      "f": 864,
+      "t": 886
+     },
+     {
+      "w": "el",
+      "f": 889,
+      "t": 894
+     },
+     {
+      "w": "ejercicio",
+      "f": 895,
+      "t": 914
+     },
+     {
+      "w": "con",
+      "f": 915,
+      "t": 920
+     },
+     {
+      "w": "nombres,",
+      "f": 922,
+      "t": 936
+     },
+     {
+      "w": "colecciones",
+      "f": 937,
+      "t": 956
+     },
+     {
+      "w": "y",
+      "f": 958,
+      "t": 958
+     },
+     {
+      "w": "precios",
+      "f": 960,
+      "t": 976
+     },
+     {
+      "w": "completamente",
+      "f": 987,
+      "t": 1013
+     },
+     {
+      "w": "ficticios.",
+      "f": 1015,
+      "t": 1039
+     }
+    ]
+   },
+   {
+    "id": "problem",
+    "kicker": "El problema",
+    "from": 1074,
+    "frames": 819,
+    "audio": "narration/horizontal_es/problem.wav",
+    "audioFrom": 15,
+    "speechFrames": 773,
+    "anchors": {
+     "variants": 128,
+     "wrong": 411,
+     "question": 598,
+     "real": 703
+    },
+    "cues": [
+     {
+      "text": "Parece sencillo:",
+      "from": 15,
+      "to": 56
+     },
+     {
+      "text": "tienes una lista de libros y sus precios.",
+      "from": 56,
+      "to": 127
+     },
+     {
+      "text": "Pero un mismo curso puede tener\nlibro del alumno, cuaderno,",
+      "from": 128,
+      "to": 248
+     },
+     {
+      "text": "versiones con soluciones, diferentes\nniveles, ediciones o acceso digital.",
+      "from": 249,
+      "to": 410
+     },
+     {
+      "text": "Si comparas dos precios sin tener todo eso en\ncuenta, puedes ver una anomalía donde no la hay.",
+      "from": 411,
+      "to": 597
+     },
+     {
+      "text": "Así que la primera pregunta no\nera qué producto era más caro,",
+      "from": 598,
+      "to": 692
+     },
+     {
+      "text": "sino cuáles se podían comparar de verdad.",
+      "from": 692,
+      "to": 793
+     }
+    ],
+    "words": [
+     {
+      "w": "Parece",
+      "f": 15,
+      "t": 24
+     },
+     {
+      "w": "sencillo:",
+      "f": 25,
+      "t": 47
+     },
+     {
+      "w": "tienes",
+      "f": 56,
+      "t": 64
+     },
+     {
+      "w": "una",
+      "f": 66,
+      "t": 69
+     },
+     {
+      "w": "lista",
+      "f": 71,
+      "t": 79
+     },
+     {
+      "w": "de",
+      "f": 80,
+      "t": 82
+     },
+     {
+      "w": "libros",
+      "f": 84,
+      "t": 94
+     },
+     {
+      "w": "y",
+      "f": 97,
+      "t": 99
+     },
+     {
+      "w": "sus",
+      "f": 101,
+      "t": 106
+     },
+     {
+      "w": "precios.",
+      "f": 108,
+      "t": 126
+     },
+     {
+      "w": "Pero",
+      "f": 128,
+      "t": 134
+     },
+     {
+      "w": "un",
+      "f": 135,
+      "t": 137
+     },
+     {
+      "w": "mismo",
+      "f": 139,
+      "t": 148
+     },
+     {
+      "w": "curso",
+      "f": 149,
+      "t": 163
+     },
+     {
+      "w": "puede",
+      "f": 173,
+      "t": 180
+     },
+     {
+      "w": "tener",
+      "f": 182,
+      "t": 191
+     },
+     {
+      "w": "libro",
+      "f": 193,
+      "t": 202
+     },
+     {
+      "w": "del",
+      "f": 204,
+      "t": 211
+     },
+     {
+      "w": "alumno,",
+      "f": 213,
+      "t": 227
+     },
+     {
+      "w": "cuaderno,",
+      "f": 228,
+      "t": 247
+     },
+     {
+      "w": "versiones",
+      "f": 249,
+      "t": 266
+     },
+     {
+      "w": "con",
+      "f": 269,
+      "t": 272
+     },
+     {
+      "w": "soluciones,",
+      "f": 274,
+      "t": 301
+     },
+     {
+      "w": "diferentes",
+      "f": 307,
+      "t": 321
+     },
+     {
+      "w": "niveles,",
+      "f": 322,
+      "t": 342
+     },
+     {
+      "w": "ediciones",
+      "f": 346,
+      "t": 362
+     },
+     {
+      "w": "o",
+      "f": 364,
+      "t": 364
+     },
+     {
+      "w": "acceso",
+      "f": 366,
+      "t": 382
+     },
+     {
+      "w": "digital.",
+      "f": 384,
+      "t": 403
+     },
+     {
+      "w": "Si",
+      "f": 411,
+      "t": 415
+     },
+     {
+      "w": "comparas",
+      "f": 417,
+      "t": 432
+     },
+     {
+      "w": "dos",
+      "f": 433,
+      "t": 437
+     },
+     {
+      "w": "precios",
+      "f": 439,
+      "t": 450
+     },
+     {
+      "w": "sin",
+      "f": 451,
+      "t": 455
+     },
+     {
+      "w": "tener",
+      "f": 457,
+      "t": 467
+     },
+     {
+      "w": "todo",
+      "f": 469,
+      "t": 475
+     },
+     {
+      "w": "eso",
+      "f": 476,
+      "t": 480
+     },
+     {
+      "w": "en",
+      "f": 480,
+      "t": 482
+     },
+     {
+      "w": "cuenta,",
+      "f": 483,
+      "t": 501
+     },
+     {
+      "w": "puedes",
+      "f": 511,
+      "t": 521
+     },
+     {
+      "w": "ver",
+      "f": 523,
+      "t": 533
+     },
+     {
+      "w": "una",
+      "f": 545,
+      "t": 550
+     },
+     {
+      "w": "anomalía",
+      "f": 551,
+      "t": 565
+     },
+     {
+      "w": "donde",
+      "f": 566,
+      "t": 573
+     },
+     {
+      "w": "no",
+      "f": 574,
+      "t": 577
+     },
+     {
+      "w": "la",
+      "f": 579,
+      "t": 582
+     },
+     {
+      "w": "hay.",
+      "f": 583,
+      "t": 593
+     },
+     {
+      "w": "Así",
+      "f": 598,
+      "t": 606
+     },
+     {
+      "w": "que",
+      "f": 607,
+      "t": 609
+     },
+     {
+      "w": "la",
+      "f": 611,
+      "t": 612
+     },
+     {
+      "w": "primera",
+      "f": 614,
+      "t": 622
+     },
+     {
+      "w": "pregunta",
+      "f": 623,
+      "t": 636
+     },
+     {
+      "w": "no",
+      "f": 637,
+      "t": 639
+     },
+     {
+      "w": "era",
+      "f": 640,
+      "t": 644
+     },
+     {
+      "w": "qué",
+      "f": 645,
+      "t": 648
+     },
+     {
+      "w": "producto",
+      "f": 649,
+      "t": 660
+     },
+     {
+      "w": "era",
+      "f": 661,
+      "t": 665
+     },
+     {
+      "w": "más",
+      "f": 666,
+      "t": 670
+     },
+     {
+      "w": "caro,",
+      "f": 672,
+      "t": 686
+     },
+     {
+      "w": "sino",
+      "f": 692,
+      "t": 701
+     },
+     {
+      "w": "cuáles",
+      "f": 703,
+      "t": 712
+     },
+     {
+      "w": "se",
+      "f": 713,
+      "t": 715
+     },
+     {
+      "w": "podían",
+      "f": 716,
+      "t": 734
+     },
+     {
+      "w": "comparar",
+      "f": 739,
+      "t": 752
+     },
+     {
+      "w": "de",
+      "f": 753,
+      "t": 755
+     },
+     {
+      "w": "verdad.",
+      "f": 756,
+      "t": 783
+     }
+    ]
+   },
+   {
+    "id": "method",
+    "kicker": "El trabajo",
+    "from": 1893,
+    "frames": 1048,
+    "audio": "narration/horizontal_es/method.wav",
+    "audioFrom": 15,
+    "speechFrames": 1002,
+    "anchors": {
+     "n362": 137,
+     "fields": 290,
+     "layers": 588,
+     "groups": 821,
+     "level": 968
+    },
+    "cues": [
+     {
+      "text": "Para la versión pública construí un\ncatálogo ficticio de 362 registros,",
+      "from": 15,
+      "to": 215
+     },
+     {
+      "text": "repartidos en 12 colecciones.",
+      "from": 216,
+      "to": 290
+     },
+     {
+      "text": "Partí de cinco campos y lo enriquecí hasta\ndiecinueve, separando tipo de producto,",
+      "from": 290,
+      "to": 467
+     },
+     {
+      "text": "nivel, edición,\ncomplementos y derechos digitales.",
+      "from": 468,
+      "to": 587
+     },
+     {
+      "text": "Conservé siempre el archivo de origen\ny dejé las correcciones en una vista de",
+      "from": 588,
+      "to": 767
+     },
+     {
+      "text": "análisis separada.",
+      "from": 768,
+      "to": 820
+     },
+     {
+      "text": "Después agrupé los productos con la misma\nconfiguración, de modo que solo cambiara el nivel.",
+      "from": 821,
+      "to": 1023
+     }
+    ],
+    "words": [
+     {
+      "w": "Para",
+      "f": 15,
+      "t": 21
+     },
+     {
+      "w": "la",
+      "f": 23,
+      "t": 24
+     },
+     {
+      "w": "versión",
+      "f": 26,
+      "t": 35
+     },
+     {
+      "w": "pública",
+      "f": 37,
+      "t": 52
+     },
+     {
+      "w": "construí",
+      "f": 55,
+      "t": 74
+     },
+     {
+      "w": "un",
+      "f": 78,
+      "t": 81
+     },
+     {
+      "w": "catálogo",
+      "f": 83,
+      "t": 98
+     },
+     {
+      "w": "ficticio",
+      "f": 101,
+      "t": 122
+     },
+     {
+      "w": "de",
+      "f": 131,
+      "t": 135
+     },
+     {
+      "w": "362",
+      "f": 137,
+      "t": 177
+     },
+     {
+      "w": "registros,",
+      "f": 182,
+      "t": 207
+     },
+     {
+      "w": "repartidos",
+      "f": 216,
+      "t": 238
+     },
+     {
+      "w": "en",
+      "f": 240,
+      "t": 243
+     },
+     {
+      "w": "12",
+      "f": 245,
+      "t": 255
+     },
+     {
+      "w": "colecciones.",
+      "f": 258,
+      "t": 282
+     },
+     {
+      "w": "Partí",
+      "f": 290,
+      "t": 303
+     },
+     {
+      "w": "de",
+      "f": 305,
+      "t": 307
+     },
+     {
+      "w": "cinco",
+      "f": 309,
+      "t": 317
+     },
+     {
+      "w": "campos",
+      "f": 319,
+      "t": 334
+     },
+     {
+      "w": "y",
+      "f": 339,
+      "t": 342
+     },
+     {
+      "w": "lo",
+      "f": 345,
+      "t": 348
+     },
+     {
+      "w": "enriquecí",
+      "f": 349,
+      "t": 367
+     },
+     {
+      "w": "hasta",
+      "f": 370,
+      "t": 380
+     },
+     {
+      "w": "diecinueve,",
+      "f": 381,
+      "t": 405
+     },
+     {
+      "w": "separando",
+      "f": 412,
+      "t": 432
+     },
+     {
+      "w": "tipo",
+      "f": 434,
+      "t": 442
+     },
+     {
+      "w": "de",
+      "f": 443,
+      "t": 445
+     },
+     {
+      "w": "producto,",
+      "f": 447,
+      "t": 465
+     },
+     {
+      "w": "nivel,",
+      "f": 468,
+      "t": 484
+     },
+     {
+      "w": "edición,",
+      "f": 486,
+      "t": 510
+     },
+     {
+      "w": "complementos",
+      "f": 515,
+      "t": 538
+     },
+     {
+      "w": "y",
+      "f": 541,
+      "t": 544
+     },
+     {
+      "w": "derechos",
+      "f": 546,
+      "t": 556
+     },
+     {
+      "w": "digitales.",
+      "f": 557,
+      "t": 578
+     },
+     {
+      "w": "Conservé",
+      "f": 588,
+      "t": 610
+     },
+     {
+      "w": "siempre",
+      "f": 613,
+      "t": 631
+     },
+     {
+      "w": "el",
+      "f": 634,
+      "t": 638
+     },
+     {
+      "w": "archivo",
+      "f": 641,
+      "t": 650
+     },
+     {
+      "w": "de",
+      "f": 652,
+      "t": 653
+     },
+     {
+      "w": "origen",
+      "f": 654,
+      "t": 669
+     },
+     {
+      "w": "y",
+      "f": 682,
+      "t": 685
+     },
+     {
+      "w": "dejé",
+      "f": 688,
+      "t": 701
+     },
+     {
+      "w": "las",
+      "f": 707,
+      "t": 712
+     },
+     {
+      "w": "correcciones",
+      "f": 713,
+      "t": 736
+     },
+     {
+      "w": "en",
+      "f": 738,
+      "t": 740
+     },
+     {
+      "w": "una",
+      "f": 743,
+      "t": 747
+     },
+     {
+      "w": "vista",
+      "f": 748,
+      "t": 761
+     },
+     {
+      "w": "de",
+      "f": 763,
+      "t": 766
+     },
+     {
+      "w": "análisis",
+      "f": 768,
+      "t": 787
+     },
+     {
+      "w": "separada.",
+      "f": 791,
+      "t": 813
+     },
+     {
+      "w": "Después",
+      "f": 821,
+      "t": 839
+     },
+     {
+      "w": "agrupé",
+      "f": 845,
+      "t": 857
+     },
+     {
+      "w": "los",
+      "f": 858,
+      "t": 862
+     },
+     {
+      "w": "productos",
+      "f": 863,
+      "t": 880
+     },
+     {
+      "w": "con",
+      "f": 882,
+      "t": 886
+     },
+     {
+      "w": "la",
+      "f": 887,
+      "t": 889
+     },
+     {
+      "w": "misma",
+      "f": 891,
+      "t": 901
+     },
+     {
+      "w": "configuración,",
+      "f": 903,
+      "t": 934
+     },
+     {
+      "w": "de",
+      "f": 941,
+      "t": 945
+     },
+     {
+      "w": "modo",
+      "f": 946,
+      "t": 954
+     },
+     {
+      "w": "que",
+      "f": 956,
+      "t": 963
+     },
+     {
+      "w": "solo",
+      "f": 968,
+      "t": 981
+     },
+     {
+      "w": "cambiara",
+      "f": 983,
+      "t": 995
+     },
+     {
+      "w": "el",
+      "f": 995,
+      "t": 997
+     },
+     {
+      "w": "nivel.",
+      "f": 998,
+      "t": 1012
+     }
+    ]
+   },
+   {
+    "id": "exceptions",
+    "kicker": "Seis excepciones",
+    "from": 2941,
+    "frames": 826,
+    "audio": "narration/horizontal_es/exceptions.wav",
+    "audioFrom": 15,
+    "speechFrames": 780,
+    "anchors": {
+     "g60": 119,
+     "u54": 200,
+     "x6": 290,
+     "starter": 328,
+     "policy": 494,
+     "two": 663
+    },
+    "cues": [
+     {
+      "text": "Al agrupar los productos comparables\naparecieron 60 conjuntos con varios niveles.",
+      "from": 15,
+      "to": 199
+     },
+     {
+      "text": "En 54, el precio no cambiaba.",
+      "from": 200,
+      "to": 290
+     },
+     {
+      "text": "En 6, sí. Cuatro casos correspondían a\nniveles Starter con un precio inferior.",
+      "from": 290,
+      "to": 493
+     },
+     {
+      "text": "Puede ser una política comercial de entrada,",
+      "from": 494,
+      "to": 569
+     },
+     {
+      "text": "pero los datos por sí solos\nno demuestran la intención.",
+      "from": 570,
+      "to": 662
+     },
+     {
+      "text": "Quedaban otros dos casos que\nmerecían una investigación distinta.",
+      "from": 663,
+      "to": 800
+     }
+    ],
+    "words": [
+     {
+      "w": "Al",
+      "f": 15,
+      "t": 20
+     },
+     {
+      "w": "agrupar",
+      "f": 22,
+      "t": 33
+     },
+     {
+      "w": "los",
+      "f": 34,
+      "t": 37
+     },
+     {
+      "w": "productos",
+      "f": 38,
+      "t": 59
+     },
+     {
+      "w": "comparables",
+      "f": 61,
+      "t": 85
+     },
+     {
+      "w": "aparecieron",
+      "f": 96,
+      "t": 117
+     },
+     {
+      "w": "60",
+      "f": 119,
+      "t": 133
+     },
+     {
+      "w": "conjuntos",
+      "f": 135,
+      "t": 156
+     },
+     {
+      "w": "con",
+      "f": 158,
+      "t": 163
+     },
+     {
+      "w": "varios",
+      "f": 164,
+      "t": 173
+     },
+     {
+      "w": "niveles.",
+      "f": 175,
+      "t": 193
+     },
+     {
+      "w": "En",
+      "f": 200,
+      "t": 204
+     },
+     {
+      "w": "54,",
+      "f": 205,
+      "t": 238
+     },
+     {
+      "w": "el",
+      "f": 240,
+      "t": 244
+     },
+     {
+      "w": "precio",
+      "f": 246,
+      "t": 261
+     },
+     {
+      "w": "no",
+      "f": 263,
+      "t": 266
+     },
+     {
+      "w": "cambiaba.",
+      "f": 267,
+      "t": 288
+     },
+     {
+      "w": "En",
+      "f": 290,
+      "t": 295
+     },
+     {
+      "w": "6,",
+      "f": 297,
+      "t": 306
+     },
+     {
+      "w": "sí.",
+      "f": 309,
+      "t": 321
+     },
+     {
+      "w": "Cuatro",
+      "f": 328,
+      "t": 339
+     },
+     {
+      "w": "casos",
+      "f": 340,
+      "t": 352
+     },
+     {
+      "w": "correspondían",
+      "f": 354,
+      "t": 381
+     },
+     {
+      "w": "a",
+      "f": 393,
+      "t": 395
+     },
+     {
+      "w": "niveles",
+      "f": 397,
+      "t": 407
+     },
+     {
+      "w": "Starter",
+      "f": 411,
+      "t": 427
+     },
+     {
+      "w": "con",
+      "f": 431,
+      "t": 436
+     },
+     {
+      "w": "un",
+      "f": 439,
+      "t": 440
+     },
+     {
+      "w": "precio",
+      "f": 442,
+      "t": 458
+     },
+     {
+      "w": "inferior.",
+      "f": 460,
+      "t": 486
+     },
+     {
+      "w": "Puede",
+      "f": 494,
+      "t": 502
+     },
+     {
+      "w": "ser",
+      "f": 504,
+      "t": 508
+     },
+     {
+      "w": "una",
+      "f": 509,
+      "t": 513
+     },
+     {
+      "w": "política",
+      "f": 514,
+      "t": 525
+     },
+     {
+      "w": "comercial",
+      "f": 526,
+      "t": 539
+     },
+     {
+      "w": "de",
+      "f": 540,
+      "t": 542
+     },
+     {
+      "w": "entrada,",
+      "f": 542,
+      "t": 564
+     },
+     {
+      "w": "pero",
+      "f": 570,
+      "t": 579
+     },
+     {
+      "w": "los",
+      "f": 580,
+      "t": 584
+     },
+     {
+      "w": "datos",
+      "f": 585,
+      "t": 592
+     },
+     {
+      "w": "por",
+      "f": 594,
+      "t": 598
+     },
+     {
+      "w": "sí",
+      "f": 599,
+      "t": 602
+     },
+     {
+      "w": "solos",
+      "f": 604,
+      "t": 615
+     },
+     {
+      "w": "no",
+      "f": 618,
+      "t": 622
+     },
+     {
+      "w": "demuestran",
+      "f": 623,
+      "t": 636
+     },
+     {
+      "w": "la",
+      "f": 637,
+      "t": 638
+     },
+     {
+      "w": "intención.",
+      "f": 639,
+      "t": 659
+     },
+     {
+      "w": "Quedaban",
+      "f": 663,
+      "t": 675
+     },
+     {
+      "w": "otros",
+      "f": 676,
+      "t": 683
+     },
+     {
+      "w": "dos",
+      "f": 684,
+      "t": 688
+     },
+     {
+      "w": "casos",
+      "f": 690,
+      "t": 704
+     },
+     {
+      "w": "que",
+      "f": 714,
+      "t": 717
+     },
+     {
+      "w": "merecían",
+      "f": 719,
+      "t": 733
+     },
+     {
+      "w": "una",
+      "f": 735,
+      "t": 738
+     },
+     {
+      "w": "investigación",
+      "f": 739,
+      "t": 759
+     },
+     {
+      "w": "distinta.",
+      "f": 760,
+      "t": 790
+     }
+    ]
+   },
+   {
+    "id": "finding",
+    "kicker": "El hallazgo",
+    "from": 3767,
+    "frames": 1116,
+    "audio": "narration/horizontal_es/finding.wav",
+    "audioFrom": 15,
+    "speechFrames": 1071,
+    "anchors": {
+     "clue": 15,
+     "mismatch": 184,
+     "looked": 371,
+     "real": 493,
+     "move": 634,
+     "result": 813,
+     "r56": 1041
+    },
+    "cues": [
+     {
+      "text": "La pista estaba en los propios grupos:",
+      "from": 15,
+      "to": 82
+     },
+     {
+      "text": "en cada uno, el mismo nivel aparecía dos veces.",
+      "from": 83,
+      "to": 183
+     },
+     {
+      "text": "El título del libro apuntaba a una colección,\ny el campo de serie indicaba otra.",
+      "from": 184,
+      "to": 370
+     },
+     {
+      "text": "Agrupado con ese campo,\nparecía una diferencia de precio.",
+      "from": 371,
+      "to": 492
+     },
+     {
+      "text": "Contrastado con la identidad del producto,\nera un problema de clasificación.",
+      "from": 493,
+      "to": 631
+     },
+     {
+      "text": "Reubiqué esos dos registros solo en la vista\nde análisis, sin tocar los datos originales.",
+      "from": 634,
+      "to": 812
+     },
+     {
+      "text": "Con los mismos 60 grupos comparables, los que\ntenían un precio uniforme pasaron de 54 a 56.",
+      "from": 813,
+      "to": 1091
+     }
+    ],
+    "words": [
+     {
+      "w": "La",
+      "f": 15,
+      "t": 20
+     },
+     {
+      "w": "pista",
+      "f": 21,
+      "t": 30
+     },
+     {
+      "w": "estaba",
+      "f": 31,
+      "t": 40
+     },
+     {
+      "w": "en",
+      "f": 41,
+      "t": 42
+     },
+     {
+      "w": "los",
+      "f": 43,
+      "t": 47
+     },
+     {
+      "w": "propios",
+      "f": 48,
+      "t": 58
+     },
+     {
+      "w": "grupos:",
+      "f": 59,
+      "t": 77
+     },
+     {
+      "w": "en",
+      "f": 83,
+      "t": 86
+     },
+     {
+      "w": "cada",
+      "f": 88,
+      "t": 94
+     },
+     {
+      "w": "uno,",
+      "f": 97,
+      "t": 104
+     },
+     {
+      "w": "el",
+      "f": 106,
+      "t": 109
+     },
+     {
+      "w": "mismo",
+      "f": 111,
+      "t": 118
+     },
+     {
+      "w": "nivel",
+      "f": 119,
+      "t": 130
+     },
+     {
+      "w": "aparecía",
+      "f": 133,
+      "t": 153
+     },
+     {
+      "w": "dos",
+      "f": 156,
+      "t": 161
+     },
+     {
+      "w": "veces.",
+      "f": 163,
+      "t": 179
+     },
+     {
+      "w": "El",
+      "f": 184,
+      "t": 188
+     },
+     {
+      "w": "título",
+      "f": 190,
+      "t": 199
+     },
+     {
+      "w": "del",
+      "f": 201,
+      "t": 204
+     },
+     {
+      "w": "libro",
+      "f": 206,
+      "t": 216
+     },
+     {
+      "w": "apuntaba",
+      "f": 227,
+      "t": 247
+     },
+     {
+      "w": "a",
+      "f": 251,
+      "t": 254
+     },
+     {
+      "w": "una",
+      "f": 256,
+      "t": 260
+     },
+     {
+      "w": "colección,",
+      "f": 262,
+      "t": 286
+     },
+     {
+      "w": "y",
+      "f": 292,
+      "t": 294
+     },
+     {
+      "w": "el",
+      "f": 296,
+      "t": 298
+     },
+     {
+      "w": "campo",
+      "f": 300,
+      "t": 307
+     },
+     {
+      "w": "de",
+      "f": 309,
+      "t": 311
+     },
+     {
+      "w": "serie",
+      "f": 312,
+      "t": 323
+     },
+     {
+      "w": "indicaba",
+      "f": 325,
+      "t": 345
+     },
+     {
+      "w": "otra.",
+      "f": 347,
+      "t": 364
+     },
+     {
+      "w": "Agrupado",
+      "f": 371,
+      "t": 387
+     },
+     {
+      "w": "con",
+      "f": 388,
+      "t": 392
+     },
+     {
+      "w": "ese",
+      "f": 394,
+      "t": 398
+     },
+     {
+      "w": "campo,",
+      "f": 400,
+      "t": 417
+     },
+     {
+      "w": "parecía",
+      "f": 425,
+      "t": 440
+     },
+     {
+      "w": "una",
+      "f": 443,
+      "t": 449
+     },
+     {
+      "w": "diferencia",
+      "f": 450,
+      "t": 464
+     },
+     {
+      "w": "de",
+      "f": 466,
+      "t": 468
+     },
+     {
+      "w": "precio.",
+      "f": 469,
+      "t": 486
+     },
+     {
+      "w": "Contrastado",
+      "f": 493,
+      "t": 512
+     },
+     {
+      "w": "con",
+      "f": 513,
+      "t": 517
+     },
+     {
+      "w": "la",
+      "f": 518,
+      "t": 525
+     },
+     {
+      "w": "identidad",
+      "f": 526,
+      "t": 541
+     },
+     {
+      "w": "del",
+      "f": 542,
+      "t": 545
+     },
+     {
+      "w": "producto,",
+      "f": 546,
+      "t": 565
+     },
+     {
+      "w": "era",
+      "f": 567,
+      "t": 572
+     },
+     {
+      "w": "un",
+      "f": 573,
+      "t": 574
+     },
+     {
+      "w": "problema",
+      "f": 576,
+      "t": 587
+     },
+     {
+      "w": "de",
+      "f": 589,
+      "t": 590
+     },
+     {
+      "w": "clasificación.",
+      "f": 591,
+      "t": 620
+     },
+     {
+      "w": "Reubiqué",
+      "f": 634,
+      "t": 650
+     },
+     {
+      "w": "esos",
+      "f": 652,
+      "t": 660
+     },
+     {
+      "w": "dos",
+      "f": 661,
+      "t": 665
+     },
+     {
+      "w": "registros",
+      "f": 666,
+      "t": 686
+     },
+     {
+      "w": "solo",
+      "f": 697,
+      "t": 706
+     },
+     {
+      "w": "en",
+      "f": 707,
+      "t": 708
+     },
+     {
+      "w": "la",
+      "f": 710,
+      "t": 712
+     },
+     {
+      "w": "vista",
+      "f": 713,
+      "t": 722
+     },
+     {
+      "w": "de",
+      "f": 724,
+      "t": 726
+     },
+     {
+      "w": "análisis,",
+      "f": 727,
+      "t": 744
+     },
+     {
+      "w": "sin",
+      "f": 746,
+      "t": 752
+     },
+     {
+      "w": "tocar",
+      "f": 754,
+      "t": 770
+     },
+     {
+      "w": "los",
+      "f": 774,
+      "t": 779
+     },
+     {
+      "w": "datos",
+      "f": 780,
+      "t": 787
+     },
+     {
+      "w": "originales.",
+      "f": 789,
+      "t": 811
+     },
+     {
+      "w": "Con",
+      "f": 813,
+      "t": 819
+     },
+     {
+      "w": "los",
+      "f": 819,
+      "t": 823
+     },
+     {
+      "w": "mismos",
+      "f": 825,
+      "t": 841
+     },
+     {
+      "w": "60",
+      "f": 854,
+      "t": 867
+     },
+     {
+      "w": "grupos",
+      "f": 868,
+      "t": 884
+     },
+     {
+      "w": "comparables,",
+      "f": 886,
+      "t": 913
+     },
+     {
+      "w": "los",
+      "f": 921,
+      "t": 926
+     },
+     {
+      "w": "que",
+      "f": 928,
+      "t": 930
+     },
+     {
+      "w": "tenían",
+      "f": 932,
+      "t": 945
+     },
+     {
+      "w": "un",
+      "f": 947,
+      "t": 950
+     },
+     {
+      "w": "precio",
+      "f": 951,
+      "t": 970
+     },
+     {
+      "w": "uniforme",
+      "f": 971,
+      "t": 989
+     },
+     {
+      "w": "pasaron",
+      "f": 991,
+      "t": 1007
+     },
+     {
+      "w": "de",
+      "f": 1008,
+      "t": 1014
+     },
+     {
+      "w": "54",
+      "f": 1015,
+      "t": 1041
+     },
+     {
+      "w": "a",
+      "f": 1041,
+      "t": 1042
+     },
+     {
+      "w": "56.",
+      "f": 1043,
+      "t": 1081
+     }
+    ]
+   },
+   {
+    "id": "limits",
+    "kicker": "Límites",
+    "from": 4883,
+    "frames": 1066,
+    "audio": "narration/horizontal_es/limits.wav",
+    "audioFrom": 15,
+    "speechFrames": 1021,
+    "anchors": {
+     "edition": 62,
+     "gleebook": 140,
+     "tb": 288,
+     "ab": 402,
+     "questions": 561,
+     "cannot": 751,
+     "fake": 932
+    },
+    "cues": [
+     {
+      "text": "Aparecieron otras trampas:",
+      "from": 15,
+      "to": 61
+     },
+     {
+      "text": "dos formas de escribir la misma edición,",
+      "from": 62,
+      "to": 139
+     },
+     {
+      "text": "un título que contiene la palabra\n«ebook» sin ser un libro digital,",
+      "from": 140,
+      "to": 288
+     },
+     {
+      "text": "un precio atípico con una abreviatura\nsin definir y libros en dos partes que,",
+      "from": 288,
+      "to": 452
+     },
+     {
+      "text": "juntas, cuestan más que el volumen completo.",
+      "from": 453,
+      "to": 560
+     },
+     {
+      "text": "El análisis las detecta y las convierte en\npreguntas claras para un equipo comercial.",
+      "from": 561,
+      "to": 749
+     },
+     {
+      "text": "Pero no pretende fijar el precio correcto:",
+      "from": 751,
+      "to": 821
+     },
+     {
+      "text": "aquí no hay datos de ventas,\ncostes, márgenes ni demanda.",
+      "from": 822,
+      "to": 929
+     },
+     {
+      "text": "Y todo este catálogo,\nde principio a fin, es inventado.",
+      "from": 932,
+      "to": 1041
+     }
+    ],
+    "words": [
+     {
+      "w": "Aparecieron",
+      "f": 15,
+      "t": 33
+     },
+     {
+      "w": "otras",
+      "f": 33,
+      "t": 40
+     },
+     {
+      "w": "trampas:",
+      "f": 41,
+      "t": 59
+     },
+     {
+      "w": "dos",
+      "f": 62,
+      "t": 67
+     },
+     {
+      "w": "formas",
+      "f": 69,
+      "t": 78
+     },
+     {
+      "w": "de",
+      "f": 79,
+      "t": 80
+     },
+     {
+      "w": "escribir",
+      "f": 81,
+      "t": 97
+     },
+     {
+      "w": "la",
+      "f": 99,
+      "t": 101
+     },
+     {
+      "w": "misma",
+      "f": 102,
+      "t": 110
+     },
+     {
+      "w": "edición,",
+      "f": 111,
+      "t": 132
+     },
+     {
+      "w": "un",
+      "f": 140,
+      "t": 144
+     },
+     {
+      "w": "título",
+      "f": 145,
+      "t": 156
+     },
+     {
+      "w": "que",
+      "f": 158,
+      "t": 160
+     },
+     {
+      "w": "contiene",
+      "f": 162,
+      "t": 172
+     },
+     {
+      "w": "la",
+      "f": 173,
+      "t": 176
+     },
+     {
+      "w": "palabra",
+      "f": 177,
+      "t": 192
+     },
+     {
+      "w": "«ebook»",
+      "f": 194,
+      "t": 215
+     },
+     {
+      "w": "sin",
+      "f": 217,
+      "t": 223
+     },
+     {
+      "w": "ser",
+      "f": 225,
+      "t": 234
+     },
+     {
+      "w": "un",
+      "f": 239,
+      "t": 243
+     },
+     {
+      "w": "libro",
+      "f": 245,
+      "t": 256
+     },
+     {
+      "w": "digital,",
+      "f": 258,
+      "t": 279
+     },
+     {
+      "w": "un",
+      "f": 288,
+      "t": 291
+     },
+     {
+      "w": "precio",
+      "f": 293,
+      "t": 310
+     },
+     {
+      "w": "atípico",
+      "f": 311,
+      "t": 327
+     },
+     {
+      "w": "con",
+      "f": 328,
+      "t": 332
+     },
+     {
+      "w": "una",
+      "f": 335,
+      "t": 346
+     },
+     {
+      "w": "abreviatura",
+      "f": 347,
+      "t": 366
+     },
+     {
+      "w": "sin",
+      "f": 368,
+      "t": 372
+     },
+     {
+      "w": "definir",
+      "f": 373,
+      "t": 388
+     },
+     {
+      "w": "y",
+      "f": 402,
+      "t": 405
+     },
+     {
+      "w": "libros",
+      "f": 409,
+      "t": 418
+     },
+     {
+      "w": "en",
+      "f": 420,
+      "t": 421
+     },
+     {
+      "w": "dos",
+      "f": 422,
+      "t": 426
+     },
+     {
+      "w": "partes",
+      "f": 428,
+      "t": 442
+     },
+     {
+      "w": "que,",
+      "f": 444,
+      "t": 452
+     },
+     {
+      "w": "juntas,",
+      "f": 453,
+      "t": 475
+     },
+     {
+      "w": "cuestan",
+      "f": 482,
+      "t": 493
+     },
+     {
+      "w": "más",
+      "f": 494,
+      "t": 501
+     },
+     {
+      "w": "que",
+      "f": 505,
+      "t": 521
+     },
+     {
+      "w": "el",
+      "f": 524,
+      "t": 529
+     },
+     {
+      "w": "volumen",
+      "f": 531,
+      "t": 540
+     },
+     {
+      "w": "completo.",
+      "f": 541,
+      "t": 559
+     },
+     {
+      "w": "El",
+      "f": 561,
+      "t": 565
+     },
+     {
+      "w": "análisis",
+      "f": 567,
+      "t": 586
+     },
+     {
+      "w": "las",
+      "f": 599,
+      "t": 604
+     },
+     {
+      "w": "detecta",
+      "f": 605,
+      "t": 620
+     },
+     {
+      "w": "y",
+      "f": 632,
+      "t": 634
+     },
+     {
+      "w": "las",
+      "f": 637,
+      "t": 640
+     },
+     {
+      "w": "convierte",
+      "f": 642,
+      "t": 658
+     },
+     {
+      "w": "en",
+      "f": 660,
+      "t": 663
+     },
+     {
+      "w": "preguntas",
+      "f": 666,
+      "t": 682
+     },
+     {
+      "w": "claras",
+      "f": 684,
+      "t": 694
+     },
+     {
+      "w": "para",
+      "f": 696,
+      "t": 702
+     },
+     {
+      "w": "un",
+      "f": 704,
+      "t": 706
+     },
+     {
+      "w": "equipo",
+      "f": 707,
+      "t": 715
+     },
+     {
+      "w": "comercial.",
+      "f": 716,
+      "t": 738
+     },
+     {
+      "w": "Pero",
+      "f": 751,
+      "t": 760
+     },
+     {
+      "w": "no",
+      "f": 762,
+      "t": 764
+     },
+     {
+      "w": "pretende",
+      "f": 766,
+      "t": 777
+     },
+     {
+      "w": "fijar",
+      "f": 779,
+      "t": 791
+     },
+     {
+      "w": "el",
+      "f": 792,
+      "t": 793
+     },
+     {
+      "w": "precio",
+      "f": 795,
+      "t": 802
+     },
+     {
+      "w": "correcto:",
+      "f": 804,
+      "t": 820
+     },
+     {
+      "w": "aquí",
+      "f": 822,
+      "t": 829
+     },
+     {
+      "w": "no",
+      "f": 831,
+      "t": 833
+     },
+     {
+      "w": "hay",
+      "f": 833,
+      "t": 836
+     },
+     {
+      "w": "datos",
+      "f": 838,
+      "t": 845
+     },
+     {
+      "w": "de",
+      "f": 846,
+      "t": 848
+     },
+     {
+      "w": "ventas,",
+      "f": 850,
+      "t": 866
+     },
+     {
+      "w": "costes,",
+      "f": 867,
+      "t": 880
+     },
+     {
+      "w": "márgenes",
+      "f": 881,
+      "t": 898
+     },
+     {
+      "w": "ni",
+      "f": 899,
+      "t": 902
+     },
+     {
+      "w": "demanda.",
+      "f": 903,
+      "t": 919
+     },
+     {
+      "w": "Y",
+      "f": 932,
+      "t": 935
+     },
+     {
+      "w": "todo",
+      "f": 938,
+      "t": 944
+     },
+     {
+      "w": "este",
+      "f": 944,
+      "t": 948
+     },
+     {
+      "w": "catálogo,",
+      "f": 949,
+      "t": 968
+     },
+     {
+      "w": "de",
+      "f": 971,
+      "t": 974
+     },
+     {
+      "w": "principio",
+      "f": 976,
+      "t": 988
+     },
+     {
+      "w": "a",
+      "f": 989,
+      "t": 989
+     },
+     {
+      "w": "fin,",
+      "f": 990,
+      "t": 1000
+     },
+     {
+      "w": "es",
+      "f": 1002,
+      "t": 1007
+     },
+     {
+      "w": "inventado.",
+      "f": 1009,
+      "t": 1031
+     }
+    ]
+   },
+   {
+    "id": "close",
+    "kicker": "Conclusión",
+    "from": 5949,
+    "frames": 818,
+    "audio": "narration/horizontal_es/close.wav",
+    "audioFrom": 15,
+    "speechFrames": 683,
+    "anchors": {
+     "rule": 248,
+     "web": 437,
+     "sign": 606
+    },
+    "cues": [
+     {
+      "text": "Para mí, lo interesante de este caso es\nque el dato más llamativo no siempre es",
+      "from": 15,
+      "to": 201
+     },
+     {
+      "text": "el problema real.",
+      "from": 202,
+      "to": 247
+     },
+     {
+      "text": "A veces, antes de decidir sobre un precio,\nhay que revisar cómo hemos definido el producto.",
+      "from": 248,
+      "to": 436
+     },
+     {
+      "text": "En la web puedes explorar los datos, comprobar\nlas fórmulas y descargar las presentaciones.",
+      "from": 437,
+      "to": 605
+     },
+     {
+      "text": "Soy Alfonso Cifuentes, y esto es Pricing Demo.",
+      "from": 606,
+      "to": 703
+     }
+    ],
+    "words": [
+     {
+      "w": "Para",
+      "f": 15,
+      "t": 21
+     },
+     {
+      "w": "mí,",
+      "f": 23,
+      "t": 27
+     },
+     {
+      "w": "lo",
+      "f": 28,
+      "t": 30
+     },
+     {
+      "w": "interesante",
+      "f": 30,
+      "t": 47
+     },
+     {
+      "w": "de",
+      "f": 48,
+      "t": 50
+     },
+     {
+      "w": "este",
+      "f": 51,
+      "t": 56
+     },
+     {
+      "w": "caso",
+      "f": 57,
+      "t": 69
+     },
+     {
+      "w": "es",
+      "f": 82,
+      "t": 88
+     },
+     {
+      "w": "que",
+      "f": 90,
+      "t": 103
+     },
+     {
+      "w": "el",
+      "f": 109,
+      "t": 113
+     },
+     {
+      "w": "dato",
+      "f": 115,
+      "t": 119
+     },
+     {
+      "w": "más",
+      "f": 120,
+      "t": 124
+     },
+     {
+      "w": "llamativo",
+      "f": 125,
+      "t": 142
+     },
+     {
+      "w": "no",
+      "f": 147,
+      "t": 152
+     },
+     {
+      "w": "siempre",
+      "f": 154,
+      "t": 170
+     },
+     {
+      "w": "es",
+      "f": 183,
+      "t": 194
+     },
+     {
+      "w": "el",
+      "f": 202,
+      "t": 211
+     },
+     {
+      "w": "problema",
+      "f": 215,
+      "t": 229
+     },
+     {
+      "w": "real.",
+      "f": 232,
+      "t": 247
+     },
+     {
+      "w": "A",
+      "f": 248,
+      "t": 251
+     },
+     {
+      "w": "veces,",
+      "f": 253,
+      "t": 262
+     },
+     {
+      "w": "antes",
+      "f": 263,
+      "t": 273
+     },
+     {
+      "w": "de",
+      "f": 274,
+      "t": 281
+     },
+     {
+      "w": "decidir",
+      "f": 283,
+      "t": 299
+     },
+     {
+      "w": "sobre",
+      "f": 302,
+      "t": 311
+     },
+     {
+      "w": "un",
+      "f": 312,
+      "t": 314
+     },
+     {
+      "w": "precio,",
+      "f": 316,
+      "t": 334
+     },
+     {
+      "w": "hay",
+      "f": 341,
+      "t": 345
+     },
+     {
+      "w": "que",
+      "f": 347,
+      "t": 349
+     },
+     {
+      "w": "revisar",
+      "f": 351,
+      "t": 367
+     },
+     {
+      "w": "cómo",
+      "f": 369,
+      "t": 376
+     },
+     {
+      "w": "hemos",
+      "f": 377,
+      "t": 383
+     },
+     {
+      "w": "definido",
+      "f": 384,
+      "t": 402
+     },
+     {
+      "w": "el",
+      "f": 405,
+      "t": 413
+     },
+     {
+      "w": "producto.",
+      "f": 417,
+      "t": 435
+     },
+     {
+      "w": "En",
+      "f": 437,
+      "t": 440
+     },
+     {
+      "w": "la",
+      "f": 442,
+      "t": 445
+     },
+     {
+      "w": "web",
+      "f": 447,
+      "t": 456
+     },
+     {
+      "w": "puedes",
+      "f": 467,
+      "t": 474
+     },
+     {
+      "w": "explorar",
+      "f": 476,
+      "t": 487
+     },
+     {
+      "w": "los",
+      "f": 488,
+      "t": 492
+     },
+     {
+      "w": "datos,",
+      "f": 493,
+      "t": 509
+     },
+     {
+      "w": "comprobar",
+      "f": 514,
+      "t": 528
+     },
+     {
+      "w": "las",
+      "f": 529,
+      "t": 532
+     },
+     {
+      "w": "fórmulas",
+      "f": 534,
+      "t": 547
+     },
+     {
+      "w": "y",
+      "f": 549,
+      "t": 551
+     },
+     {
+      "w": "descargar",
+      "f": 553,
+      "t": 567
+     },
+     {
+      "w": "las",
+      "f": 567,
+      "t": 570
+     },
+     {
+      "w": "presentaciones.",
+      "f": 572,
+      "t": 597
+     },
+     {
+      "w": "Soy",
+      "f": 606,
+      "t": 613
+     },
+     {
+      "w": "Alfonso",
+      "f": 615,
+      "t": 624
+     },
+     {
+      "w": "Cifuentes,",
+      "f": 625,
+      "t": 645
+     },
+     {
+      "w": "y",
+      "f": 648,
+      "t": 651
+     },
+     {
+      "w": "esto",
+      "f": 652,
+      "t": 658
+     },
+     {
+      "w": "es",
+      "f": 660,
+      "t": 661
+     },
+     {
+      "w": "Pricing",
+      "f": 663,
+      "t": 674
+     },
+     {
+      "w": "Demo.",
+      "f": 675,
+      "t": 693
+     }
+    ]
+   }
+  ],
+  "speech": [
+   {
+    "from": 72,
+    "to": 1044
+   },
+   {
+    "from": 1089,
+    "to": 1862
+   },
+   {
+    "from": 1908,
+    "to": 2910
+   },
+   {
+    "from": 2956,
+    "to": 3736
+   },
+   {
+    "from": 3782,
+    "to": 4853
+   },
+   {
+    "from": 4898,
+    "to": 5919
+   },
+   {
+    "from": 5964,
+    "to": 6647
+   }
+  ]
+ },
+ "horizontal_en": {
+  "id": "horizontal_en",
+  "lang": "en",
+  "format": "horizontal",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "frames": 6094,
+  "seconds": 203.13,
+  "scenes": [
+   {
+    "id": "origin",
+    "kicker": "Origin",
+    "from": 0,
+    "frames": 894,
+    "audio": "narration/horizontal_en/origin.wav",
+    "audioFrom": 72,
+    "speechFrames": 791,
+    "anchors": {
+     "test": 135,
+     "task": 324,
+     "rebuild": 564,
+     "fictional": 678
+    },
+    "cues": [
+     {
+      "text": "I first worked on this kind of problem\nduring a technical assessment for a data",
+      "from": 72,
+      "to": 189
+     },
+     {
+      "text": "analyst position at an international\neducational publishing company.",
+      "from": 190,
+      "to": 310
+     },
+     {
+      "text": "The task was to examine a product catalogue,\nmake sense of its pricing structure,",
+      "from": 324,
+      "to": 459
+     },
+     {
+      "text": "and explain which findings were worth pursuing.",
+      "from": 460,
+      "to": 546
+     },
+     {
+      "text": "I later rebuilt the exercise as an\nindependent case study, with fictional titles,",
+      "from": 564,
+      "to": 708
+     },
+     {
+      "text": "series and prices, so I could share\nthe analytical process publicly.",
+      "from": 709,
+      "to": 868
+     }
+    ],
+    "words": [
+     {
+      "w": "I",
+      "f": 72,
+      "t": 74
+     },
+     {
+      "w": "first",
+      "f": 78,
+      "t": 84
+     },
+     {
+      "w": "worked",
+      "f": 86,
+      "t": 92
+     },
+     {
+      "w": "on",
+      "f": 94,
+      "t": 96
+     },
+     {
+      "w": "this",
+      "f": 97,
+      "t": 101
+     },
+     {
+      "w": "kind",
+      "f": 102,
+      "t": 107
+     },
+     {
+      "w": "of",
+      "f": 108,
+      "t": 110
+     },
+     {
+      "w": "problem",
+      "f": 111,
+      "t": 121
+     },
+     {
+      "w": "during",
+      "f": 123,
+      "t": 129
+     },
+     {
+      "w": "a",
+      "f": 131,
+      "t": 132
+     },
+     {
+      "w": "technical",
+      "f": 135,
+      "t": 149
+     },
+     {
+      "w": "assessment",
+      "f": 151,
+      "t": 167
+     },
+     {
+      "w": "for",
+      "f": 168,
+      "t": 172
+     },
+     {
+      "w": "a",
+      "f": 174,
+      "t": 175
+     },
+     {
+      "w": "data",
+      "f": 178,
+      "t": 188
+     },
+     {
+      "w": "analyst",
+      "f": 190,
+      "t": 202
+     },
+     {
+      "w": "position",
+      "f": 203,
+      "t": 216
+     },
+     {
+      "w": "at",
+      "f": 218,
+      "t": 220
+     },
+     {
+      "w": "an",
+      "f": 222,
+      "t": 224
+     },
+     {
+      "w": "international",
+      "f": 227,
+      "t": 246
+     },
+     {
+      "w": "educational",
+      "f": 249,
+      "t": 267
+     },
+     {
+      "w": "publishing",
+      "f": 269,
+      "t": 282
+     },
+     {
+      "w": "company.",
+      "f": 283,
+      "t": 299
+     },
+     {
+      "w": "The",
+      "f": 324,
+      "t": 327
+     },
+     {
+      "w": "task",
+      "f": 329,
+      "t": 338
+     },
+     {
+      "w": "was",
+      "f": 339,
+      "t": 343
+     },
+     {
+      "w": "to",
+      "f": 345,
+      "t": 347
+     },
+     {
+      "w": "examine",
+      "f": 349,
+      "t": 362
+     },
+     {
+      "w": "a",
+      "f": 364,
+      "t": 365
+     },
+     {
+      "w": "product",
+      "f": 367,
+      "t": 378
+     },
+     {
+      "w": "catalogue,",
+      "f": 379,
+      "t": 398
+     },
+     {
+      "w": "make",
+      "f": 399,
+      "t": 405
+     },
+     {
+      "w": "sense",
+      "f": 406,
+      "t": 414
+     },
+     {
+      "w": "of",
+      "f": 414,
+      "t": 416
+     },
+     {
+      "w": "its",
+      "f": 417,
+      "t": 421
+     },
+     {
+      "w": "pricing",
+      "f": 423,
+      "t": 434
+     },
+     {
+      "w": "structure,",
+      "f": 436,
+      "t": 453
+     },
+     {
+      "w": "and",
+      "f": 460,
+      "t": 465
+     },
+     {
+      "w": "explain",
+      "f": 466,
+      "t": 478
+     },
+     {
+      "w": "which",
+      "f": 480,
+      "t": 486
+     },
+     {
+      "w": "findings",
+      "f": 488,
+      "t": 501
+     },
+     {
+      "w": "were",
+      "f": 502,
+      "t": 506
+     },
+     {
+      "w": "worth",
+      "f": 507,
+      "t": 513
+     },
+     {
+      "w": "pursuing.",
+      "f": 514,
+      "t": 535
+     },
+     {
+      "w": "I",
+      "f": 564,
+      "t": 566
+     },
+     {
+      "w": "later",
+      "f": 569,
+      "t": 576
+     },
+     {
+      "w": "rebuilt",
+      "f": 577,
+      "t": 589
+     },
+     {
+      "w": "the",
+      "f": 590,
+      "t": 592
+     },
+     {
+      "w": "exercise",
+      "f": 593,
+      "t": 610
+     },
+     {
+      "w": "as",
+      "f": 611,
+      "t": 614
+     },
+     {
+      "w": "an",
+      "f": 615,
+      "t": 618
+     },
+     {
+      "w": "independent",
+      "f": 620,
+      "t": 637
+     },
+     {
+      "w": "case",
+      "f": 638,
+      "t": 646
+     },
+     {
+      "w": "study,",
+      "f": 647,
+      "t": 662
+     },
+     {
+      "w": "with",
+      "f": 670,
+      "t": 676
+     },
+     {
+      "w": "fictional",
+      "f": 678,
+      "t": 691
+     },
+     {
+      "w": "titles,",
+      "f": 693,
+      "t": 708
+     },
+     {
+      "w": "series",
+      "f": 709,
+      "t": 721
+     },
+     {
+      "w": "and",
+      "f": 722,
+      "t": 724
+     },
+     {
+      "w": "prices,",
+      "f": 726,
+      "t": 743
+     },
+     {
+      "w": "so",
+      "f": 744,
+      "t": 748
+     },
+     {
+      "w": "I",
+      "f": 750,
+      "t": 751
+     },
+     {
+      "w": "could",
+      "f": 752,
+      "t": 757
+     },
+     {
+      "w": "share",
+      "f": 758,
+      "t": 767
+     },
+     {
+      "w": "the",
+      "f": 768,
+      "t": 771
+     },
+     {
+      "w": "analytical",
+      "f": 774,
+      "t": 791
+     },
+     {
+      "w": "process",
+      "f": 793,
+      "t": 807
+     },
+     {
+      "w": "publicly.",
+      "f": 810,
+      "t": 858
+     }
+    ]
+   },
+   {
+    "id": "problem",
+    "kicker": "The problem",
+    "from": 894,
+    "frames": 942,
+    "audio": "narration/horizontal_en/problem.wav",
+    "audioFrom": 15,
+    "speechFrames": 896,
+    "anchors": {
+     "variants": 119,
+     "wrong": 372,
+     "question": 721,
+     "real": 815
+    },
+    "cues": [
+     {
+      "text": "A price list looks simple\nuntil you look closely.",
+      "from": 15,
+      "to": 105
+     },
+     {
+      "text": "A single course might have a student book,\na workbook, an answer-key version,",
+      "from": 119,
+      "to": 247
+     },
+     {
+      "text": "a digital licence, several\nlevels and multiple editions.",
+      "from": 248,
+      "to": 358
+     },
+     {
+      "text": "Two similar names can\ndescribe different products.",
+      "from": 372,
+      "to": 460
+     },
+     {
+      "text": "If you compare their prices without\naccounting for those differences,",
+      "from": 465,
+      "to": 572
+     },
+     {
+      "text": "an apparent anomaly may tell you more\nabout the catalogue than about the pricing.",
+      "from": 572,
+      "to": 707
+     },
+     {
+      "text": "So the first question was\nnot which product costs more,",
+      "from": 721,
+      "to": 808
+     },
+     {
+      "text": "but which products can fairly be compared.",
+      "from": 809,
+      "to": 917
+     }
+    ],
+    "words": [
+     {
+      "w": "A",
+      "f": 15,
+      "t": 18
+     },
+     {
+      "w": "price",
+      "f": 20,
+      "t": 28
+     },
+     {
+      "w": "list",
+      "f": 29,
+      "t": 35
+     },
+     {
+      "w": "looks",
+      "f": 36,
+      "t": 42
+     },
+     {
+      "w": "simple",
+      "f": 43,
+      "t": 53
+     },
+     {
+      "w": "until",
+      "f": 55,
+      "t": 62
+     },
+     {
+      "w": "you",
+      "f": 64,
+      "t": 66
+     },
+     {
+      "w": "look",
+      "f": 68,
+      "t": 72
+     },
+     {
+      "w": "closely.",
+      "f": 73,
+      "t": 95
+     },
+     {
+      "w": "A",
+      "f": 119,
+      "t": 121
+     },
+     {
+      "w": "single",
+      "f": 123,
+      "t": 132
+     },
+     {
+      "w": "course",
+      "f": 134,
+      "t": 144
+     },
+     {
+      "w": "might",
+      "f": 145,
+      "t": 150
+     },
+     {
+      "w": "have",
+      "f": 151,
+      "t": 155
+     },
+     {
+      "w": "a",
+      "f": 156,
+      "t": 157
+     },
+     {
+      "w": "student",
+      "f": 159,
+      "t": 168
+     },
+     {
+      "w": "book,",
+      "f": 169,
+      "t": 179
+     },
+     {
+      "w": "a",
+      "f": 180,
+      "t": 182
+     },
+     {
+      "w": "workbook,",
+      "f": 184,
+      "t": 201
+     },
+     {
+      "w": "an",
+      "f": 203,
+      "t": 207
+     },
+     {
+      "w": "answer-key",
+      "f": 208,
+      "t": 221
+     },
+     {
+      "w": "version,",
+      "f": 223,
+      "t": 240
+     },
+     {
+      "w": "a",
+      "f": 248,
+      "t": 250
+     },
+     {
+      "w": "digital",
+      "f": 252,
+      "t": 262
+     },
+     {
+      "w": "licence,",
+      "f": 264,
+      "t": 283
+     },
+     {
+      "w": "several",
+      "f": 287,
+      "t": 297
+     },
+     {
+      "w": "levels",
+      "f": 298,
+      "t": 307
+     },
+     {
+      "w": "and",
+      "f": 308,
+      "t": 311
+     },
+     {
+      "w": "multiple",
+      "f": 314,
+      "t": 327
+     },
+     {
+      "w": "editions.",
+      "f": 328,
+      "t": 348
+     },
+     {
+      "w": "Two",
+      "f": 372,
+      "t": 378
+     },
+     {
+      "w": "similar",
+      "f": 380,
+      "t": 391
+     },
+     {
+      "w": "names",
+      "f": 392,
+      "t": 400
+     },
+     {
+      "w": "can",
+      "f": 401,
+      "t": 405
+     },
+     {
+      "w": "describe",
+      "f": 406,
+      "t": 419
+     },
+     {
+      "w": "different",
+      "f": 420,
+      "t": 429
+     },
+     {
+      "w": "products.",
+      "f": 430,
+      "t": 449
+     },
+     {
+      "w": "If",
+      "f": 465,
+      "t": 468
+     },
+     {
+      "w": "you",
+      "f": 470,
+      "t": 472
+     },
+     {
+      "w": "compare",
+      "f": 474,
+      "t": 484
+     },
+     {
+      "w": "their",
+      "f": 485,
+      "t": 489
+     },
+     {
+      "w": "prices",
+      "f": 491,
+      "t": 505
+     },
+     {
+      "w": "without",
+      "f": 506,
+      "t": 515
+     },
+     {
+      "w": "accounting",
+      "f": 515,
+      "t": 529
+     },
+     {
+      "w": "for",
+      "f": 530,
+      "t": 533
+     },
+     {
+      "w": "those",
+      "f": 535,
+      "t": 541
+     },
+     {
+      "w": "differences,",
+      "f": 542,
+      "t": 563
+     },
+     {
+      "w": "an",
+      "f": 572,
+      "t": 576
+     },
+     {
+      "w": "apparent",
+      "f": 577,
+      "t": 589
+     },
+     {
+      "w": "anomaly",
+      "f": 590,
+      "t": 606
+     },
+     {
+      "w": "may",
+      "f": 609,
+      "t": 612
+     },
+     {
+      "w": "tell",
+      "f": 614,
+      "t": 618
+     },
+     {
+      "w": "you",
+      "f": 620,
+      "t": 623
+     },
+     {
+      "w": "more",
+      "f": 626,
+      "t": 632
+     },
+     {
+      "w": "about",
+      "f": 633,
+      "t": 639
+     },
+     {
+      "w": "the",
+      "f": 640,
+      "t": 642
+     },
+     {
+      "w": "catalogue",
+      "f": 644,
+      "t": 660
+     },
+     {
+      "w": "than",
+      "f": 661,
+      "t": 664
+     },
+     {
+      "w": "about",
+      "f": 666,
+      "t": 673
+     },
+     {
+      "w": "the",
+      "f": 674,
+      "t": 676
+     },
+     {
+      "w": "pricing.",
+      "f": 677,
+      "t": 696
+     },
+     {
+      "w": "So",
+      "f": 721,
+      "t": 726
+     },
+     {
+      "w": "the",
+      "f": 728,
+      "t": 730
+     },
+     {
+      "w": "first",
+      "f": 732,
+      "t": 739
+     },
+     {
+      "w": "question",
+      "f": 740,
+      "t": 750
+     },
+     {
+      "w": "was",
+      "f": 752,
+      "t": 756
+     },
+     {
+      "w": "not",
+      "f": 759,
+      "t": 764
+     },
+     {
+      "w": "which",
+      "f": 766,
+      "t": 772
+     },
+     {
+      "w": "product",
+      "f": 774,
+      "t": 784
+     },
+     {
+      "w": "costs",
+      "f": 786,
+      "t": 794
+     },
+     {
+      "w": "more,",
+      "f": 797,
+      "t": 808
+     },
+     {
+      "w": "but",
+      "f": 809,
+      "t": 814
+     },
+     {
+      "w": "which",
+      "f": 815,
+      "t": 820
+     },
+     {
+      "w": "products",
+      "f": 822,
+      "t": 833
+     },
+     {
+      "w": "can",
+      "f": 834,
+      "t": 839
+     },
+     {
+      "w": "fairly",
+      "f": 842,
+      "t": 853
+     },
+     {
+      "w": "be",
+      "f": 855,
+      "t": 857
+     },
+     {
+      "w": "compared.",
+      "f": 859,
+      "t": 906
+     }
+    ]
+   },
+   {
+    "id": "method",
+    "kicker": "The work",
+    "from": 1836,
+    "frames": 847,
+    "audio": "narration/horizontal_en/method.wav",
+    "audioFrom": 15,
+    "speechFrames": 802,
+    "anchors": {
+     "n362": 77,
+     "fields": 227,
+     "layers": 496,
+     "groups": 633,
+     "level": 743
+    },
+    "cues": [
+     {
+      "text": "For this public version, I generated 362 fictional\nproduct records across 12 fictional series.",
+      "from": 15,
+      "to": 222
+     },
+     {
+      "text": "I took five raw fields and enriched\nthem into nineteen attributes,",
+      "from": 227,
+      "to": 333
+     },
+     {
+      "text": "covering product type, level, edition,\nbundle content and digital access.",
+      "from": 334,
+      "to": 482
+     },
+     {
+      "text": "I preserved the source and kept every\ncorrection in a separate reporting view.",
+      "from": 496,
+      "to": 626
+     },
+     {
+      "text": "Then I grouped products by their actual\nconfiguration, so that only the level could change.",
+      "from": 633,
+      "to": 822
+     }
+    ],
+    "words": [
+     {
+      "w": "For",
+      "f": 15,
+      "t": 21
+     },
+     {
+      "w": "this",
+      "f": 22,
+      "t": 26
+     },
+     {
+      "w": "public",
+      "f": 29,
+      "t": 39
+     },
+     {
+      "w": "version,",
+      "f": 41,
+      "t": 56
+     },
+     {
+      "w": "I",
+      "f": 57,
+      "t": 59
+     },
+     {
+      "w": "generated",
+      "f": 62,
+      "t": 76
+     },
+     {
+      "w": "362",
+      "f": 77,
+      "t": 112
+     },
+     {
+      "w": "fictional",
+      "f": 116,
+      "t": 130
+     },
+     {
+      "w": "product",
+      "f": 132,
+      "t": 142
+     },
+     {
+      "w": "records",
+      "f": 143,
+      "t": 153
+     },
+     {
+      "w": "across",
+      "f": 154,
+      "t": 164
+     },
+     {
+      "w": "12",
+      "f": 166,
+      "t": 177
+     },
+     {
+      "w": "fictional",
+      "f": 178,
+      "t": 191
+     },
+     {
+      "w": "series.",
+      "f": 194,
+      "t": 211
+     },
+     {
+      "w": "I",
+      "f": 227,
+      "t": 229
+     },
+     {
+      "w": "took",
+      "f": 231,
+      "t": 237
+     },
+     {
+      "w": "five",
+      "f": 239,
+      "t": 247
+     },
+     {
+      "w": "raw",
+      "f": 249,
+      "t": 254
+     },
+     {
+      "w": "fields",
+      "f": 256,
+      "t": 266
+     },
+     {
+      "w": "and",
+      "f": 268,
+      "t": 270
+     },
+     {
+      "w": "enriched",
+      "f": 271,
+      "t": 281
+     },
+     {
+      "w": "them",
+      "f": 282,
+      "t": 285
+     },
+     {
+      "w": "into",
+      "f": 287,
+      "t": 292
+     },
+     {
+      "w": "nineteen",
+      "f": 295,
+      "t": 308
+     },
+     {
+      "w": "attributes,",
+      "f": 311,
+      "t": 333
+     },
+     {
+      "w": "covering",
+      "f": 334,
+      "t": 345
+     },
+     {
+      "w": "product",
+      "f": 348,
+      "t": 359
+     },
+     {
+      "w": "type,",
+      "f": 359,
+      "t": 372
+     },
+     {
+      "w": "level,",
+      "f": 377,
+      "t": 387
+     },
+     {
+      "w": "edition,",
+      "f": 388,
+      "t": 404
+     },
+     {
+      "w": "bundle",
+      "f": 406,
+      "t": 418
+     },
+     {
+      "w": "content",
+      "f": 419,
+      "t": 432
+     },
+     {
+      "w": "and",
+      "f": 434,
+      "t": 436
+     },
+     {
+      "w": "digital",
+      "f": 439,
+      "t": 449
+     },
+     {
+      "w": "access.",
+      "f": 451,
+      "t": 472
+     },
+     {
+      "w": "I",
+      "f": 496,
+      "t": 498
+     },
+     {
+      "w": "preserved",
+      "f": 502,
+      "t": 514
+     },
+     {
+      "w": "the",
+      "f": 514,
+      "t": 517
+     },
+     {
+      "w": "source",
+      "f": 518,
+      "t": 529
+     },
+     {
+      "w": "and",
+      "f": 530,
+      "t": 533
+     },
+     {
+      "w": "kept",
+      "f": 535,
+      "t": 542
+     },
+     {
+      "w": "every",
+      "f": 543,
+      "t": 550
+     },
+     {
+      "w": "correction",
+      "f": 551,
+      "t": 565
+     },
+     {
+      "w": "in",
+      "f": 566,
+      "t": 569
+     },
+     {
+      "w": "a",
+      "f": 571,
+      "t": 572
+     },
+     {
+      "w": "separate",
+      "f": 575,
+      "t": 586
+     },
+     {
+      "w": "reporting",
+      "f": 587,
+      "t": 600
+     },
+     {
+      "w": "view.",
+      "f": 602,
+      "t": 615
+     },
+     {
+      "w": "Then",
+      "f": 633,
+      "t": 639
+     },
+     {
+      "w": "I",
+      "f": 640,
+      "t": 641
+     },
+     {
+      "w": "grouped",
+      "f": 643,
+      "t": 650
+     },
+     {
+      "w": "products",
+      "f": 651,
+      "t": 662
+     },
+     {
+      "w": "by",
+      "f": 664,
+      "t": 667
+     },
+     {
+      "w": "their",
+      "f": 668,
+      "t": 673
+     },
+     {
+      "w": "actual",
+      "f": 675,
+      "t": 688
+     },
+     {
+      "w": "configuration,",
+      "f": 690,
+      "t": 721
+     },
+     {
+      "w": "so",
+      "f": 731,
+      "t": 735
+     },
+     {
+      "w": "that",
+      "f": 737,
+      "t": 741
+     },
+     {
+      "w": "only",
+      "f": 743,
+      "t": 750
+     },
+     {
+      "w": "the",
+      "f": 751,
+      "t": 753
+     },
+     {
+      "w": "level",
+      "f": 755,
+      "t": 763
+     },
+     {
+      "w": "could",
+      "f": 765,
+      "t": 769
+     },
+     {
+      "w": "change.",
+      "f": 770,
+      "t": 812
+     }
+    ]
+   },
+   {
+    "id": "exceptions",
+    "kicker": "Six exceptions",
+    "from": 2683,
+    "frames": 732,
+    "audio": "narration/horizontal_en/exceptions.wav",
+    "audioFrom": 15,
+    "speechFrames": 687,
+    "anchors": {
+     "g60": 34,
+     "u54": 157,
+     "x6": 234,
+     "starter": 268,
+     "policy": 359,
+     "two": 566
+    },
+    "cues": [
+     {
+      "text": "That gave me 60 comparable product\ngroups spanning more than one level.",
+      "from": 15,
+      "to": 143
+     },
+     {
+      "text": "54 had the same price throughout.",
+      "from": 157,
+      "to": 233
+     },
+     {
+      "text": "Six did not. Four involved\na cheaper Starter level.",
+      "from": 234,
+      "to": 345
+     },
+     {
+      "text": "That could reflect an\nintentional entry-level policy,",
+      "from": 359,
+      "to": 460
+     },
+     {
+      "text": "but a list price cannot prove why it exists.",
+      "from": 461,
+      "to": 552
+     },
+     {
+      "text": "The remaining two differences called\nfor a different kind of investigation.",
+      "from": 566,
+      "to": 707
+     }
+    ],
+    "words": [
+     {
+      "w": "That",
+      "f": 15,
+      "t": 21
+     },
+     {
+      "w": "gave",
+      "f": 22,
+      "t": 27
+     },
+     {
+      "w": "me",
+      "f": 28,
+      "t": 31
+     },
+     {
+      "w": "60",
+      "f": 34,
+      "t": 45
+     },
+     {
+      "w": "comparable",
+      "f": 49,
+      "t": 66
+     },
+     {
+      "w": "product",
+      "f": 68,
+      "t": 77
+     },
+     {
+      "w": "groups",
+      "f": 78,
+      "t": 85
+     },
+     {
+      "w": "spanning",
+      "f": 86,
+      "t": 97
+     },
+     {
+      "w": "more",
+      "f": 98,
+      "t": 102
+     },
+     {
+      "w": "than",
+      "f": 103,
+      "t": 107
+     },
+     {
+      "w": "one",
+      "f": 110,
+      "t": 116
+     },
+     {
+      "w": "level.",
+      "f": 117,
+      "t": 133
+     },
+     {
+      "w": "54",
+      "f": 157,
+      "t": 176
+     },
+     {
+      "w": "had",
+      "f": 178,
+      "t": 182
+     },
+     {
+      "w": "the",
+      "f": 183,
+      "t": 185
+     },
+     {
+      "w": "same",
+      "f": 186,
+      "t": 193
+     },
+     {
+      "w": "price",
+      "f": 194,
+      "t": 203
+     },
+     {
+      "w": "throughout.",
+      "f": 204,
+      "t": 223
+     },
+     {
+      "w": "Six",
+      "f": 234,
+      "t": 241
+     },
+     {
+      "w": "did",
+      "f": 243,
+      "t": 247
+     },
+     {
+      "w": "not.",
+      "f": 248,
+      "t": 258
+     },
+     {
+      "w": "Four",
+      "f": 268,
+      "t": 278
+     },
+     {
+      "w": "involved",
+      "f": 280,
+      "t": 292
+     },
+     {
+      "w": "a",
+      "f": 293,
+      "t": 294
+     },
+     {
+      "w": "cheaper",
+      "f": 295,
+      "t": 305
+     },
+     {
+      "w": "Starter",
+      "f": 308,
+      "t": 319
+     },
+     {
+      "w": "level.",
+      "f": 320,
+      "t": 334
+     },
+     {
+      "w": "That",
+      "f": 359,
+      "t": 364
+     },
+     {
+      "w": "could",
+      "f": 366,
+      "t": 370
+     },
+     {
+      "w": "reflect",
+      "f": 372,
+      "t": 382
+     },
+     {
+      "w": "an",
+      "f": 383,
+      "t": 386
+     },
+     {
+      "w": "intentional",
+      "f": 387,
+      "t": 407
+     },
+     {
+      "w": "entry-level",
+      "f": 410,
+      "t": 427
+     },
+     {
+      "w": "policy,",
+      "f": 429,
+      "t": 449
+     },
+     {
+      "w": "but",
+      "f": 461,
+      "t": 466
+     },
+     {
+      "w": "a",
+      "f": 467,
+      "t": 467
+     },
+     {
+      "w": "list",
+      "f": 470,
+      "t": 475
+     },
+     {
+      "w": "price",
+      "f": 476,
+      "t": 485
+     },
+     {
+      "w": "cannot",
+      "f": 486,
+      "t": 495
+     },
+     {
+      "w": "prove",
+      "f": 497,
+      "t": 506
+     },
+     {
+      "w": "why",
+      "f": 507,
+      "t": 512
+     },
+     {
+      "w": "it",
+      "f": 514,
+      "t": 516
+     },
+     {
+      "w": "exists.",
+      "f": 517,
+      "t": 541
+     },
+     {
+      "w": "The",
+      "f": 566,
+      "t": 569
+     },
+     {
+      "w": "remaining",
+      "f": 571,
+      "t": 581
+     },
+     {
+      "w": "two",
+      "f": 582,
+      "t": 586
+     },
+     {
+      "w": "differences",
+      "f": 588,
+      "t": 601
+     },
+     {
+      "w": "called",
+      "f": 603,
+      "t": 611
+     },
+     {
+      "w": "for",
+      "f": 612,
+      "t": 615
+     },
+     {
+      "w": "a",
+      "f": 616,
+      "t": 618
+     },
+     {
+      "w": "different",
+      "f": 621,
+      "t": 632
+     },
+     {
+      "w": "kind",
+      "f": 633,
+      "t": 638
+     },
+     {
+      "w": "of",
+      "f": 639,
+      "t": 641
+     },
+     {
+      "w": "investigation.",
+      "f": 642,
+      "t": 696
+     }
+    ]
+   },
+   {
+    "id": "finding",
+    "kicker": "Root cause",
+    "from": 3415,
+    "frames": 1020,
+    "audio": "narration/horizontal_en/finding.wav",
+    "audioFrom": 15,
+    "speechFrames": 975,
+    "anchors": {
+     "clue": 15,
+     "mismatch": 174,
+     "looked": 343,
+     "real": 445,
+     "move": 613,
+     "result": 780,
+     "r56": 925
+    },
+    "cues": [
+     {
+      "text": "The clue was inside the groups themselves:",
+      "from": 15,
+      "to": 90
+     },
+     {
+      "text": "each one listed the same level twice.",
+      "from": 91,
+      "to": 169
+     },
+     {
+      "text": "In both cases, the product title named one\nseries while the series field named another.",
+      "from": 174,
+      "to": 329
+     },
+     {
+      "text": "Grouped by that field,\nit looked like a price difference.",
+      "from": 343,
+      "to": 435
+     },
+     {
+      "text": "Checked against the product's identity,\nit was a filing mismatch, not a pricing decision.",
+      "from": 445,
+      "to": 599
+     },
+     {
+      "text": "I reassigned those two records in the reporting\nview, leaving the original data untouched.",
+      "from": 613,
+      "to": 766
+     },
+     {
+      "text": "With the same 60 comparable groups, the number\nwith consistent prices rose from 54 to 56.",
+      "from": 780,
+      "to": 995
+     }
+    ],
+    "words": [
+     {
+      "w": "The",
+      "f": 15,
+      "t": 19
+     },
+     {
+      "w": "clue",
+      "f": 20,
+      "t": 27
+     },
+     {
+      "w": "was",
+      "f": 28,
+      "t": 31
+     },
+     {
+      "w": "inside",
+      "f": 34,
+      "t": 44
+     },
+     {
+      "w": "the",
+      "f": 45,
+      "t": 47
+     },
+     {
+      "w": "groups",
+      "f": 49,
+      "t": 58
+     },
+     {
+      "w": "themselves:",
+      "f": 59,
+      "t": 86
+     },
+     {
+      "w": "each",
+      "f": 91,
+      "t": 96
+     },
+     {
+      "w": "one",
+      "f": 98,
+      "t": 102
+     },
+     {
+      "w": "listed",
+      "f": 104,
+      "t": 113
+     },
+     {
+      "w": "the",
+      "f": 114,
+      "t": 116
+     },
+     {
+      "w": "same",
+      "f": 119,
+      "t": 128
+     },
+     {
+      "w": "level",
+      "f": 129,
+      "t": 137
+     },
+     {
+      "w": "twice.",
+      "f": 139,
+      "t": 158
+     },
+     {
+      "w": "In",
+      "f": 174,
+      "t": 177
+     },
+     {
+      "w": "both",
+      "f": 179,
+      "t": 186
+     },
+     {
+      "w": "cases,",
+      "f": 187,
+      "t": 200
+     },
+     {
+      "w": "the",
+      "f": 201,
+      "t": 204
+     },
+     {
+      "w": "product",
+      "f": 206,
+      "t": 216
+     },
+     {
+      "w": "title",
+      "f": 217,
+      "t": 226
+     },
+     {
+      "w": "named",
+      "f": 227,
+      "t": 233
+     },
+     {
+      "w": "one",
+      "f": 236,
+      "t": 243
+     },
+     {
+      "w": "series",
+      "f": 245,
+      "t": 258
+     },
+     {
+      "w": "while",
+      "f": 260,
+      "t": 266
+     },
+     {
+      "w": "the",
+      "f": 267,
+      "t": 269
+     },
+     {
+      "w": "series",
+      "f": 270,
+      "t": 280
+     },
+     {
+      "w": "field",
+      "f": 282,
+      "t": 291
+     },
+     {
+      "w": "named",
+      "f": 293,
+      "t": 299
+     },
+     {
+      "w": "another.",
+      "f": 300,
+      "t": 318
+     },
+     {
+      "w": "Grouped",
+      "f": 343,
+      "t": 353
+     },
+     {
+      "w": "by",
+      "f": 355,
+      "t": 358
+     },
+     {
+      "w": "that",
+      "f": 360,
+      "t": 364
+     },
+     {
+      "w": "field,",
+      "f": 366,
+      "t": 377
+     },
+     {
+      "w": "it",
+      "f": 377,
+      "t": 380
+     },
+     {
+      "w": "looked",
+      "f": 383,
+      "t": 389
+     },
+     {
+      "w": "like",
+      "f": 389,
+      "t": 394
+     },
+     {
+      "w": "a",
+      "f": 395,
+      "t": 395
+     },
+     {
+      "w": "price",
+      "f": 398,
+      "t": 407
+     },
+     {
+      "w": "difference.",
+      "f": 408,
+      "t": 424
+     },
+     {
+      "w": "Checked",
+      "f": 445,
+      "t": 454
+     },
+     {
+      "w": "against",
+      "f": 455,
+      "t": 463
+     },
+     {
+      "w": "the",
+      "f": 464,
+      "t": 466
+     },
+     {
+      "w": "product's",
+      "f": 468,
+      "t": 479
+     },
+     {
+      "w": "identity,",
+      "f": 481,
+      "t": 496
+     },
+     {
+      "w": "it",
+      "f": 497,
+      "t": 499
+     },
+     {
+      "w": "was",
+      "f": 500,
+      "t": 504
+     },
+     {
+      "w": "a",
+      "f": 506,
+      "t": 507
+     },
+     {
+      "w": "filing",
+      "f": 510,
+      "t": 523
+     },
+     {
+      "w": "mismatch,",
+      "f": 524,
+      "t": 544
+     },
+     {
+      "w": "not",
+      "f": 549,
+      "t": 554
+     },
+     {
+      "w": "a",
+      "f": 555,
+      "t": 556
+     },
+     {
+      "w": "pricing",
+      "f": 557,
+      "t": 569
+     },
+     {
+      "w": "decision.",
+      "f": 570,
+      "t": 588
+     },
+     {
+      "w": "I",
+      "f": 613,
+      "t": 614
+     },
+     {
+      "w": "reassigned",
+      "f": 618,
+      "t": 632
+     },
+     {
+      "w": "those",
+      "f": 633,
+      "t": 639
+     },
+     {
+      "w": "two",
+      "f": 640,
+      "t": 644
+     },
+     {
+      "w": "records",
+      "f": 646,
+      "t": 656
+     },
+     {
+      "w": "in",
+      "f": 658,
+      "t": 659
+     },
+     {
+      "w": "the",
+      "f": 661,
+      "t": 663
+     },
+     {
+      "w": "reporting",
+      "f": 665,
+      "t": 679
+     },
+     {
+      "w": "view,",
+      "f": 680,
+      "t": 691
+     },
+     {
+      "w": "leaving",
+      "f": 694,
+      "t": 702
+     },
+     {
+      "w": "the",
+      "f": 704,
+      "t": 706
+     },
+     {
+      "w": "original",
+      "f": 707,
+      "t": 719
+     },
+     {
+      "w": "data",
+      "f": 721,
+      "t": 729
+     },
+     {
+      "w": "untouched.",
+      "f": 732,
+      "t": 756
+     },
+     {
+      "w": "With",
+      "f": 780,
+      "t": 785
+     },
+     {
+      "w": "the",
+      "f": 786,
+      "t": 788
+     },
+     {
+      "w": "same",
+      "f": 789,
+      "t": 797
+     },
+     {
+      "w": "60",
+      "f": 799,
+      "t": 810
+     },
+     {
+      "w": "comparable",
+      "f": 812,
+      "t": 827
+     },
+     {
+      "w": "groups,",
+      "f": 828,
+      "t": 840
+     },
+     {
+      "w": "the",
+      "f": 842,
+      "t": 845
+     },
+     {
+      "w": "number",
+      "f": 846,
+      "t": 853
+     },
+     {
+      "w": "with",
+      "f": 854,
+      "t": 858
+     },
+     {
+      "w": "consistent",
+      "f": 860,
+      "t": 875
+     },
+     {
+      "w": "prices",
+      "f": 876,
+      "t": 889
+     },
+     {
+      "w": "rose",
+      "f": 891,
+      "t": 899
+     },
+     {
+      "w": "from",
+      "f": 900,
+      "t": 904
+     },
+     {
+      "w": "54",
+      "f": 908,
+      "t": 924
+     },
+     {
+      "w": "to",
+      "f": 925,
+      "t": 927
+     },
+     {
+      "w": "56.",
+      "f": 929,
+      "t": 984
+     }
+    ]
+   },
+   {
+    "id": "limits",
+    "kicker": "Limits",
+    "from": 4435,
+    "frames": 1059,
+    "audio": "narration/horizontal_en/limits.wav",
+    "audioFrom": 15,
+    "speechFrames": 1014,
+    "anchors": {
+     "edition": 90,
+     "gleebook": 157,
+     "tb": 257,
+     "ab": 377,
+     "questions": 514,
+     "cannot": 665,
+     "fake": 924
+    },
+    "cues": [
+     {
+      "text": "The catalogue had other traps too:",
+      "from": 15,
+      "to": 87
+     },
+     {
+      "text": "two spellings of the same edition,",
+      "from": 90,
+      "to": 156
+     },
+     {
+      "text": "a title that contains the\nletters e-book but is printed,",
+      "from": 157,
+      "to": 256
+     },
+     {
+      "text": "an unusually high price attached\nto an ambiguous product code,",
+      "from": 257,
+      "to": 376
+     },
+     {
+      "text": "and books sold in two parts that\ncost more than the complete volume.",
+      "from": 377,
+      "to": 500
+     },
+     {
+      "text": "They were prompts for investigation,\nnot excuses to invent an explanation.",
+      "from": 514,
+      "to": 651
+     },
+     {
+      "text": "There are no sales, cost,\nmargin or demand data here,",
+      "from": 665,
+      "to": 785
+     },
+     {
+      "text": "so the analysis does not recommend\na price or claim a financial impact.",
+      "from": 786,
+      "to": 916
+     },
+     {
+      "text": "Every figure in this demonstration is fictional.",
+      "from": 924,
+      "to": 1034
+     }
+    ],
+    "words": [
+     {
+      "w": "The",
+      "f": 15,
+      "t": 19
+     },
+     {
+      "w": "catalogue",
+      "f": 20,
+      "t": 35
+     },
+     {
+      "w": "had",
+      "f": 36,
+      "t": 40
+     },
+     {
+      "w": "other",
+      "f": 42,
+      "t": 48
+     },
+     {
+      "w": "traps",
+      "f": 50,
+      "t": 60
+     },
+     {
+      "w": "too:",
+      "f": 62,
+      "t": 77
+     },
+     {
+      "w": "two",
+      "f": 90,
+      "t": 95
+     },
+     {
+      "w": "spellings",
+      "f": 97,
+      "t": 109
+     },
+     {
+      "w": "of",
+      "f": 110,
+      "t": 112
+     },
+     {
+      "w": "the",
+      "f": 114,
+      "t": 116
+     },
+     {
+      "w": "same",
+      "f": 120,
+      "t": 128
+     },
+     {
+      "w": "edition,",
+      "f": 129,
+      "t": 146
+     },
+     {
+      "w": "a",
+      "f": 157,
+      "t": 159
+     },
+     {
+      "w": "title",
+      "f": 162,
+      "t": 171
+     },
+     {
+      "w": "that",
+      "f": 172,
+      "t": 176
+     },
+     {
+      "w": "contains",
+      "f": 178,
+      "t": 190
+     },
+     {
+      "w": "the",
+      "f": 193,
+      "t": 195
+     },
+     {
+      "w": "letters",
+      "f": 196,
+      "t": 205
+     },
+     {
+      "w": "e-book",
+      "f": 209,
+      "t": 221
+     },
+     {
+      "w": "but",
+      "f": 222,
+      "t": 226
+     },
+     {
+      "w": "is",
+      "f": 228,
+      "t": 230
+     },
+     {
+      "w": "printed,",
+      "f": 232,
+      "t": 248
+     },
+     {
+      "w": "an",
+      "f": 257,
+      "t": 262
+     },
+     {
+      "w": "unusually",
+      "f": 264,
+      "t": 283
+     },
+     {
+      "w": "high",
+      "f": 286,
+      "t": 291
+     },
+     {
+      "w": "price",
+      "f": 292,
+      "t": 302
+     },
+     {
+      "w": "attached",
+      "f": 303,
+      "t": 314
+     },
+     {
+      "w": "to",
+      "f": 315,
+      "t": 317
+     },
+     {
+      "w": "an",
+      "f": 320,
+      "t": 322
+     },
+     {
+      "w": "ambiguous",
+      "f": 323,
+      "t": 340
+     },
+     {
+      "w": "product",
+      "f": 342,
+      "t": 353
+     },
+     {
+      "w": "code,",
+      "f": 354,
+      "t": 367
+     },
+     {
+      "w": "and",
+      "f": 377,
+      "t": 383
+     },
+     {
+      "w": "books",
+      "f": 385,
+      "t": 392
+     },
+     {
+      "w": "sold",
+      "f": 393,
+      "t": 400
+     },
+     {
+      "w": "in",
+      "f": 402,
+      "t": 404
+     },
+     {
+      "w": "two",
+      "f": 407,
+      "t": 412
+     },
+     {
+      "w": "parts",
+      "f": 415,
+      "t": 426
+     },
+     {
+      "w": "that",
+      "f": 427,
+      "t": 430
+     },
+     {
+      "w": "cost",
+      "f": 432,
+      "t": 440
+     },
+     {
+      "w": "more",
+      "f": 442,
+      "t": 449
+     },
+     {
+      "w": "than",
+      "f": 450,
+      "t": 453
+     },
+     {
+      "w": "the",
+      "f": 454,
+      "t": 457
+     },
+     {
+      "w": "complete",
+      "f": 458,
+      "t": 470
+     },
+     {
+      "w": "volume.",
+      "f": 471,
+      "t": 489
+     },
+     {
+      "w": "They",
+      "f": 514,
+      "t": 519
+     },
+     {
+      "w": "were",
+      "f": 520,
+      "t": 524
+     },
+     {
+      "w": "prompts",
+      "f": 526,
+      "t": 534
+     },
+     {
+      "w": "for",
+      "f": 536,
+      "t": 539
+     },
+     {
+      "w": "investigation,",
+      "f": 541,
+      "t": 567
+     },
+     {
+      "w": "not",
+      "f": 569,
+      "t": 574
+     },
+     {
+      "w": "excuses",
+      "f": 575,
+      "t": 592
+     },
+     {
+      "w": "to",
+      "f": 593,
+      "t": 595
+     },
+     {
+      "w": "invent",
+      "f": 598,
+      "t": 608
+     },
+     {
+      "w": "an",
+      "f": 610,
+      "t": 612
+     },
+     {
+      "w": "explanation.",
+      "f": 613,
+      "t": 640
+     },
+     {
+      "w": "There",
+      "f": 665,
+      "t": 671
+     },
+     {
+      "w": "are",
+      "f": 672,
+      "t": 675
+     },
+     {
+      "w": "no",
+      "f": 676,
+      "t": 679
+     },
+     {
+      "w": "sales,",
+      "f": 682,
+      "t": 696
+     },
+     {
+      "w": "cost,",
+      "f": 697,
+      "t": 710
+     },
+     {
+      "w": "margin",
+      "f": 712,
+      "t": 726
+     },
+     {
+      "w": "or",
+      "f": 728,
+      "t": 731
+     },
+     {
+      "w": "demand",
+      "f": 734,
+      "t": 746
+     },
+     {
+      "w": "data",
+      "f": 748,
+      "t": 757
+     },
+     {
+      "w": "here,",
+      "f": 760,
+      "t": 775
+     },
+     {
+      "w": "so",
+      "f": 786,
+      "t": 792
+     },
+     {
+      "w": "the",
+      "f": 795,
+      "t": 797
+     },
+     {
+      "w": "analysis",
+      "f": 799,
+      "t": 814
+     },
+     {
+      "w": "does",
+      "f": 816,
+      "t": 821
+     },
+     {
+      "w": "not",
+      "f": 824,
+      "t": 829
+     },
+     {
+      "w": "recommend",
+      "f": 831,
+      "t": 841
+     },
+     {
+      "w": "a",
+      "f": 842,
+      "t": 843
+     },
+     {
+      "w": "price",
+      "f": 845,
+      "t": 855
+     },
+     {
+      "w": "or",
+      "f": 857,
+      "t": 860
+     },
+     {
+      "w": "claim",
+      "f": 862,
+      "t": 869
+     },
+     {
+      "w": "a",
+      "f": 871,
+      "t": 872
+     },
+     {
+      "w": "financial",
+      "f": 874,
+      "t": 887
+     },
+     {
+      "w": "impact.",
+      "f": 889,
+      "t": 906
+     },
+     {
+      "w": "Every",
+      "f": 924,
+      "t": 933
+     },
+     {
+      "w": "figure",
+      "f": 935,
+      "t": 943
+     },
+     {
+      "w": "in",
+      "f": 944,
+      "t": 946
+     },
+     {
+      "w": "this",
+      "f": 947,
+      "t": 951
+     },
+     {
+      "w": "demonstration",
+      "f": 953,
+      "t": 972
+     },
+     {
+      "w": "is",
+      "f": 974,
+      "t": 976
+     },
+     {
+      "w": "fictional.",
+      "f": 979,
+      "t": 1023
+     }
+    ]
+   },
+   {
+    "id": "close",
+    "kicker": "Conclusion",
+    "from": 5494,
+    "frames": 600,
+    "audio": "narration/horizontal_en/close.wav",
+    "audioFrom": 15,
+    "speechFrames": 465,
+    "anchors": {
+     "rule": 48,
+     "web": 201,
+     "sign": 371
+    },
+    "cues": [
+     {
+      "text": "The lesson is simple:",
+      "from": 15,
+      "to": 47
+     },
+     {
+      "text": "before making a decision about a price,\nmake sure you know what product you are looking at.",
+      "from": 48,
+      "to": 187
+     },
+     {
+      "text": "You can explore the dataset, inspect the\ncalculations and download the case study",
+      "from": 201,
+      "to": 328
+     },
+     {
+      "text": "materials on the website.",
+      "from": 329,
+      "to": 370
+     },
+     {
+      "text": "I'm Alfonso Cifuentes, and this is Pricing Demo.",
+      "from": 371,
+      "to": 476
+     }
+    ],
+    "words": [
+     {
+      "w": "The",
+      "f": 15,
+      "t": 19
+     },
+     {
+      "w": "lesson",
+      "f": 21,
+      "t": 29
+     },
+     {
+      "w": "is",
+      "f": 30,
+      "t": 33
+     },
+     {
+      "w": "simple:",
+      "f": 34,
+      "t": 46
+     },
+     {
+      "w": "before",
+      "f": 48,
+      "t": 58
+     },
+     {
+      "w": "making",
+      "f": 59,
+      "t": 67
+     },
+     {
+      "w": "a",
+      "f": 69,
+      "t": 69
+     },
+     {
+      "w": "decision",
+      "f": 71,
+      "t": 83
+     },
+     {
+      "w": "about",
+      "f": 84,
+      "t": 90
+     },
+     {
+      "w": "a",
+      "f": 91,
+      "t": 92
+     },
+     {
+      "w": "price,",
+      "f": 94,
+      "t": 110
+     },
+     {
+      "w": "make",
+      "f": 111,
+      "t": 116
+     },
+     {
+      "w": "sure",
+      "f": 117,
+      "t": 122
+     },
+     {
+      "w": "you",
+      "f": 123,
+      "t": 125
+     },
+     {
+      "w": "know",
+      "f": 127,
+      "t": 131
+     },
+     {
+      "w": "what",
+      "f": 132,
+      "t": 137
+     },
+     {
+      "w": "product",
+      "f": 138,
+      "t": 149
+     },
+     {
+      "w": "you",
+      "f": 150,
+      "t": 152
+     },
+     {
+      "w": "are",
+      "f": 153,
+      "t": 156
+     },
+     {
+      "w": "looking",
+      "f": 157,
+      "t": 165
+     },
+     {
+      "w": "at.",
+      "f": 166,
+      "t": 177
+     },
+     {
+      "w": "You",
+      "f": 201,
+      "t": 205
+     },
+     {
+      "w": "can",
+      "f": 206,
+      "t": 210
+     },
+     {
+      "w": "explore",
+      "f": 211,
+      "t": 222
+     },
+     {
+      "w": "the",
+      "f": 223,
+      "t": 225
+     },
+     {
+      "w": "dataset,",
+      "f": 227,
+      "t": 248
+     },
+     {
+      "w": "inspect",
+      "f": 249,
+      "t": 261
+     },
+     {
+      "w": "the",
+      "f": 261,
+      "t": 263
+     },
+     {
+      "w": "calculations",
+      "f": 265,
+      "t": 290
+     },
+     {
+      "w": "and",
+      "f": 291,
+      "t": 295
+     },
+     {
+      "w": "download",
+      "f": 297,
+      "t": 309
+     },
+     {
+      "w": "the",
+      "f": 310,
+      "t": 312
+     },
+     {
+      "w": "case",
+      "f": 313,
+      "t": 319
+     },
+     {
+      "w": "study",
+      "f": 320,
+      "t": 327
+     },
+     {
+      "w": "materials",
+      "f": 329,
+      "t": 343
+     },
+     {
+      "w": "on",
+      "f": 345,
+      "t": 347
+     },
+     {
+      "w": "the",
+      "f": 348,
+      "t": 350
+     },
+     {
+      "w": "website.",
+      "f": 351,
+      "t": 370
+     },
+     {
+      "w": "I'm",
+      "f": 371,
+      "t": 375
+     },
+     {
+      "w": "Alfonso",
+      "f": 378,
+      "t": 392
+     },
+     {
+      "w": "Cifuentes,",
+      "f": 394,
+      "t": 415
+     },
+     {
+      "w": "and",
+      "f": 416,
+      "t": 419
+     },
+     {
+      "w": "this",
+      "f": 421,
+      "t": 425
+     },
+     {
+      "w": "is",
+      "f": 426,
+      "t": 428
+     },
+     {
+      "w": "Pricing",
+      "f": 430,
+      "t": 441
+     },
+     {
+      "w": "Demo.",
+      "f": 443,
+      "t": 465
+     }
+    ]
+   }
+  ],
+  "speech": [
+   {
+    "from": 72,
+    "to": 863
+   },
+   {
+    "from": 909,
+    "to": 1805
+   },
+   {
+    "from": 1851,
+    "to": 2653
+   },
+   {
+    "from": 2698,
+    "to": 3385
+   },
+   {
+    "from": 3430,
+    "to": 4405
+   },
+   {
+    "from": 4450,
+    "to": 5464
+   },
+   {
+    "from": 5509,
+    "to": 5974
+   }
+  ]
+ },
+ "vertical_es": {
+  "id": "vertical_es",
+  "lang": "es",
+  "format": "vertical",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 2201,
+  "seconds": 73.37,
+  "scenes": [
+   {
+    "id": "v_origin",
+    "kicker": "Origen",
+    "from": 0,
+    "frames": 468,
+    "audio": "narration/vertical_es/v_origin.wav",
+    "audioFrom": 36,
+    "speechFrames": 411,
+    "anchors": {
+     "test": 103,
+     "rebuild": 252,
+     "fictional": 318
+    },
+    "cues": [
+     {
+      "text": "Este caso de estudio viene\nde una prueba técnica",
+      "from": 36,
+      "to": 134
+     },
+     {
+      "text": "real que hice para un\npuesto de analista de datos.",
+      "from": 135,
+      "to": 251
+     },
+     {
+      "text": "Lo he recreado con libros\ny precios completamente",
+      "from": 252,
+      "to": 339
+     },
+     {
+      "text": "ficticios para poder\nenseñarte el proceso.",
+      "from": 340,
+      "to": 452
+     }
+    ],
+    "words": [
+     {
+      "w": "Este",
+      "f": 36,
+      "t": 44
+     },
+     {
+      "w": "caso",
+      "f": 45,
+      "t": 52
+     },
+     {
+      "w": "de",
+      "f": 53,
+      "t": 54
+     },
+     {
+      "w": "estudio",
+      "f": 55,
+      "t": 73
+     },
+     {
+      "w": "viene",
+      "f": 76,
+      "t": 89
+     },
+     {
+      "w": "de",
+      "f": 93,
+      "t": 96
+     },
+     {
+      "w": "una",
+      "f": 97,
+      "t": 102
+     },
+     {
+      "w": "prueba",
+      "f": 103,
+      "t": 116
+     },
+     {
+      "w": "técnica",
+      "f": 119,
+      "t": 132
+     },
+     {
+      "w": "real",
+      "f": 135,
+      "t": 144
+     },
+     {
+      "w": "que",
+      "f": 158,
+      "t": 162
+     },
+     {
+      "w": "hice",
+      "f": 163,
+      "t": 169
+     },
+     {
+      "w": "para",
+      "f": 171,
+      "t": 176
+     },
+     {
+      "w": "un",
+      "f": 177,
+      "t": 179
+     },
+     {
+      "w": "puesto",
+      "f": 181,
+      "t": 191
+     },
+     {
+      "w": "de",
+      "f": 193,
+      "t": 205
+     },
+     {
+      "w": "analista",
+      "f": 208,
+      "t": 223
+     },
+     {
+      "w": "de",
+      "f": 225,
+      "t": 227
+     },
+     {
+      "w": "datos.",
+      "f": 228,
+      "t": 243
+     },
+     {
+      "w": "Lo",
+      "f": 252,
+      "t": 258
+     },
+     {
+      "w": "he",
+      "f": 259,
+      "t": 261
+     },
+     {
+      "w": "recreado",
+      "f": 263,
+      "t": 281
+     },
+     {
+      "w": "con",
+      "f": 284,
+      "t": 289
+     },
+     {
+      "w": "libros",
+      "f": 291,
+      "t": 302
+     },
+     {
+      "w": "y",
+      "f": 303,
+      "t": 304
+     },
+     {
+      "w": "precios",
+      "f": 306,
+      "t": 316
+     },
+     {
+      "w": "completamente",
+      "f": 318,
+      "t": 338
+     },
+     {
+      "w": "ficticios",
+      "f": 340,
+      "t": 362
+     },
+     {
+      "w": "para",
+      "f": 372,
+      "t": 379
+     },
+     {
+      "w": "poder",
+      "f": 380,
+      "t": 388
+     },
+     {
+      "w": "enseñarte",
+      "f": 390,
+      "t": 409
+     },
+     {
+      "w": "el",
+      "f": 411,
+      "t": 414
+     },
+     {
+      "w": "proceso.",
+      "f": 416,
+      "t": 441
+     }
+    ]
+   },
+   {
+    "id": "v_challenge",
+    "kicker": "El reto",
+    "from": 468,
+    "frames": 386,
+    "audio": "narration/vertical_es/v_challenge.wav",
+    "audioFrom": 10,
+    "speechFrames": 354,
+    "anchors": {
+     "trap": 134,
+     "attrs": 255
+    },
+    "cues": [
+     {
+      "text": "El objetivo era analizar\nlos precios de un",
+      "from": 10,
+      "to": 82
+     },
+     {
+      "text": "catálogo editorial.",
+      "from": 83,
+      "to": 134
+     },
+     {
+      "text": "Y había una trampa:",
+      "from": 134,
+      "to": 168
+     },
+     {
+      "text": "no puedes comparar dos\nlibros sin comprobar antes su",
+      "from": 169,
+      "to": 259
+     },
+     {
+      "text": "nivel, su edición,\nsu formato y lo que incluyen.",
+      "from": 260,
+      "to": 369
+     }
+    ],
+    "words": [
+     {
+      "w": "El",
+      "f": 10,
+      "t": 14
+     },
+     {
+      "w": "objetivo",
+      "f": 17,
+      "t": 33
+     },
+     {
+      "w": "era",
+      "f": 37,
+      "t": 43
+     },
+     {
+      "w": "analizar",
+      "f": 44,
+      "t": 59
+     },
+     {
+      "w": "los",
+      "f": 60,
+      "t": 63
+     },
+     {
+      "w": "precios",
+      "f": 65,
+      "t": 77
+     },
+     {
+      "w": "de",
+      "f": 77,
+      "t": 79
+     },
+     {
+      "w": "un",
+      "f": 80,
+      "t": 82
+     },
+     {
+      "w": "catálogo",
+      "f": 83,
+      "t": 99
+     },
+     {
+      "w": "editorial.",
+      "f": 101,
+      "t": 125
+     },
+     {
+      "w": "Y",
+      "f": 134,
+      "t": 137
+     },
+     {
+      "w": "había",
+      "f": 138,
+      "t": 145
+     },
+     {
+      "w": "una",
+      "f": 146,
+      "t": 149
+     },
+     {
+      "w": "trampa:",
+      "f": 151,
+      "t": 165
+     },
+     {
+      "w": "no",
+      "f": 169,
+      "t": 172
+     },
+     {
+      "w": "puedes",
+      "f": 174,
+      "t": 181
+     },
+     {
+      "w": "comparar",
+      "f": 182,
+      "t": 194
+     },
+     {
+      "w": "dos",
+      "f": 196,
+      "t": 200
+     },
+     {
+      "w": "libros",
+      "f": 201,
+      "t": 213
+     },
+     {
+      "w": "sin",
+      "f": 216,
+      "t": 223
+     },
+     {
+      "w": "comprobar",
+      "f": 225,
+      "t": 242
+     },
+     {
+      "w": "antes",
+      "f": 244,
+      "t": 254
+     },
+     {
+      "w": "su",
+      "f": 255,
+      "t": 258
+     },
+     {
+      "w": "nivel,",
+      "f": 260,
+      "t": 272
+     },
+     {
+      "w": "su",
+      "f": 274,
+      "t": 278
+     },
+     {
+      "w": "edición,",
+      "f": 280,
+      "t": 294
+     },
+     {
+      "w": "su",
+      "f": 295,
+      "t": 298
+     },
+     {
+      "w": "formato",
+      "f": 300,
+      "t": 317
+     },
+     {
+      "w": "y",
+      "f": 319,
+      "t": 322
+     },
+     {
+      "w": "lo",
+      "f": 324,
+      "t": 326
+     },
+     {
+      "w": "que",
+      "f": 327,
+      "t": 330
+     },
+     {
+      "w": "incluyen.",
+      "f": 331,
+      "t": 359
+     }
+    ]
+   },
+   {
+    "id": "v_discovery",
+    "kicker": "El hallazgo",
+    "from": 854,
+    "frames": 596,
+    "audio": "narration/vertical_es/v_discovery.wav",
+    "audioFrom": 10,
+    "speechFrames": 564,
+    "anchors": {
+     "six": 107,
+     "four": 157,
+     "two": 267,
+     "reveal": 437
+    },
+    "cues": [
+     {
+      "text": "Al agrupar productos\nequivalentes aparecieron seis",
+      "from": 10,
+      "to": 114
+     },
+     {
+      "text": "posibles excepciones.",
+      "from": 115,
+      "to": 156
+     },
+     {
+      "text": "Cuatro tenían un precio\nStarter más bajo.",
+      "from": 157,
+      "to": 266
+     },
+     {
+      "text": "Pero las otras dos\neran algo diferente:",
+      "from": 267,
+      "to": 345
+     },
+     {
+      "text": "libros archivados bajo\nla serie equivocada.",
+      "from": 346,
+      "to": 436
+     },
+     {
+      "text": "Parecían errores de precio,",
+      "from": 437,
+      "to": 494
+     },
+     {
+      "text": "y en realidad eran\nerrores de datos.",
+      "from": 495,
+      "to": 580
+     }
+    ],
+    "words": [
+     {
+      "w": "Al",
+      "f": 10,
+      "t": 15
+     },
+     {
+      "w": "agrupar",
+      "f": 17,
+      "t": 31
+     },
+     {
+      "w": "productos",
+      "f": 34,
+      "t": 49
+     },
+     {
+      "w": "equivalentes",
+      "f": 51,
+      "t": 74
+     },
+     {
+      "w": "aparecieron",
+      "f": 83,
+      "t": 104
+     },
+     {
+      "w": "seis",
+      "f": 107,
+      "t": 113
+     },
+     {
+      "w": "posibles",
+      "f": 115,
+      "t": 128
+     },
+     {
+      "w": "excepciones.",
+      "f": 130,
+      "t": 155
+     },
+     {
+      "w": "Cuatro",
+      "f": 157,
+      "t": 172
+     },
+     {
+      "w": "tenían",
+      "f": 182,
+      "t": 194
+     },
+     {
+      "w": "un",
+      "f": 196,
+      "t": 198
+     },
+     {
+      "w": "precio",
+      "f": 200,
+      "t": 215
+     },
+     {
+      "w": "Starter",
+      "f": 217,
+      "t": 234
+     },
+     {
+      "w": "más",
+      "f": 237,
+      "t": 244
+     },
+     {
+      "w": "bajo.",
+      "f": 245,
+      "t": 260
+     },
+     {
+      "w": "Pero",
+      "f": 267,
+      "t": 274
+     },
+     {
+      "w": "las",
+      "f": 274,
+      "t": 278
+     },
+     {
+      "w": "otras",
+      "f": 279,
+      "t": 286
+     },
+     {
+      "w": "dos",
+      "f": 287,
+      "t": 295
+     },
+     {
+      "w": "eran",
+      "f": 300,
+      "t": 310
+     },
+     {
+      "w": "algo",
+      "f": 312,
+      "t": 319
+     },
+     {
+      "w": "diferente:",
+      "f": 321,
+      "t": 341
+     },
+     {
+      "w": "libros",
+      "f": 346,
+      "t": 356
+     },
+     {
+      "w": "archivados",
+      "f": 358,
+      "t": 377
+     },
+     {
+      "w": "bajo",
+      "f": 379,
+      "t": 386
+     },
+     {
+      "w": "la",
+      "f": 387,
+      "t": 389
+     },
+     {
+      "w": "serie",
+      "f": 391,
+      "t": 402
+     },
+     {
+      "w": "equivocada.",
+      "f": 405,
+      "t": 430
+     },
+     {
+      "w": "Parecían",
+      "f": 437,
+      "t": 457
+     },
+     {
+      "w": "errores",
+      "f": 459,
+      "t": 474
+     },
+     {
+      "w": "de",
+      "f": 476,
+      "t": 478
+     },
+     {
+      "w": "precio,",
+      "f": 479,
+      "t": 493
+     },
+     {
+      "w": "y",
+      "f": 495,
+      "t": 497
+     },
+     {
+      "w": "en",
+      "f": 499,
+      "t": 500
+     },
+     {
+      "w": "realidad",
+      "f": 502,
+      "t": 516
+     },
+     {
+      "w": "eran",
+      "f": 519,
+      "t": 528
+     },
+     {
+      "w": "errores",
+      "f": 531,
+      "t": 542
+     },
+     {
+      "w": "de",
+      "f": 543,
+      "t": 545
+     },
+     {
+      "w": "datos.",
+      "f": 547,
+      "t": 569
+     }
+    ]
+   },
+   {
+    "id": "v_result",
+    "kicker": "Resultado",
+    "from": 1450,
+    "frames": 751,
+    "audio": "narration/vertical_es/v_result.wav",
+    "audioFrom": 10,
+    "speechFrames": 644,
+    "anchors": {
+     "result": 209,
+     "r56": 325,
+     "web": 400,
+     "sign": 554
+    },
+    "cues": [
+     {
+      "text": "Sin alterar el archivo original,",
+      "from": 10,
+      "to": 82
+     },
+     {
+      "text": "corregí la clasificación\nen el análisis y lo",
+      "from": 83,
+      "to": 163
+     },
+     {
+      "text": "volví a calcular.",
+      "from": 164,
+      "to": 209
+     },
+     {
+      "text": "Los grupos con precio uniforme\npasaron de 54 a 56 de 60.",
+      "from": 209,
+      "to": 399
+     },
+     {
+      "text": "El caso completo,\nlos datos ficticios y las fórmulas",
+      "from": 400,
+      "to": 515
+     },
+     {
+      "text": "están en la web.",
+      "from": 516,
+      "to": 553
+     },
+     {
+      "text": "Soy Alfonso Cifuentes.",
+      "from": 554,
+      "to": 596
+     },
+     {
+      "text": "Esto es Pricing Demo.",
+      "from": 597,
+      "to": 659
+     }
+    ],
+    "words": [
+     {
+      "w": "Sin",
+      "f": 10,
+      "t": 17
+     },
+     {
+      "w": "alterar",
+      "f": 19,
+      "t": 33
+     },
+     {
+      "w": "el",
+      "f": 34,
+      "t": 36
+     },
+     {
+      "w": "archivo",
+      "f": 38,
+      "t": 53
+     },
+     {
+      "w": "original,",
+      "f": 53,
+      "t": 76
+     },
+     {
+      "w": "corregí",
+      "f": 83,
+      "t": 96
+     },
+     {
+      "w": "la",
+      "f": 97,
+      "t": 99
+     },
+     {
+      "w": "clasificación",
+      "f": 100,
+      "t": 126
+     },
+     {
+      "w": "en",
+      "f": 129,
+      "t": 133
+     },
+     {
+      "w": "el",
+      "f": 135,
+      "t": 137
+     },
+     {
+      "w": "análisis",
+      "f": 139,
+      "t": 154
+     },
+     {
+      "w": "y",
+      "f": 157,
+      "t": 159
+     },
+     {
+      "w": "lo",
+      "f": 161,
+      "t": 163
+     },
+     {
+      "w": "volví",
+      "f": 164,
+      "t": 175
+     },
+     {
+      "w": "a",
+      "f": 178,
+      "t": 181
+     },
+     {
+      "w": "calcular.",
+      "f": 183,
+      "t": 203
+     },
+     {
+      "w": "Los",
+      "f": 209,
+      "t": 214
+     },
+     {
+      "w": "grupos",
+      "f": 216,
+      "t": 228
+     },
+     {
+      "w": "con",
+      "f": 229,
+      "t": 233
+     },
+     {
+      "w": "precio",
+      "f": 235,
+      "t": 244
+     },
+     {
+      "w": "uniforme",
+      "f": 245,
+      "t": 263
+     },
+     {
+      "w": "pasaron",
+      "f": 272,
+      "t": 289
+     },
+     {
+      "w": "de",
+      "f": 291,
+      "t": 294
+     },
+     {
+      "w": "54",
+      "f": 295,
+      "t": 323
+     },
+     {
+      "w": "a",
+      "f": 325,
+      "t": 327
+     },
+     {
+      "w": "56",
+      "f": 329,
+      "t": 359
+     },
+     {
+      "w": "de",
+      "f": 364,
+      "t": 371
+     },
+     {
+      "w": "60.",
+      "f": 373,
+      "t": 393
+     },
+     {
+      "w": "El",
+      "f": 400,
+      "t": 405
+     },
+     {
+      "w": "caso",
+      "f": 406,
+      "t": 412
+     },
+     {
+      "w": "completo,",
+      "f": 413,
+      "t": 435
+     },
+     {
+      "w": "los",
+      "f": 442,
+      "t": 449
+     },
+     {
+      "w": "datos",
+      "f": 450,
+      "t": 464
+     },
+     {
+      "w": "ficticios",
+      "f": 466,
+      "t": 485
+     },
+     {
+      "w": "y",
+      "f": 488,
+      "t": 493
+     },
+     {
+      "w": "las",
+      "f": 497,
+      "t": 501
+     },
+     {
+      "w": "fórmulas",
+      "f": 503,
+      "t": 515
+     },
+     {
+      "w": "están",
+      "f": 516,
+      "t": 524
+     },
+     {
+      "w": "en",
+      "f": 525,
+      "t": 527
+     },
+     {
+      "w": "la",
+      "f": 528,
+      "t": 530
+     },
+     {
+      "w": "web.",
+      "f": 532,
+      "t": 544
+     },
+     {
+      "w": "Soy",
+      "f": 554,
+      "t": 561
+     },
+     {
+      "w": "Alfonso",
+      "f": 562,
+      "t": 571
+     },
+     {
+      "w": "Cifuentes.",
+      "f": 572,
+      "t": 594
+     },
+     {
+      "w": "Esto",
+      "f": 597,
+      "t": 606
+     },
+     {
+      "w": "es",
+      "f": 609,
+      "t": 612
+     },
+     {
+      "w": "Pricing",
+      "f": 614,
+      "t": 626
+     },
+     {
+      "w": "Demo.",
+      "f": 628,
+      "t": 648
+     }
+    ]
+   }
+  ],
+  "speech": [
+   {
+    "from": 36,
+    "to": 447
+   },
+   {
+    "from": 478,
+    "to": 832
+   },
+   {
+    "from": 864,
+    "to": 1428
+   },
+   {
+    "from": 1460,
+    "to": 2104
+   }
+  ]
+ },
+ "vertical_en": {
+  "id": "vertical_en",
+  "lang": "en",
+  "format": "vertical",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 1941,
+  "seconds": 64.7,
+  "scenes": [
+   {
+    "id": "v_origin",
+    "kicker": "Origin",
+    "from": 0,
+    "frames": 408,
+    "audio": "narration/vertical_en/v_origin.wav",
+    "audioFrom": 36,
+    "speechFrames": 351,
+    "anchors": {
+     "test": 79,
+     "rebuild": 193,
+     "fictional": 236
+    },
+    "cues": [
+     {
+      "text": "This case study grew\nout of a real technical",
+      "from": 36,
+      "to": 103
+     },
+     {
+      "text": "assessment for a\ndata analyst role.",
+      "from": 104,
+      "to": 179
+     },
+     {
+      "text": "I rebuilt the challenge\nwith fictional books and",
+      "from": 193,
+      "to": 263
+     },
+     {
+      "text": "prices, so I could show\nthe process publicly.",
+      "from": 264,
+      "to": 392
+     }
+    ],
+    "words": [
+     {
+      "w": "This",
+      "f": 36,
+      "t": 43
+     },
+     {
+      "w": "case",
+      "f": 45,
+      "t": 51
+     },
+     {
+      "w": "study",
+      "f": 52,
+      "t": 60
+     },
+     {
+      "w": "grew",
+      "f": 62,
+      "t": 68
+     },
+     {
+      "w": "out",
+      "f": 69,
+      "t": 73
+     },
+     {
+      "w": "of",
+      "f": 73,
+      "t": 75
+     },
+     {
+      "w": "a",
+      "f": 76,
+      "t": 77
+     },
+     {
+      "w": "real",
+      "f": 79,
+      "t": 85
+     },
+     {
+      "w": "technical",
+      "f": 88,
+      "t": 102
+     },
+     {
+      "w": "assessment",
+      "f": 104,
+      "t": 119
+     },
+     {
+      "w": "for",
+      "f": 121,
+      "t": 124
+     },
+     {
+      "w": "a",
+      "f": 126,
+      "t": 127
+     },
+     {
+      "w": "data",
+      "f": 129,
+      "t": 137
+     },
+     {
+      "w": "analyst",
+      "f": 139,
+      "t": 153
+     },
+     {
+      "w": "role.",
+      "f": 154,
+      "t": 169
+     },
+     {
+      "w": "I",
+      "f": 193,
+      "t": 196
+     },
+     {
+      "w": "rebuilt",
+      "f": 199,
+      "t": 211
+     },
+     {
+      "w": "the",
+      "f": 212,
+      "t": 214
+     },
+     {
+      "w": "challenge",
+      "f": 216,
+      "t": 228
+     },
+     {
+      "w": "with",
+      "f": 229,
+      "t": 233
+     },
+     {
+      "w": "fictional",
+      "f": 236,
+      "t": 249
+     },
+     {
+      "w": "books",
+      "f": 251,
+      "t": 259
+     },
+     {
+      "w": "and",
+      "f": 260,
+      "t": 262
+     },
+     {
+      "w": "prices,",
+      "f": 264,
+      "t": 285
+     },
+     {
+      "w": "so",
+      "f": 292,
+      "t": 296
+     },
+     {
+      "w": "I",
+      "f": 299,
+      "t": 299
+     },
+     {
+      "w": "could",
+      "f": 301,
+      "t": 305
+     },
+     {
+      "w": "show",
+      "f": 306,
+      "t": 310
+     },
+     {
+      "w": "the",
+      "f": 312,
+      "t": 314
+     },
+     {
+      "w": "process",
+      "f": 316,
+      "t": 329
+     },
+     {
+      "w": "publicly.",
+      "f": 331,
+      "t": 382
+     }
+    ]
+   },
+   {
+    "id": "v_challenge",
+    "kicker": "The challenge",
+    "from": 408,
+    "frames": 383,
+    "audio": "narration/vertical_en/v_challenge.wav",
+    "audioFrom": 10,
+    "speechFrames": 351,
+    "anchors": {
+     "trap": 115,
+     "attrs": 243
+    },
+    "cues": [
+     {
+      "text": "The task was to analyse\na publishing price list.",
+      "from": 10,
+      "to": 101
+     },
+     {
+      "text": "The catch?",
+      "from": 115,
+      "to": 148
+     },
+     {
+      "text": "You cannot compare two\nbooks fairly until you",
+      "from": 162,
+      "to": 229
+     },
+     {
+      "text": "account for the level,\nthe edition,",
+      "from": 230,
+      "to": 276
+     },
+     {
+      "text": "the format and\neverything included.",
+      "from": 277,
+      "to": 367
+     }
+    ],
+    "words": [
+     {
+      "w": "The",
+      "f": 10,
+      "t": 15
+     },
+     {
+      "w": "task",
+      "f": 17,
+      "t": 25
+     },
+     {
+      "w": "was",
+      "f": 27,
+      "t": 30
+     },
+     {
+      "w": "to",
+      "f": 31,
+      "t": 33
+     },
+     {
+      "w": "analyse",
+      "f": 36,
+      "t": 49
+     },
+     {
+      "w": "a",
+      "f": 50,
+      "t": 51
+     },
+     {
+      "w": "publishing",
+      "f": 53,
+      "t": 66
+     },
+     {
+      "w": "price",
+      "f": 68,
+      "t": 76
+     },
+     {
+      "w": "list.",
+      "f": 77,
+      "t": 91
+     },
+     {
+      "w": "The",
+      "f": 115,
+      "t": 118
+     },
+     {
+      "w": "catch?",
+      "f": 120,
+      "t": 138
+     },
+     {
+      "w": "You",
+      "f": 162,
+      "t": 166
+     },
+     {
+      "w": "cannot",
+      "f": 168,
+      "t": 177
+     },
+     {
+      "w": "compare",
+      "f": 178,
+      "t": 189
+     },
+     {
+      "w": "two",
+      "f": 191,
+      "t": 196
+     },
+     {
+      "w": "books",
+      "f": 199,
+      "t": 205
+     },
+     {
+      "w": "fairly",
+      "f": 207,
+      "t": 217
+     },
+     {
+      "w": "until",
+      "f": 219,
+      "t": 225
+     },
+     {
+      "w": "you",
+      "f": 226,
+      "t": 229
+     },
+     {
+      "w": "account",
+      "f": 230,
+      "t": 238
+     },
+     {
+      "w": "for",
+      "f": 239,
+      "t": 242
+     },
+     {
+      "w": "the",
+      "f": 243,
+      "t": 245
+     },
+     {
+      "w": "level,",
+      "f": 247,
+      "t": 258
+     },
+     {
+      "w": "the",
+      "f": 260,
+      "t": 262
+     },
+     {
+      "w": "edition,",
+      "f": 264,
+      "t": 276
+     },
+     {
+      "w": "the",
+      "f": 277,
+      "t": 279
+     },
+     {
+      "w": "format",
+      "f": 280,
+      "t": 293
+     },
+     {
+      "w": "and",
+      "f": 294,
+      "t": 296
+     },
+     {
+      "w": "everything",
+      "f": 298,
+      "t": 309
+     },
+     {
+      "w": "included.",
+      "f": 310,
+      "t": 356
+     }
+    ]
+   },
+   {
+    "id": "v_discovery",
+    "kicker": "Discovery",
+    "from": 791,
+    "frames": 457,
+    "audio": "narration/vertical_en/v_discovery.wav",
+    "audioFrom": 10,
+    "speechFrames": 425,
+    "anchors": {
+     "six": 10,
+     "four": 107,
+     "two": 174,
+     "reveal": 317
+    },
+    "cues": [
+     {
+      "text": "Six product groups initially\nlooked inconsistent.",
+      "from": 10,
+      "to": 104
+     },
+     {
+      "text": "Four had a cheaper\nStarter level.",
+      "from": 107,
+      "to": 173
+     },
+     {
+      "text": "But two were different:",
+      "from": 174,
+      "to": 219
+     },
+     {
+      "text": "the books had been filed\nunder the wrong series.",
+      "from": 222,
+      "to": 303
+     },
+     {
+      "text": "What looked like pricing\nproblems were actually",
+      "from": 317,
+      "to": 379
+     },
+     {
+      "text": "classification problems.",
+      "from": 380,
+      "to": 440
+     }
+    ],
+    "words": [
+     {
+      "w": "Six",
+      "f": 10,
+      "t": 18
+     },
+     {
+      "w": "product",
+      "f": 20,
+      "t": 29
+     },
+     {
+      "w": "groups",
+      "f": 29,
+      "t": 38
+     },
+     {
+      "w": "initially",
+      "f": 40,
+      "t": 53
+     },
+     {
+      "w": "looked",
+      "f": 54,
+      "t": 61
+     },
+     {
+      "w": "inconsistent.",
+      "f": 63,
+      "t": 94
+     },
+     {
+      "w": "Four",
+      "f": 107,
+      "t": 114
+     },
+     {
+      "w": "had",
+      "f": 116,
+      "t": 119
+     },
+     {
+      "w": "a",
+      "f": 121,
+      "t": 122
+     },
+     {
+      "w": "cheaper",
+      "f": 124,
+      "t": 134
+     },
+     {
+      "w": "Starter",
+      "f": 136,
+      "t": 147
+     },
+     {
+      "w": "level.",
+      "f": 149,
+      "t": 162
+     },
+     {
+      "w": "But",
+      "f": 174,
+      "t": 179
+     },
+     {
+      "w": "two",
+      "f": 180,
+      "t": 184
+     },
+     {
+      "w": "were",
+      "f": 186,
+      "t": 190
+     },
+     {
+      "w": "different:",
+      "f": 191,
+      "t": 208
+     },
+     {
+      "w": "the",
+      "f": 222,
+      "t": 225
+     },
+     {
+      "w": "books",
+      "f": 226,
+      "t": 233
+     },
+     {
+      "w": "had",
+      "f": 234,
+      "t": 237
+     },
+     {
+      "w": "been",
+      "f": 238,
+      "t": 242
+     },
+     {
+      "w": "filed",
+      "f": 243,
+      "t": 253
+     },
+     {
+      "w": "under",
+      "f": 255,
+      "t": 260
+     },
+     {
+      "w": "the",
+      "f": 261,
+      "t": 263
+     },
+     {
+      "w": "wrong",
+      "f": 264,
+      "t": 271
+     },
+     {
+      "w": "series.",
+      "f": 273,
+      "t": 293
+     },
+     {
+      "w": "What",
+      "f": 317,
+      "t": 323
+     },
+     {
+      "w": "looked",
+      "f": 324,
+      "t": 330
+     },
+     {
+      "w": "like",
+      "f": 330,
+      "t": 335
+     },
+     {
+      "w": "pricing",
+      "f": 336,
+      "t": 346
+     },
+     {
+      "w": "problems",
+      "f": 348,
+      "t": 360
+     },
+     {
+      "w": "were",
+      "f": 361,
+      "t": 366
+     },
+     {
+      "w": "actually",
+      "f": 367,
+      "t": 378
+     },
+     {
+      "w": "classification",
+      "f": 380,
+      "t": 406
+     },
+     {
+      "w": "problems.",
+      "f": 408,
+      "t": 430
+     }
+    ]
+   },
+   {
+    "id": "v_result",
+    "kicker": "Result",
+    "from": 1248,
+    "frames": 693,
+    "audio": "narration/vertical_en/v_result.wav",
+    "audioFrom": 10,
+    "speechFrames": 586,
+    "anchors": {
+     "result": 190,
+     "r56": 267,
+     "web": 343,
+     "sign": 499
+    },
+    "cues": [
+     {
+      "text": "I left the raw data untouched,",
+      "from": 10,
+      "to": 73
+     },
+     {
+      "text": "corrected the reporting view\nand reran the comparison.",
+      "from": 74,
+      "to": 176
+     },
+     {
+      "text": "Consistently priced groups\nwent from 54 to 56 out of 60.",
+      "from": 190,
+      "to": 333
+     },
+     {
+      "text": "The interactive case,",
+      "from": 343,
+      "to": 381
+     },
+     {
+      "text": "the fictional dataset\nand the calculations are",
+      "from": 382,
+      "to": 448
+     },
+     {
+      "text": "on the website.",
+      "from": 449,
+      "to": 488
+     },
+     {
+      "text": "I'm Alfonso Cifuentes.",
+      "from": 499,
+      "to": 547
+     },
+     {
+      "text": "This is Pricing Demo.",
+      "from": 548,
+      "to": 602
+     }
+    ],
+    "words": [
+     {
+      "w": "I",
+      "f": 10,
+      "t": 13
+     },
+     {
+      "w": "left",
+      "f": 17,
+      "t": 22
+     },
+     {
+      "w": "the",
+      "f": 23,
+      "t": 25
+     },
+     {
+      "w": "raw",
+      "f": 29,
+      "t": 35
+     },
+     {
+      "w": "data",
+      "f": 36,
+      "t": 44
+     },
+     {
+      "w": "untouched,",
+      "f": 47,
+      "t": 71
+     },
+     {
+      "w": "corrected",
+      "f": 74,
+      "t": 87
+     },
+     {
+      "w": "the",
+      "f": 88,
+      "t": 90
+     },
+     {
+      "w": "reporting",
+      "f": 92,
+      "t": 106
+     },
+     {
+      "w": "view",
+      "f": 108,
+      "t": 114
+     },
+     {
+      "w": "and",
+      "f": 116,
+      "t": 119
+     },
+     {
+      "w": "reran",
+      "f": 122,
+      "t": 134
+     },
+     {
+      "w": "the",
+      "f": 136,
+      "t": 138
+     },
+     {
+      "w": "comparison.",
+      "f": 139,
+      "t": 165
+     },
+     {
+      "w": "Consistently",
+      "f": 190,
+      "t": 210
+     },
+     {
+      "w": "priced",
+      "f": 212,
+      "t": 222
+     },
+     {
+      "w": "groups",
+      "f": 223,
+      "t": 232
+     },
+     {
+      "w": "went",
+      "f": 233,
+      "t": 238
+     },
+     {
+      "w": "from",
+      "f": 239,
+      "t": 244
+     },
+     {
+      "w": "54",
+      "f": 246,
+      "t": 265
+     },
+     {
+      "w": "to",
+      "f": 267,
+      "t": 269
+     },
+     {
+      "w": "56",
+      "f": 272,
+      "t": 292
+     },
+     {
+      "w": "out",
+      "f": 294,
+      "t": 298
+     },
+     {
+      "w": "of",
+      "f": 299,
+      "t": 300
+     },
+     {
+      "w": "60.",
+      "f": 302,
+      "t": 323
+     },
+     {
+      "w": "The",
+      "f": 343,
+      "t": 348
+     },
+     {
+      "w": "interactive",
+      "f": 350,
+      "t": 367
+     },
+     {
+      "w": "case,",
+      "f": 368,
+      "t": 380
+     },
+     {
+      "w": "the",
+      "f": 382,
+      "t": 385
+     },
+     {
+      "w": "fictional",
+      "f": 388,
+      "t": 400
+     },
+     {
+      "w": "dataset",
+      "f": 402,
+      "t": 416
+     },
+     {
+      "w": "and",
+      "f": 417,
+      "t": 419
+     },
+     {
+      "w": "the",
+      "f": 420,
+      "t": 423
+     },
+     {
+      "w": "calculations",
+      "f": 424,
+      "t": 444
+     },
+     {
+      "w": "are",
+      "f": 445,
+      "t": 448
+     },
+     {
+      "w": "on",
+      "f": 449,
+      "t": 451
+     },
+     {
+      "w": "the",
+      "f": 452,
+      "t": 454
+     },
+     {
+      "w": "website.",
+      "f": 456,
+      "t": 478
+     },
+     {
+      "w": "I'm",
+      "f": 499,
+      "t": 504
+     },
+     {
+      "w": "Alfonso",
+      "f": 506,
+      "t": 519
+     },
+     {
+      "w": "Cifuentes.",
+      "f": 521,
+      "t": 547
+     },
+     {
+      "w": "This",
+      "f": 548,
+      "t": 552
+     },
+     {
+      "w": "is",
+      "f": 554,
+      "t": 557
+     },
+     {
+      "w": "Pricing",
+      "f": 559,
+      "t": 570
+     },
+     {
+      "w": "Demo.",
+      "f": 572,
+      "t": 591
+     }
+    ]
+   }
+  ],
+  "speech": [
+   {
+    "from": 36,
+    "to": 387
+   },
+   {
+    "from": 418,
+    "to": 769
+   },
+   {
+    "from": 801,
+    "to": 1227
+   },
+   {
+    "from": 1258,
+    "to": 1845
+   }
+  ]
+ }
+}

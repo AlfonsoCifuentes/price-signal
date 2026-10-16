@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""PRICE / SIGNAL — independent analysis of the public fictional catalogue.
+"""Pricing Demo — independent analysis of the public fictional catalogue.
 
 Reads ONLY the two public CSVs produced by generate_independent_dataset.py and writes
 public_analysis.json. Standard library only. Deterministic output (LF, sorted, fixed rounding).
@@ -103,7 +103,9 @@ for k, v in comps.items():
 exceptions.sort(key=lambda e: (e['kind'] != 'starter-pricing', e['series'], e['configuration']))
 
 # Repair series from title prefix (reporting view only — source is never overwritten) and recount.
-comps_fixed, _ = comparable_groups(enh, series_of=lambda r: title_series(r['Title']) or r['Series'])
+comps_fixed, singles_fixed = comparable_groups(enh, series_of=lambda r: title_series(r['Title']) or r['Series'])
+# a comparable group that holds two records at one level is itself a signal: as recorded, the misfiled rows cause exactly that
+dup_level = lambda gs: sum(len(v) != len({x['Level'] for x in v}) for v in gs.values())
 consistent_fixed = sum(len({x['price'] for x in v}) == 1 for v in comps_fixed.values())
 
 # ---------------------------------------------------------------- 2. traps with evidence
@@ -154,7 +156,10 @@ for s in sorted({x['series'] for x in split}):
     xs = [x for x in split if x['series'] == s]
     split_by_series.append({'series': s, 'levels': len(xs), 'complete': xs[0]['complete'], 'parts_total': xs[0]['parts_total'],
                             'premium_eur': xs[0]['premium_eur'], 'premium_pct': xs[0]['premium_pct'],
-                            'uniform': len({(x['complete'], x['parts_total']) for x in xs}) == 1})
+                            'uniform': len({(x['complete'], x['parts_total']) for x in xs}) == 1,
+                            # strict = parts and complete volume carry the same edition label; mixed levels are indicative only
+                            'levels_strict': sum(not x['edition_mixed'] for x in xs),
+                            'levels_edition_mixed': sum(x['edition_mixed'] for x in xs)})
 
 keyed = collections.defaultdict(dict)
 for r in enh:
@@ -268,7 +273,7 @@ type_stats = [{'type': t, 'count': len(v), 'min': min(v), 'median': statistics.m
                'mean': r2(statistics.mean(v))} for t, v in sorted(by_type.items(), key=lambda kv: -len(kv[1]))]
 
 analysis = {
-    'name': 'PRICE / SIGNAL — independent analysis',
+    'name': 'Pricing Demo — independent analysis (by Alfonso Cifuentes)',
     'note': 'All records, names and EUR list prices are invented. No sales, cost, margin, discount or demand data exist.',
     'inputs': {'public_raw_catalogue.csv': sha('public_raw_catalogue.csv'),
                'public_enriched_catalogue.csv': sha('public_enriched_catalogue.csv')},
@@ -282,6 +287,10 @@ analysis = {
         'exceptions_misfiled': sum(e['kind'] == 'misfiled-record' for e in exceptions),
         'comparables_after_series_repair': len(comps_fixed), 'consistent_after_series_repair': consistent_fixed,
         'consistent_pct_after_series_repair': round(100 * consistent_fixed / len(comps_fixed), 1),
+        'groups_total_after_series_repair': len(comps_fixed) + len(singles_fixed),
+        'groups_with_duplicate_level': dup_level(comps), 'groups_with_duplicate_level_after_series_repair': dup_level(comps_fixed),
+        'split_levels': len(split), 'split_levels_strict': sum(not x['edition_mixed'] for x in split),
+        'split_levels_edition_mixed': sum(x['edition_mixed'] for x in split),
     },
     'exceptions': exceptions,
     'starter': starter,

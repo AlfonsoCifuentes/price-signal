@@ -1,0 +1,85 @@
+WEBVTT
+
+00:00:01.200 --> 00:00:03.433
+This case study grew
+out of a real technical
+
+00:00:03.467 --> 00:00:05.967
+assessment for a
+data analyst role.
+
+00:00:06.433 --> 00:00:08.767
+I rebuilt the challenge
+with fictional books and
+
+00:00:08.800 --> 00:00:13.067
+prices, so I could show
+the process publicly.
+
+00:00:13.933 --> 00:00:16.967
+The task was to analyse
+a publishing price list.
+
+00:00:17.433 --> 00:00:18.533
+The catch?
+
+00:00:19.000 --> 00:00:21.233
+You cannot compare two
+books fairly until you
+
+00:00:21.267 --> 00:00:22.800
+account for the level,
+the edition,
+
+00:00:22.833 --> 00:00:25.833
+the format and
+everything included.
+
+00:00:26.700 --> 00:00:29.833
+Six product groups initially
+looked inconsistent.
+
+00:00:29.933 --> 00:00:32.133
+Four had a cheaper
+Starter level.
+
+00:00:32.167 --> 00:00:33.667
+But two were different:
+
+00:00:33.767 --> 00:00:36.467
+the books had been filed
+under the wrong series.
+
+00:00:36.933 --> 00:00:39.000
+What looked like pricing
+problems were actually
+
+00:00:39.033 --> 00:00:41.033
+classification problems.
+
+00:00:41.933 --> 00:00:44.033
+I left the raw data untouched,
+
+00:00:44.067 --> 00:00:47.467
+corrected the reporting view
+and reran the comparison.
+
+00:00:47.933 --> 00:00:52.700
+Consistently priced groups
+went from 54 to 56 out of 60.
+
+00:00:53.033 --> 00:00:54.300
+The interactive case,
+
+00:00:54.333 --> 00:00:56.533
+the fictional dataset
+and the calculations are
+
+00:00:56.567 --> 00:00:57.867
+on the website.
+
+00:00:58.233 --> 00:00:59.833
+I'm Alfonso Cifuentes.
+
+00:00:59.867 --> 00:01:01.667
+This is Pricing Demo.

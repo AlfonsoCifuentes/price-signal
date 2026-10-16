@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://pricingdemo-alfonsocifuentes.vercel.app/sitemap.xml

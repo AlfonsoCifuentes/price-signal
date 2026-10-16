@@ -1,0 +1,34 @@
+{
+  "id": "vertical_en",
+  "lang": "en",
+  "format": "vertical",
+  "version": "3.0",
+  "title": "Pricing Demo — vertical cut",
+  "notes": "Standalone piece for LinkedIn and Shorts. Opens with context, not a number.",
+  "scenes": [
+    {
+      "id": "v_origin",
+      "kicker": "Origin",
+      "narration": "This case study grew out of a {#test}real technical assessment for a data analyst role. {#rebuild}I rebuilt the challenge with {#fictional}fictional books and prices, so I could show the process publicly.",
+      "screen": "PRICING DEMO / by Alfonso Cifuentes. Real assessment → independent case study, fictional data."
+    },
+    {
+      "id": "v_challenge",
+      "kicker": "The challenge",
+      "narration": "The task was to analyse a publishing price list. {#trap}The catch? You cannot compare two books fairly until you account for {#attrs}the level, the edition, the format and everything included.",
+      "screen": "Two cards that look alike; attributes pull them apart."
+    },
+    {
+      "id": "v_discovery",
+      "kicker": "Discovery",
+      "narration": "{#six}Six product groups initially looked inconsistent. {#four}Four had a cheaper Starter level. {#two}But two were different: the books had been filed under the wrong series. {#reveal}What looked like pricing problems were actually classification problems.",
+      "screen": "Six flags; four Starter; two wrong series; reveal after a pause."
+    },
+    {
+      "id": "v_result",
+      "kicker": "Result",
+      "narration": "I left the raw data untouched, corrected the reporting view and reran the comparison. {#result}Consistently priced groups went from [54|fifty-four] {#r56}to [56|fifty-six] out of [60|sixty]. {#web}The interactive case, the fictional dataset and the calculations are on the website. {#sign}I'm Alfonso Cifuentes. This is Pricing Demo.",
+      "screen": "54/60 → 56/60 with the source intact; author and URL."
+    }
+  ]
+}

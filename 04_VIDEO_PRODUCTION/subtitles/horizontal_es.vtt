@@ -1,0 +1,173 @@
+WEBVTT
+
+00:00:02.400 --> 00:00:08.033
+Este proyecto nació de una prueba técnica
+que hice durante un proceso de selección
+
+00:00:08.067 --> 00:00:14.367
+para un puesto de análisis de datos en una
+empresa internacional de libros educativos.
+
+00:00:14.400 --> 00:00:17.567
+Tenía que estudiar un catálogo de productos,
+
+00:00:17.600 --> 00:00:24.067
+entender cómo estaban organizados sus precios
+y explicar qué conclusiones se podían sacar.
+
+00:00:24.100 --> 00:00:28.767
+Para convertir aquel trabajo
+en un caso de estudio público,
+
+00:00:28.800 --> 00:00:34.967
+reconstruí el ejercicio con nombres,
+colecciones y precios completamente ficticios.
+
+00:00:36.300 --> 00:00:37.667
+Parece sencillo:
+
+00:00:37.667 --> 00:00:40.033
+tienes una lista de libros y sus precios.
+
+00:00:40.067 --> 00:00:44.067
+Pero un mismo curso puede tener
+libro del alumno, cuaderno,
+
+00:00:44.100 --> 00:00:49.467
+versiones con soluciones, diferentes
+niveles, ediciones o acceso digital.
+
+00:00:49.500 --> 00:00:55.700
+Si comparas dos precios sin tener todo eso en
+cuenta, puedes ver una anomalía donde no la hay.
+
+00:00:55.733 --> 00:00:58.867
+Así que la primera pregunta no
+era qué producto era más caro,
+
+00:00:58.867 --> 00:01:02.233
+sino cuáles se podían comparar de verdad.
+
+00:01:03.600 --> 00:01:10.267
+Para la versión pública construí un
+catálogo ficticio de 362 registros,
+
+00:01:10.300 --> 00:01:12.767
+repartidos en 12 colecciones.
+
+00:01:12.767 --> 00:01:18.667
+Partí de cinco campos y lo enriquecí hasta
+diecinueve, separando tipo de producto,
+
+00:01:18.700 --> 00:01:22.667
+nivel, edición,
+complementos y derechos digitales.
+
+00:01:22.700 --> 00:01:28.667
+Conservé siempre el archivo de origen
+y dejé las correcciones en una vista de
+
+00:01:28.700 --> 00:01:30.433
+análisis separada.
+
+00:01:30.467 --> 00:01:37.200
+Después agrupé los productos con la misma
+configuración, de modo que solo cambiara el nivel.
+
+00:01:38.533 --> 00:01:44.667
+Al agrupar los productos comparables
+aparecieron 60 conjuntos con varios niveles.
+
+00:01:44.700 --> 00:01:47.700
+En 54, el precio no cambiaba.
+
+00:01:47.700 --> 00:01:54.467
+En 6, sí. Cuatro casos correspondían a
+niveles Starter con un precio inferior.
+
+00:01:54.500 --> 00:01:57.000
+Puede ser una política comercial de entrada,
+
+00:01:57.033 --> 00:02:00.100
+pero los datos por sí solos
+no demuestran la intención.
+
+00:02:00.133 --> 00:02:04.700
+Quedaban otros dos casos que
+merecían una investigación distinta.
+
+00:02:06.067 --> 00:02:08.300
+La pista estaba en los propios grupos:
+
+00:02:08.333 --> 00:02:11.667
+en cada uno, el mismo nivel aparecía dos veces.
+
+00:02:11.700 --> 00:02:17.900
+El título del libro apuntaba a una colección,
+y el campo de serie indicaba otra.
+
+00:02:17.933 --> 00:02:21.967
+Agrupado con ese campo,
+parecía una diferencia de precio.
+
+00:02:22.000 --> 00:02:26.600
+Contrastado con la identidad del producto,
+era un problema de clasificación.
+
+00:02:26.700 --> 00:02:32.633
+Reubiqué esos dos registros solo en la vista
+de análisis, sin tocar los datos originales.
+
+00:02:32.667 --> 00:02:41.933
+Con los mismos 60 grupos comparables, los que
+tenían un precio uniforme pasaron de 54 a 56.
+
+00:02:43.267 --> 00:02:44.800
+Aparecieron otras trampas:
+
+00:02:44.833 --> 00:02:47.400
+dos formas de escribir la misma edición,
+
+00:02:47.433 --> 00:02:52.367
+un título que contiene la palabra
+«ebook» sin ser un libro digital,
+
+00:02:52.367 --> 00:02:57.833
+un precio atípico con una abreviatura
+sin definir y libros en dos partes que,
+
+00:02:57.867 --> 00:03:01.433
+juntas, cuestan más que el volumen completo.
+
+00:03:01.467 --> 00:03:07.733
+El análisis las detecta y las convierte en
+preguntas claras para un equipo comercial.
+
+00:03:07.800 --> 00:03:10.133
+Pero no pretende fijar el precio correcto:
+
+00:03:10.167 --> 00:03:13.733
+aquí no hay datos de ventas,
+costes, márgenes ni demanda.
+
+00:03:13.833 --> 00:03:17.467
+Y todo este catálogo,
+de principio a fin, es inventado.
+
+00:03:18.800 --> 00:03:25.000
+Para mí, lo interesante de este caso es
+que el dato más llamativo no siempre es
+
+00:03:25.033 --> 00:03:26.533
+el problema real.
+
+00:03:26.567 --> 00:03:32.833
+A veces, antes de decidir sobre un precio,
+hay que revisar cómo hemos definido el producto.
+
+00:03:32.867 --> 00:03:38.467
+En la web puedes explorar los datos, comprobar
+las fórmulas y descargar las presentaciones.
+
+00:03:38.500 --> 00:03:41.733
+Soy Alfonso Cifuentes, y esto es Pricing Demo.

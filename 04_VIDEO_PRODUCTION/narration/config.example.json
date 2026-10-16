@@ -1,0 +1,25 @@
+{
+  "_note": "Copy to config.json and fill the voice IDs you are entitled to use. The API key is never stored here: set EL_KEY in the environment.",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+  },
+  "voices": {
+    "en": {
+      "name": "Roger (ElevenLabs library voice, American English)",
+      "voice_id": "<ELEVENLABS_VOICE_ID>"
+    },
+    "es": {
+      "name": "Mario (ElevenLabs library voice, peninsular Spanish)",
+      "voice_id": "<ELEVENLABS_VOICE_ID>",
+      "voice_settings": {
+        "stability": 0.7
+      }
+    }
+  },
+  "_es_note": "ES stability raised from 0.5 to 0.7 on 2026-10-16: at 0.5 Mario added hesitations (\"para, para\", \"eh\") detected by tools/voice_qc.py."
+}

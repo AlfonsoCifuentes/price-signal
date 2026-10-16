@@ -108,7 +108,7 @@ for r in rows:
 pairs=[group for group in support.values() if {'With Key','Without Key'}==set(x['Answer_Support'] for x in group)]
 assert all(g[0]['Price_EUR']==g[1]['Price_EUR'] for g in pairs)
 summary={
- 'name':'PRICE / SIGNAL', 'dataset':'Independent fictional demonstration / no real business information',
+ 'name':'Pricing Demo', 'dataset':'Independent fictional demonstration / no real business information',
  'seed':20261011,'products':len(rows),'series':len(set(r['Series'] for r in rows)),
  'source_columns':len(RAW),'enriched_columns':len(ENH),
  'avg_price':round(statistics.mean(prices),2),'median_price':round(statistics.median(prices),2),

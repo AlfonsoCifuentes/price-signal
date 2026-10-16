@@ -1,21 +1,35 @@
-# PRICE / SIGNAL — Remotion film
+# Pricing Demo — videos (Remotion)
 
-Two data-driven compositions in the site's visual system: **Film** (1920×1080, 30 fps, 2:36) and **Vertical** (1080×1920, 30 fps, 0:45), plus stills (YouTube thumbnail, OG cover, square). Every figure on screen comes from `src/data.json`, a copy of `02_PUBLIC_CASE_STUDY/public_analysis.json`. No stock footage, music or synthetic voice.
+Four narrated videos built from one script source and the public analysis:
+
+| Composition | Format | Language | Captions |
+|---|---|---|---|
+| `HorizontalEs` | 1920×1080, 30 fps | Spanish | separate SRT/VTT |
+| `HorizontalEn` | 1920×1080, 30 fps | English | separate SRT/VTT |
+| `VerticalEs` | 1080×1920, 30 fps | Spanish | burned in (feeds play muted) + SRT/VTT |
+| `VerticalEn` | 1080×1920, 30 fps | English | burned in + SRT/VTT |
+
+Stills: `Thumbnail{En,Es}` 1280×720, `OgCover{En,Es}` 1200×630, `Square{En,Es}` 1080×1080, `VerticalPoster{En,Es}` 1080×1920.
+
+Durations are not written by hand: every scene lasts as long as its narration plus a short lead and tail, and every on-screen reveal waits for a word marked `{#anchor}` in the script.
+
+## Pipeline (run from `04_VIDEO_PRODUCTION/`)
 
 ```bash
-npm install
-npm run studio            # preview and edit
-npm run render:all        # stills + silent film + vertical (captions burned in)
+python tools/sync_video_data.py                 # public_analysis.json -> remotion/src/v3/data.json, fonts
+EL_KEY=... python tools/narrate.py --dry-run    # characters that would be billed
+EL_KEY=... python tools/narrate.py              # ElevenLabs takes, cached by hash (only changed scenes are billed)
+EL_KEY=... python tools/voice_qc.py             # listening check: Scribe transcription vs script, pauses, peaks
+EL_KEY=... python tools/retake.py <video> <scene>   # new seed for one scene until the check is clean
+python tools/build_timeline_v3.py               # trimmed takes, word times, anchors, captions -> src/timeline_v3.json, subtitles/
+cd remotion && npm install && npx tsc --noEmit && ./render_all.sh && cd ..
+python tools/master_and_qc.py                   # -16 LUFS, <= -1 dBTP, faststart -> final/ + final/qc_report.json
+python tools/export_media_assets.py             # posters, thumbnails, OG cards -> final/stills/
+node remotion/review_frames.mjs horizontal_es   # stills at every anchor, for visual review (run inside remotion/)
 ```
 
-| Composition | Use |
-|---|---|
-| `Film` | Silent master (web player uses it with a VTT track) |
-| `FilmCaptioned` | Preview with script captions burned in |
-| `FilmVoice` | Final film with the author's recorded narration |
-| `Vertical` / `VerticalVoice` | LinkedIn cut, captions burned in, without / with narration |
-| `Thumbnail`, `OgCover`, `Square` | 1280×720, 1200×630, 1080×1080 stills |
+Scripts: `../scripts/<video>.json` (source) and `.md` (readable, with real timings). Narration settings: `../narration/config.json` (private: voice IDs) or `config.example.json`. The API key is only ever read from `EL_KEY`.
 
-**Timing and narration** live in `../script_master.json`. `../tools/build_timeline.py` turns it into `src/timeline.json` and the SRT/VTT files in `../captions/`. With recorded takes in `public/voice/` (prepared by `../prepare_voice.py`), each scene stretches to fit its take and the captions follow the speech.
+Code: `src/v3/core.tsx` (system, anchors, captions), `horizontal.tsx` (7 scenes), `vertical.tsx` (4 scenes), `Video.tsx` (audio, music ducking, stills), `Root.tsx` (compositions). All figures come from `src/v3/data.json`.
 
-Scenes: `src/scenes.tsx` (film), `src/vertical.tsx` (vertical), shared system in `src/kit.tsx`, compositions in `src/Root.tsx`. Run `npm run typecheck` before rendering.
+Audio: narration by ElevenLabs synthetic voices (authorised by the author); music generated with ElevenLabs Music, normalised to −24 LUFS and ducked under speech. Voices and music are not covered by the repository's MIT / CC BY licences.
