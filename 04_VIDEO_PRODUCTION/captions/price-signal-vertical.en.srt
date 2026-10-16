@@ -1,9 +1,9 @@
 1
-00:00:00,467 --> 00:00:02,161
+00:00:01,600 --> 00:00:03,294
 Is this book priced wrong?
 
 2
-00:00:02,220 --> 00:00:05,493
+00:00:03,353 --> 00:00:06,626
 Or are we comparing it with a completely different product?
 
 3

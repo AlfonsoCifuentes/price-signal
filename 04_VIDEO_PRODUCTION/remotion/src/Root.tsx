@@ -27,14 +27,35 @@ const SceneFrame: React.FC<{kicker: string; cues: Cue[]; index: number; total: n
     );
   };
 
+/* Background score: sits under the narration, dips while a take is speaking and fades in and out.
+   Levels are relative to the score's normalised loudness (about -24 LUFS). */
+const MUSIC = {film: 'audio/music-film.mp3', vertical: 'audio/music-vertical.mp3'} as const;
+const DUCK_DEPTH = 0.42;   // score level while speech is on (0.42 = about -7.5 dB)
+const DUCK_RAMP = 12;      // frames to move between full and ducked (0.4 s at 30 fps)
+const FADE_IN = 60;        // 2 s
+const FADE_OUT = 120;      // 4 s
+const musicVolume = (spans: {from: number; to: number}[], total: number) => (f: number) => {
+  const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+  let speech = 0;
+  for (const s of spans) {
+    speech = Math.max(speech, interpolate(f, [s.from - DUCK_RAMP, s.from, s.to, s.to + DUCK_RAMP], [0, 1, 1, 0], clamp));
+  }
+  const level = 1 - (1 - DUCK_DEPTH) * speech;
+  const fadeIn = interpolate(f, [0, FADE_IN], [0, 1], clamp);
+  const fadeOut = interpolate(f, [total - FADE_OUT, total], [1, 0], clamp);
+  return level * Math.min(fadeIn, fadeOut);
+};
+
 const Reel: React.FC<Props & {kind: 'film' | 'vertical'}> = ({kind, captions, voice, locale}) => {
   useFonts();
   const scenes = (timeline[kind].scenes as Scene[]);
   const registry = kind === 'film' ? FILM_SCENES : VERTICAL_SCENES;
+  const spans = timeline[kind].voiceSpans[locale];
   let from = 0;
   return (
     <LocaleCtx.Provider value={locale}>
       <AbsoluteFill style={{background: C.paper}}>
+        {voice && <Audio src={staticFile(MUSIC[kind])} volume={musicVolume(spans, timeline[kind].frames)} />}
         {scenes.map((s, i) => {
           const start = from;
           from += s.frames;

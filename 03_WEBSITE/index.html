@@ -56,7 +56,6 @@
     <a href="#explorer">Explorer</a>
     <a href="#exceptions">Exceptions</a>
     <a href="#register">Register</a>
-    <a href="#film">Film</a>
     <a href="#files" class="nav-files">Files</a>
   </nav>
   <div class="progress" aria-hidden="true"><span id="progress"></span></div>
@@ -105,6 +104,22 @@
     <a class="btn" href="#question">Read the case <span aria-hidden="true">↓</span></a>
     <a class="btn ghost" href="#explorer">Explore the prices</a>
   </p>
+</section>
+
+<!-- ============================================================ VIDEO -->
+<section class="sec sec-video" id="video" aria-labelledby="v-title">
+  <div class="galley galley-solo">
+    <div class="main">
+      <h2 id="v-title">The same case, in <em>under three minutes.</em></h2>
+      <div class="player" id="player">
+        <button class="player-start" id="player-start" type="button">
+          <img src="public/media/film-poster.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+          <span class="player-label"><span class="play" aria-hidden="true"></span>Watch the video <small>2:42 · loads only when you press play</small></span>
+        </button>
+      </div>
+      <p class="aside-mono">Vertical cut for phones: <a href="public/media/price-signal-vertical.mp4">48 seconds, MP4</a></p>
+    </div>
+  </div>
 </section>
 
 <!-- ============================================================ QUESTION -->
@@ -367,26 +382,6 @@
   </div>
 </section>
 
-<!-- ============================================================ FILM -->
-<section class="sec" id="film" aria-labelledby="v-title">
-  <div class="galley">
-    <div class="margin">
-      <p class="label">The film</p>
-      <p class="note" id="film-status">Silent cut. My English narration is still to be recorded; captions show the script.</p>
-    </div>
-    <div class="main">
-      <h2 id="v-title">The same case, in <em>two and a half minutes.</em></h2>
-      <div class="player" id="player">
-        <button class="player-start" id="player-start" type="button" aria-describedby="film-status">
-          <img src="public/media/film-poster.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
-          <span class="player-label"><span class="play" aria-hidden="true"></span>Play the film <small>2:36 · loads only when you press play</small></span>
-        </button>
-      </div>
-      <p class="aside-mono">Also cut for phones: <a href="public/media/price-signal-vertical.mp4">45-second vertical version (MP4)</a></p>
-    </div>
-  </div>
-</section>
-
 <!-- ============================================================ FILES -->
 <section class="sec" id="files" aria-labelledby="d-title">
   <div class="galley">
@@ -412,7 +407,7 @@
         <li><a href="public/data/challenges.json" download><span class="f-name">Quality register (data)</span><span class="f-meta">JSON</span></a></li>
       </ul>
       <div class="byline">
-        <p>Made by <strong>Alfonso Cifuentes</strong> as an independent portfolio case study: Python for generation and analysis, Excel for live-formula verification, HTML, CSS and JavaScript for this page, Remotion for the film.</p>
+        <p>Made by <strong>Alfonso Cifuentes</strong> as an independent portfolio case study: Python for generation and analysis, Excel for live-formula verification, HTML, CSS and JavaScript for this page, Remotion for the video.</p>
         <p class="byline-links">
           <a class="btn" href="https://github.com/AlfonsoCifuentes" rel="me noopener">GitHub profile <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
           <a class="btn ghost" href="https://alfonsocifuentes.vercel.app/" rel="me noopener">Portfolio <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>

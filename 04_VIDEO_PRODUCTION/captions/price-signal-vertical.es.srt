@@ -1,9 +1,9 @@
 1
-00:00:00,467 --> 00:00:02,428
+00:00:01,600 --> 00:00:03,561
 ¿Este libro tiene mal el precio?
 
 2
-00:00:02,452 --> 00:00:06,468
+00:00:03,585 --> 00:00:07,601
 ¿O lo estamos comparando con un producto completamente distinto?
 
 3

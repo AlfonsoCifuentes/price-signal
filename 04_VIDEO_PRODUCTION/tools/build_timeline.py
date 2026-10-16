@@ -24,6 +24,7 @@ VOICE = REMOTION / 'public' / 'voice'
 CAP = HERE / 'captions'
 LF = chr(10)
 LEAD, TAIL = 0.45, 0.75          # seconds of air before/after speech inside a scene
+INTRO_LEAD = 1.6                  # opening scene: music runs this long before the first word
 MAX_CHARS = 64                    # per caption cue (two short lines)
 MIN_CHARS = 20                    # shorter fragments are merged, then re-split evenly
 
@@ -102,43 +103,52 @@ def cues_from_words(text, words, offset):
 
 
 def build(kind, prefix):
-    """Each scene lasts as long as its longest take (EN or ES), so both cuts keep identical frames."""
-    scenes, t0, cues, cues_es, voiced = [], 0.0, [], [], 0
+    """Each scene lasts as long as its longest take (EN or ES), so both cuts keep identical frames.
+    The first scene opens on music before the voice comes in (INTRO_LEAD); the others use LEAD."""
+    scenes, t0, cues, cues_es, voiced, frame, spans_en, spans_es = [], 0.0, [], [], 0, 0, [], []
     as_frames = lambda cs: [{'text': c['text'], 'from': round(c['from'] * FPS), 'to': round(c['to'] * FPS)} for c in cs]
     for n, s in enumerate(master[kind], start=1):
         take_en = VOICE / f'{prefix}-{n:02d}.wav'
         take_es = VOICE / 'es' / f'{prefix}-{n:02d}.wav'
         base = float(s['seconds'])
-        durations = [duration(t) for t in (take_en, take_es) if t.exists()]
+        lead = INTRO_LEAD if n == 1 else LEAD
+        durations = {lang: duration(t) for lang, t in (('en', take_en), ('es', take_es)) if t.exists()}
         if durations:
             voiced += take_en.exists()
-            secs = max([base] + [LEAD + d + TAIL for d in durations])
+            secs = max([base] + [lead + d + TAIL for d in durations.values()])
         else:
             secs = base
+        frames = math.ceil(secs * FPS)
+        offset = round(lead * FPS)
 
-        def cues_for(text, take, lang_label):
-            # word-level timing (from a speech-to-text JSON next to the take) wins over proportional spreading
+        def cues_for(text, take):
+            # word-level timing (from the ElevenLabs alignment next to the take) wins over proportional spreading
             if take.exists():
                 words_file = take.with_suffix('.words.json')
                 if words_file.exists():
-                    return cues_from_words(text, json.loads(words_file.read_text(encoding='utf-8')), LEAD)
-                return cues_proportional(text, LEAD, LEAD + duration(take))
-            return cues_proportional(text, LEAD, secs - TAIL)
+                    return cues_from_words(text, json.loads(words_file.read_text(encoding='utf-8')), lead)
+                return cues_proportional(text, lead, lead + duration(take))
+            return cues_proportional(text, lead, secs - TAIL)
 
-        local = cues_for(s['narration'], take_en, 'en')
-        local_es = cues_for(s['es']['narration'], take_es, 'es')
+        local = cues_for(s['narration'], take_en)
+        local_es = cues_for(s['es']['narration'], take_es)
         audio = f'voice/{take_en.name}' if take_en.exists() else None
         audio_es = f'voice/es/{take_es.name}' if take_es.exists() else None
-        frames = math.ceil(secs * FPS)
+        if take_en.exists():
+            spans_en.append({'from': frame + offset, 'to': frame + offset + math.ceil(durations['en'] * FPS)})
+        if take_es.exists():
+            spans_es.append({'from': frame + offset, 'to': frame + offset + math.ceil(durations['es'] * FPS)})
         scenes.append({**{k: v for k, v in s.items() if k != 'es'}, 'frames': frames, 'audio': audio,
-                       'audioOffsetFrames': round(LEAD * FPS), 'cues': as_frames(local),
+                       'audioOffsetFrames': offset, 'cues': as_frames(local),
                        'es': {'kicker': s['es']['kicker'], 'title': s['es']['title'], 'cues': as_frames(local_es),
                               'audio': audio_es}})
         cues += [{'text': c['text'], 'from': t0 + c['from'], 'to': t0 + c['to']} for c in local]
         cues_es += [{'text': c['text'], 'from': t0 + c['from'], 'to': t0 + c['to']} for c in local_es]
         t0 += frames / FPS
+        frame += frames
     return {'scenes': scenes, 'frames': sum(s['frames'] for s in scenes), 'voicedScenes': voiced,
             'voicedScenesEs': sum(1 for s in scenes if s['es']['audio']),
+            'voiceSpans': {'en': spans_en, 'es': spans_es},
             'captionsAreApproximate': voiced > 0}, cues, cues_es
 
 

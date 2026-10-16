@@ -1,9 +1,9 @@
 1
-00:00:00,547 --> 00:00:04,238
+00:00:01,680 --> 00:00:05,371
 ¿Y si el mayor error de precios no fuera una cifra equivocada,
 
 2
-00:00:04,262 --> 00:00:07,663
+00:00:05,395 --> 00:00:08,796
 sino comparar dos cosas que nunca fueron equivalentes?
 
 3

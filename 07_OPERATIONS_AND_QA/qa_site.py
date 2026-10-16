@@ -26,11 +26,11 @@ PAGES = {
     'en': dict(path='', prefix='site', lang='en', other=('es/', 'es'),
                film='public/media/price-signal-film.mp4', vtt='public/media/price-signal-film.en.vtt',
                poster='public/media/film-poster.jpg', og='public/media/og-cover.png',
-               nojs=('Ten things that', 'Ten things that'), film_label='Play the film'),
+               nojs=('Ten things that', 'Ten things that'), film_label='Watch the video'),
     'es': dict(path='es/', prefix='site_es', lang='es', other=('../', 'en'),
                film='public/media/price-signal-film-es.mp4', vtt='public/media/price-signal-film.es.vtt',
                poster='public/media/film-poster-es.jpg', og='public/media/og-cover-es.png',
-               nojs=('Diez cosas que', 'Diez cosas que'), film_label='Reproducir la película'),
+               nojs=('Diez cosas que', 'Diez cosas que'), film_label='Ver el vídeo'),
 }
 
 
@@ -148,7 +148,7 @@ async def run_page(b, base, cfg):
     tracks = await pg.evaluate('document.querySelector("video").textTracks.length')
     src = await pg.evaluate('document.querySelector("video source").getAttribute("src")')
     tl = json.loads((ROOT / '04_VIDEO_PRODUCTION' / 'remotion' / 'src' / 'timeline.json').read_text(encoding='utf-8'))
-    want = tl['film']['frames'] / tl['fps']  # 156 s silent
+    want = tl['film']['frames'] / tl['fps']  # narrated film, length from the timeline
     check(abs(dur - want) < 0.2 and tracks == 1 and src == ('' if cfg['path'] == '' else '../') + cfg['film'],
           f'[{tag}] film: loads on click, {want:.0f} s, one caption track ({src})', f'{dur:.2f}s, {tracks} track, {src}')
     await ctx.close()

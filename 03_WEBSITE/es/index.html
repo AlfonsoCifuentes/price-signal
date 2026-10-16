@@ -57,7 +57,6 @@
     <a href="#explorer">Explorador</a>
     <a href="#exceptions">Excepciones</a>
     <a href="#register">Registro</a>
-    <a href="#film">Película</a>
     <a href="#files" class="nav-files">Ficheros</a>
   </nav>
   <div class="progress" aria-hidden="true"><span id="progress"></span></div>
@@ -106,6 +105,22 @@
     <a class="btn" href="#question">Leer el caso <span aria-hidden="true">↓</span></a>
     <a class="btn ghost" href="#explorer">Explorar los precios</a>
   </p>
+</section>
+
+<!-- ============================================================ VIDEO -->
+<section class="sec sec-video" id="video" aria-labelledby="v-title">
+  <div class="galley galley-solo">
+    <div class="main">
+      <h2 id="v-title">El mismo caso, en <em>menos de tres minutos.</em></h2>
+      <div class="player" id="player">
+        <button class="player-start" id="player-start" type="button">
+          <img src="../public/media/film-poster-es.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+          <span class="player-label"><span class="play" aria-hidden="true"></span>Ver el vídeo <small>2:42 · solo se carga al pulsar reproducir</small></span>
+        </button>
+      </div>
+      <p class="aside-mono">También en vertical para móvil: <a href="../public/media/price-signal-vertical-es.mp4">versión de 48 segundos (MP4)</a></p>
+    </div>
+  </div>
 </section>
 
 <!-- ============================================================ QUESTION -->
@@ -368,26 +383,6 @@
   </div>
 </section>
 
-<!-- ============================================================ FILM -->
-<section class="sec" id="film" aria-labelledby="v-title">
-  <div class="galley">
-    <div class="margin">
-      <p class="label">La película</p>
-      <p class="note" id="film-status">Corte sin voz. Los subtítulos en español muestran el guion de la narración, que aún no está grabada.</p>
-    </div>
-    <div class="main">
-      <h2 id="v-title">El mismo caso, en <em>dos minutos y medio.</em></h2>
-      <div class="player" id="player">
-        <button class="player-start" id="player-start" type="button" aria-describedby="film-status">
-          <img src="../public/media/film-poster-es.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
-          <span class="player-label"><span class="play" aria-hidden="true"></span>Reproducir la película <small>2:36 · solo se carga al pulsar reproducir</small></span>
-        </button>
-      </div>
-      <p class="aside-mono">También en formato vertical para móvil: <a href="../public/media/price-signal-vertical-es.mp4">versión vertical de 45 segundos (MP4)</a></p>
-    </div>
-  </div>
-</section>
-
 <!-- ============================================================ FILES -->
 <section class="sec" id="files" aria-labelledby="d-title">
   <div class="galley">
@@ -413,7 +408,7 @@
         <li><a href="../public/data/challenges.json" download><span class="f-name">Registro de calidad (datos)</span><span class="f-meta">JSON</span></a></li>
       </ul>
       <div class="byline">
-        <p>Hecho por <strong>Alfonso Cifuentes</strong> como caso de estudio independiente para portfolio: Python para la generación y el análisis, Excel para la verificación con fórmulas en vivo, HTML, CSS y JavaScript para esta página, Remotion para la película.</p>
+        <p>Hecho por <strong>Alfonso Cifuentes</strong> como caso de estudio independiente para portfolio: Python para la generación y el análisis, Excel para la verificación con fórmulas en vivo, HTML, CSS y JavaScript para esta página, Remotion para el vídeo.</p>
         <p class="byline-links">
           <a class="btn" href="https://github.com/AlfonsoCifuentes" rel="me noopener">Perfil de GitHub <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
           <a class="btn ghost" href="https://alfonsocifuentes.vercel.app/" rel="me noopener">Portfolio <svg class="ext" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3 9l6-6M4 3h5v5"/></svg></a>

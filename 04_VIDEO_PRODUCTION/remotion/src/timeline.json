@@ -10,22 +10,22 @@
     "narration": "What if the biggest pricing mistake isn't a wrong number, but comparing two things that were never equivalent in the first place?",
     "frames": 360,
     "audio": "voice/film-01.wav",
-    "audioOffsetFrames": 14,
+    "audioOffsetFrames": 48,
     "cues": [
      {
       "text": "What if the biggest pricing mistake isn't a wrong number,",
-      "from": 14,
-      "to": 97
+      "from": 48,
+      "to": 131
      },
      {
       "text": "but comparing two things that were never",
-      "from": 97,
-      "to": 152
+      "from": 131,
+      "to": 186
      },
      {
       "text": "equivalent in the first place?",
-      "from": 152,
-      "to": 209
+      "from": 186,
+      "to": 243
      }
     ],
     "es": {
@@ -34,13 +34,13 @@
      "cues": [
       {
        "text": "¿Y si el mayor error de precios no fuera una cifra equivocada,",
-       "from": 16,
-       "to": 127
+       "from": 50,
+       "to": 161
       },
       {
        "text": "sino comparar dos cosas que nunca fueron equivalentes?",
-       "from": 128,
-       "to": 230
+       "from": 162,
+       "to": 264
       }
      ],
      "audio": "voice/es/film-01.wav"
@@ -703,6 +703,116 @@
   "frames": 4858,
   "voicedScenes": 13,
   "voicedScenesEs": 13,
+  "voiceSpans": {
+   "en": [
+    {
+     "from": 48,
+     "to": 231
+    },
+    {
+     "from": 374,
+     "to": 662
+    },
+    {
+     "from": 745,
+     "to": 1060
+    },
+    {
+     "from": 1158,
+     "to": 1404
+    },
+    {
+     "from": 1518,
+     "to": 1759
+    },
+    {
+     "from": 1878,
+     "to": 2134
+    },
+    {
+     "from": 2238,
+     "to": 2535
+    },
+    {
+     "from": 2598,
+     "to": 2894
+    },
+    {
+     "from": 2991,
+     "to": 3312
+    },
+    {
+     "from": 3432,
+     "to": 3647
+    },
+    {
+     "from": 3792,
+     "to": 4062
+    },
+    {
+     "from": 4152,
+     "to": 4382
+    },
+    {
+     "from": 4512,
+     "to": 4793
+    }
+   ],
+   "es": [
+    {
+     "from": 48,
+     "to": 251
+    },
+    {
+     "from": 374,
+     "to": 708
+    },
+    {
+     "from": 745,
+     "to": 1122
+    },
+    {
+     "from": 1158,
+     "to": 1419
+    },
+    {
+     "from": 1518,
+     "to": 1809
+    },
+    {
+     "from": 1878,
+     "to": 2174
+    },
+    {
+     "from": 2238,
+     "to": 2561
+    },
+    {
+     "from": 2598,
+     "to": 2954
+    },
+    {
+     "from": 2991,
+     "to": 3395
+    },
+    {
+     "from": 3432,
+     "to": 3733
+    },
+    {
+     "from": 3792,
+     "to": 4069
+    },
+    {
+     "from": 4152,
+     "to": 4457
+    },
+    {
+     "from": 4512,
+     "to": 4787
+    }
+   ]
+  },
   "captionsAreApproximate": true
  },
  "vertical": {
@@ -715,17 +825,17 @@
     "narration": "Is this book priced wrong? Or are we comparing it with a completely different product?",
     "frames": 270,
     "audio": "voice/vertical-01.wav",
-    "audioOffsetFrames": 14,
+    "audioOffsetFrames": 48,
     "cues": [
      {
       "text": "Is this book priced wrong?",
-      "from": 14,
-      "to": 65
+      "from": 48,
+      "to": 99
      },
      {
       "text": "Or are we comparing it with a completely different product?",
-      "from": 67,
-      "to": 165
+      "from": 101,
+      "to": 199
      }
     ],
     "es": {
@@ -734,13 +844,13 @@
      "cues": [
       {
        "text": "¿Este libro tiene mal el precio?",
-       "from": 14,
-       "to": 73
+       "from": 48,
+       "to": 107
       },
       {
        "text": "¿O lo estamos comparando con un producto completamente distinto?",
-       "from": 74,
-       "to": 194
+       "from": 108,
+       "to": 228
       }
      ],
      "audio": "voice/es/vertical-01.wav"
@@ -941,6 +1051,52 @@
   "frames": 1427,
   "voicedScenes": 5,
   "voicedScenesEs": 5,
+  "voiceSpans": {
+   "en": [
+    {
+     "from": 48,
+     "to": 187
+    },
+    {
+     "from": 284,
+     "to": 487
+    },
+    {
+     "from": 554,
+     "to": 755
+    },
+    {
+     "from": 824,
+     "to": 1022
+    },
+    {
+     "from": 1129,
+     "to": 1338
+    }
+   ],
+   "es": [
+    {
+     "from": 48,
+     "to": 217
+    },
+    {
+     "from": 284,
+     "to": 517
+    },
+    {
+     "from": 554,
+     "to": 774
+    },
+    {
+     "from": 824,
+     "to": 1093
+    },
+    {
+     "from": 1129,
+     "to": 1405
+    }
+   ]
+  },
   "captionsAreApproximate": true
  }
 }

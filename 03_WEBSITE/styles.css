@@ -156,6 +156,7 @@ h3 { font-size: 1.32rem; line-height: 1.12; letter-spacing: -.012em; font-stretc
 .galley { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: minmax(12rem, 3fr) minmax(0, 9fr); gap: clamp(1.5rem, 4vw, 4.5rem); }
 /* the margin travels as one block, so its label never slides over its own note */
 .margin { position: sticky; top: 5rem; align-self: start; padding-top: .4rem; }
+.galley-solo { grid-template-columns: minmax(0, 1fr); }
 .note { font-style: normal; color: var(--ink-2); font-size: .98rem; line-height: 1.5; margin: 0; max-width: 28ch; border-left: 2px solid var(--magenta); padding-left: .85rem; }
 .note strong { font-style: normal; color: var(--key); }
 .main { min-width: 0; }
