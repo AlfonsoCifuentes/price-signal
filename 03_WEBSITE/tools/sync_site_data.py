@@ -71,8 +71,8 @@ COPIES.update({
     FILM / 'remotion/out/og-cover.png': SITE / 'public/media/og-cover.png',
     FILM / 'captions/price-signal-film.en.vtt': SITE / 'public/media/price-signal-film.en.vtt',
     # Spanish edition: same cut and timing, Spanish on-screen text and captions
-    FILM / 'remotion/out/price-signal-film-es.mp4': SITE / 'public/media/price-signal-film-es.mp4',
-    FILM / 'remotion/out/price-signal-vertical-es.mp4': SITE / 'public/media/price-signal-vertical-es.mp4',
+    render('price-signal-film-es.mp4'): SITE / 'public/media/price-signal-film-es.mp4',
+    render('price-signal-vertical-es.mp4'): SITE / 'public/media/price-signal-vertical-es.mp4',
     FILM / 'remotion/out/og-cover-es.png': SITE / 'public/media/og-cover-es.png',
     FILM / 'captions/price-signal-film.es.vtt': SITE / 'public/media/price-signal-film.es.vtt',
     # documents: every downloadable exists in both languages

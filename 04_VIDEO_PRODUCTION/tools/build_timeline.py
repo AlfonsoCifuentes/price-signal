@@ -29,6 +29,7 @@ MIN_CHARS = 20                    # shorter fragments are merged, then re-split 
 
 master = json.loads((HERE / 'script_master.json').read_text(encoding='utf-8'))
 FPS = master['fps']
+LEAD = round(LEAD * FPS) / FPS     # whole frames: Remotion starts the voice on this exact frame
 
 
 def duration(path):
@@ -95,41 +96,49 @@ def cues_from_words(text, words, offset):
         seg = words[i:i + n] or words[-1:]
         out.append({'text': p, 'from': round(offset + seg[0]['start'], 3), 'to': round(offset + seg[-1]['end'] + 0.15, 3)})
         i += n
+    for a, b in zip(out, out[1:]):  # a cue never outlives the next one: no overlapping subtitles
+        a['to'] = min(a['to'], b['from'])
     return out
 
 
 def build(kind, prefix):
+    """Each scene lasts as long as its longest take (EN or ES), so both cuts keep identical frames."""
     scenes, t0, cues, cues_es, voiced = [], 0.0, [], [], 0
     as_frames = lambda cs: [{'text': c['text'], 'from': round(c['from'] * FPS), 'to': round(c['to'] * FPS)} for c in cs]
     for n, s in enumerate(master[kind], start=1):
-        take = VOICE / f'{prefix}-{n:02d}.wav'
+        take_en = VOICE / f'{prefix}-{n:02d}.wav'
+        take_es = VOICE / 'es' / f'{prefix}-{n:02d}.wav'
         base = float(s['seconds'])
-        if take.exists():
-            voiced += 1
-            d = duration(take)
-            secs = max(base, LEAD + d + TAIL)
-            span_end = LEAD + d
-            words_file = take.with_suffix('.words.json')
-            if words_file.exists():
-                local = cues_from_words(s['narration'], json.loads(words_file.read_text(encoding='utf-8')), LEAD)
-            else:
-                local = cues_proportional(s['narration'], LEAD, span_end)
-            audio = f'voice/{take.name}'
+        durations = [duration(t) for t in (take_en, take_es) if t.exists()]
+        if durations:
+            voiced += take_en.exists()
+            secs = max([base] + [LEAD + d + TAIL for d in durations])
         else:
             secs = base
-            span_end = secs - TAIL
-            local = cues_proportional(s['narration'], LEAD, span_end)
-            audio = None
-        # Spanish narration on the same scene span (no Spanish take exists yet, so cues are proportional)
-        local_es = cues_proportional(s['es']['narration'], LEAD, span_end)
+
+        def cues_for(text, take, lang_label):
+            # word-level timing (from a speech-to-text JSON next to the take) wins over proportional spreading
+            if take.exists():
+                words_file = take.with_suffix('.words.json')
+                if words_file.exists():
+                    return cues_from_words(text, json.loads(words_file.read_text(encoding='utf-8')), LEAD)
+                return cues_proportional(text, LEAD, LEAD + duration(take))
+            return cues_proportional(text, LEAD, secs - TAIL)
+
+        local = cues_for(s['narration'], take_en, 'en')
+        local_es = cues_for(s['es']['narration'], take_es, 'es')
+        audio = f'voice/{take_en.name}' if take_en.exists() else None
+        audio_es = f'voice/es/{take_es.name}' if take_es.exists() else None
         frames = math.ceil(secs * FPS)
         scenes.append({**{k: v for k, v in s.items() if k != 'es'}, 'frames': frames, 'audio': audio,
                        'audioOffsetFrames': round(LEAD * FPS), 'cues': as_frames(local),
-                       'es': {'kicker': s['es']['kicker'], 'title': s['es']['title'], 'cues': as_frames(local_es)}})
+                       'es': {'kicker': s['es']['kicker'], 'title': s['es']['title'], 'cues': as_frames(local_es),
+                              'audio': audio_es}})
         cues += [{'text': c['text'], 'from': t0 + c['from'], 'to': t0 + c['to']} for c in local]
         cues_es += [{'text': c['text'], 'from': t0 + c['from'], 'to': t0 + c['to']} for c in local_es]
         t0 += frames / FPS
     return {'scenes': scenes, 'frames': sum(s['frames'] for s in scenes), 'voicedScenes': voiced,
+            'voicedScenesEs': sum(1 for s in scenes if s['es']['audio']),
             'captionsAreApproximate': voiced > 0}, cues, cues_es
 
 
@@ -186,7 +195,10 @@ film, film_cues, film_cues_es = build('film', 'film')
 vertical, vertical_cues, vertical_cues_es = build('vertical', 'vertical')
 timeline = {'fps': FPS, 'film': film, 'vertical': vertical}
 (REMOTION / 'src' / 'timeline.json').write_text(json.dumps(timeline, ensure_ascii=False, indent=1) + LF, encoding='utf-8', newline=LF)
-note = ('Timed to recorded takes; spread proportionally, review before upload.' if film['voicedScenes']
+word_timed = all((VOICE / f'film-{n:02d}.words.json').exists() and (VOICE / 'es' / f'film-{n:02d}.words.json').exists()
+                 for n in range(1, 14))
+note = ('Each cue starts on the word it belongs to (ElevenLabs character alignment, measured against the take).' if word_timed
+        else 'Timed to recorded takes; spread proportionally, review before upload.' if film['voicedScenes']
         else 'Script captions on the planned 12-second grid. Not word-accurate until the narration is recorded.')
 for lang, fc, vc in (('en', film_cues, vertical_cues), ('es', film_cues_es, vertical_cues_es)):
     write_captions(fc, 'price-signal-film', note, lang)

@@ -9,23 +9,23 @@
     "title": "The price of clarity",
     "narration": "What if the biggest pricing mistake isn't a wrong number, but comparing two things that were never equivalent in the first place?",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-01.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "What if the biggest pricing mistake isn't a wrong number,",
       "from": 14,
-      "to": 153
+      "to": 97
      },
      {
       "text": "but comparing two things that were never",
-      "from": 154,
-      "to": 256
+      "from": 97,
+      "to": 152
      },
      {
       "text": "equivalent in the first place?",
-      "from": 257,
-      "to": 336
+      "from": 152,
+      "to": 209
      }
     ],
     "es": {
@@ -34,15 +34,16 @@
      "cues": [
       {
        "text": "¿Y si el mayor error de precios no fuera una cifra equivocada,",
-       "from": 14,
-       "to": 184
+       "from": 16,
+       "to": 127
       },
       {
        "text": "sino comparar dos cosas que nunca fueron equivalentes?",
-       "from": 186,
-       "to": 336
+       "from": 128,
+       "to": 230
       }
-     ]
+     ],
+     "audio": "voice/es/film-01.wav"
     }
    },
    {
@@ -51,29 +52,29 @@
     "kicker": "The question",
     "title": "Define the product first",
     "narration": "A publishing catalogue looks simple: a title, a series and a price. But behind every title sit formats, levels, editions, packs and access rights.",
-    "frames": 360,
-    "audio": null,
+    "frames": 371,
+    "audio": "voice/film-02.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "A publishing catalogue looks simple: a title,",
       "from": 14,
-      "to": 111
+      "to": 99
      },
      {
       "text": "a series and a price.",
-      "from": 112,
-      "to": 163
+      "from": 99,
+      "to": 143
      },
      {
       "text": "But behind every title sit formats, levels, editions,",
-      "from": 165,
-      "to": 278
+      "from": 157,
+      "to": 254
      },
      {
       "text": "packs and access rights.",
-      "from": 279,
-      "to": 336
+      "from": 254,
+      "to": 314
      }
     ],
     "es": {
@@ -82,25 +83,26 @@
      "cues": [
       {
        "text": "Un catálogo editorial parece sencillo: un título,",
-       "from": 14,
-       "to": 110
+       "from": 16,
+       "to": 116
       },
       {
        "text": "una serie y un precio.",
-       "from": 111,
-       "to": 160
+       "from": 116,
+       "to": 164
       },
       {
        "text": "Pero detrás de cada título hay formatos, niveles, ediciones,",
-       "from": 161,
-       "to": 277
+       "from": 172,
+       "to": 290
       },
       {
        "text": "packs y derechos de acceso.",
-       "from": 279,
-       "to": 336
+       "from": 291,
+       "to": 362
       }
-     ]
+     ],
+     "audio": "voice/es/film-02.wav"
     }
    },
    {
@@ -109,29 +111,29 @@
     "kicker": "The material",
     "title": "A fictional catalogue",
     "narration": "For this case study I generated a fictional catalogue: three hundred and sixty-two products, twelve series, and data problems planted on purpose. No real publisher, no real prices.",
-    "frames": 360,
-    "audio": null,
+    "frames": 413,
+    "audio": "voice/film-03.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "For this case study I generated a fictional catalogue:",
       "from": 14,
-      "to": 109
+      "to": 108
      },
      {
       "text": "three hundred and sixty-two products, twelve series,",
-      "from": 110,
-      "to": 202
+      "from": 108,
+      "to": 187
      },
      {
       "text": "and data problems planted on purpose.",
-      "from": 204,
-      "to": 272
+      "from": 187,
+      "to": 254
      },
      {
       "text": "No real publisher, no real prices.",
-      "from": 273,
-      "to": 336
+      "from": 265,
+      "to": 340
      }
     ],
     "es": {
@@ -140,25 +142,26 @@
      "cues": [
       {
        "text": "Para este caso generé un catálogo inventado:",
-       "from": 14,
-       "to": 95
+       "from": 16,
+       "to": 102
       },
       {
        "text": "trescientos sesenta y dos productos,",
-       "from": 97,
-       "to": 165
+       "from": 111,
+       "to": 198
       },
       {
        "text": "doce series y problemas de datos sembrados a propósito.",
-       "from": 166,
-       "to": 266
+       "from": 201,
+       "to": 309
       },
       {
        "text": "Ni editorial real ni precios reales.",
-       "from": 268,
-       "to": 336
+       "from": 317,
+       "to": 404
       }
-     ]
+     ],
+     "audio": "voice/es/film-03.wav"
     }
    },
    {
@@ -168,23 +171,23 @@
     "title": "Five columns in, nineteen out",
     "narration": "First, I recovered structure from the titles, without guessing. If a title doesn't mention access duration, that's unknown, not unlimited.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-04.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "First, I recovered structure from the titles, without guessing.",
       "from": 14,
-      "to": 157
+      "to": 118
      },
      {
       "text": "If a title doesn't mention access duration,",
-      "from": 159,
-      "to": 260
+      "from": 138,
+      "to": 211
      },
      {
       "text": "that's unknown, not unlimited.",
-      "from": 262,
-      "to": 336
+      "from": 211,
+      "to": 272
      }
     ],
     "es": {
@@ -193,20 +196,21 @@
      "cues": [
       {
        "text": "Primero recuperé la estructura de los títulos, sin adivinar.",
-       "from": 14,
-       "to": 150
+       "from": 16,
+       "to": 120
       },
       {
        "text": "Si un título no menciona la duración del",
-       "from": 151,
-       "to": 246
+       "from": 133,
+       "to": 186
       },
       {
        "text": "acceso, es desconocida, no ilimitada.",
-       "from": 248,
-       "to": 336
+       "from": 186,
+       "to": 288
       }
-     ]
+     ],
+     "audio": "voice/es/film-04.wav"
     }
    },
    {
@@ -216,23 +220,23 @@
     "title": "Keep the source",
     "narration": "The raw file stays untouched. Every correction lives in a separate, reversible reporting view, so any number traces back to its source record.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-05.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "The raw file stays untouched.",
       "from": 14,
-      "to": 84
+      "to": 77
      },
      {
       "text": "Every correction lives in a separate, reversible reporting view,",
-      "from": 85,
-      "to": 227
+      "from": 77,
+      "to": 177
      },
      {
       "text": "so any number traces back to its source record.",
-      "from": 229,
-      "to": 336
+      "from": 182,
+      "to": 266
      }
     ],
     "es": {
@@ -242,24 +246,25 @@
       {
        "text": "El fichero original no se toca.",
        "from": 14,
-       "to": 78
+       "to": 79
       },
       {
        "text": "Cada corrección vive en una vista",
-       "from": 80,
-       "to": 148
+       "from": 88,
+       "to": 137
       },
       {
        "text": "de reporting aparte y reversible,",
-       "from": 150,
-       "to": 218
+       "from": 137,
+       "to": 203
       },
       {
        "text": "así que cualquier cifra se puede rastrear hasta su registro.",
-       "from": 219,
-       "to": 336
+       "from": 207,
+       "to": 318
       }
-     ]
+     ],
+     "audio": "voice/es/film-05.wav"
     }
    },
    {
@@ -269,28 +274,28 @@
     "title": "Two misfiled records",
     "narration": "Two records carry a series name that contradicts their own title. They're flagged and re-filed in the reporting view, never silently overwritten.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-06.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "Two records carry a series name that",
       "from": 14,
-      "to": 94
+      "to": 73
      },
      {
       "text": "contradicts their own title.",
-      "from": 95,
-      "to": 160
+      "from": 73,
+      "to": 126
      },
      {
       "text": "They're flagged and re-filed in the reporting view,",
-      "from": 162,
-      "to": 272
+      "from": 135,
+      "to": 220
      },
      {
       "text": "never silently overwritten.",
-      "from": 273,
-      "to": 336
+      "from": 221,
+      "to": 282
      }
     ],
     "es": {
@@ -300,24 +305,25 @@
       {
        "text": "Dos registros llevan un nombre de serie",
        "from": 14,
-       "to": 93
+       "to": 75
       },
       {
        "text": "que contradice su propio título.",
-       "from": 95,
-       "to": 162
+       "from": 75,
+       "to": 141
       },
       {
        "text": "Se señalan y se reubican en la vista de reporting,",
-       "from": 164,
-       "to": 264
+       "from": 152,
+       "to": 245
       },
       {
        "text": "nunca se sobrescriben en silencio.",
-       "from": 265,
-       "to": 336
+       "from": 247,
+       "to": 322
       }
-     ]
+     ],
+     "audio": "voice/es/film-06.wav"
     }
    },
    {
@@ -327,23 +333,23 @@
     "title": "Gleebook is not an eBook",
     "narration": "A printed resource called Gleebook contains the letters e-book. A naive substring rule grants it digital access. A word-boundary rule doesn't.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-07.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "A printed resource called Gleebook contains the letters e-book.",
       "from": 14,
-      "to": 153
+      "to": 134
      },
      {
       "text": "A naive substring rule grants it digital access.",
-      "from": 155,
-      "to": 264
+      "from": 150,
+      "to": 244
      },
      {
       "text": "A word-boundary rule doesn't.",
-      "from": 266,
-      "to": 336
+      "from": 261,
+      "to": 324
      }
     ],
     "es": {
@@ -352,20 +358,21 @@
      "cues": [
       {
        "text": "Un recurso impreso llamado Gleebook contiene las letras «ebook».",
-       "from": 14,
-       "to": 140
+       "from": 16,
+       "to": 143
       },
       {
        "text": "Una regla ingenua por subcadena le concede acceso digital;",
-       "from": 142,
-       "to": 257
+       "from": 154,
+       "to": 264
       },
       {
        "text": "una regla con límites de palabra, no.",
-       "from": 259,
-       "to": 336
+       "from": 270,
+       "to": 351
       }
-     ]
+     ],
+     "audio": "voice/es/film-07.wav"
     }
    },
    {
@@ -374,29 +381,29 @@
     "kicker": "Step 3 · Comparison",
     "title": "Like for like",
     "narration": "Only then did I compare prices: same series, type, pack, edition and access. Only the level is allowed to change. That gives sixty comparable groups.",
-    "frames": 360,
-    "audio": null,
+    "frames": 393,
+    "audio": "voice/film-08.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "Only then did I compare prices: same series,",
       "from": 14,
-      "to": 107
+      "to": 102
      },
      {
       "text": "type, pack, edition and access.",
-      "from": 109,
-      "to": 178
+      "from": 102,
+      "to": 163
      },
      {
       "text": "Only the level is allowed to change.",
       "from": 179,
-      "to": 258
+      "to": 241
      },
      {
       "text": "That gives sixty comparable groups.",
-      "from": 259,
-      "to": 336
+      "from": 250,
+      "to": 321
      }
     ],
     "es": {
@@ -406,24 +413,25 @@
       {
        "text": "Solo entonces comparé precios: misma",
        "from": 14,
-       "to": 97
+       "to": 106
       },
       {
        "text": "serie, tipo, pack, edición y acceso.",
-       "from": 98,
-       "to": 181
+       "from": 106,
+       "to": 215
       },
       {
        "text": "Solo puede cambiar el nivel.",
-       "from": 183,
-       "to": 249
+       "from": 228,
+       "to": 280
       },
       {
        "text": "Así salen sesenta grupos comparables.",
-       "from": 251,
-       "to": 336
+       "from": 291,
+       "to": 381
       }
-     ]
+     ],
+     "audio": "voice/es/film-08.wav"
     }
    },
    {
@@ -432,24 +440,24 @@
     "kicker": "Finding",
     "title": "54 of 60, then 56",
     "narration": "Fifty-four of the sixty hold one price at every level. Four exceptions are cheaper Starter levels. The other two aren't pricing at all: they're filing errors.",
-    "frames": 360,
-    "audio": null,
+    "frames": 441,
+    "audio": "voice/film-09.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "Fifty-four of the sixty hold one price at every level.",
       "from": 14,
-      "to": 124
+      "to": 114
      },
      {
       "text": "Four exceptions are cheaper Starter levels.",
       "from": 125,
-      "to": 215
+      "to": 201
      },
      {
       "text": "The other two aren't pricing at all: they're filing errors.",
-      "from": 216,
-      "to": 336
+      "from": 221,
+      "to": 346
      }
     ],
     "es": {
@@ -458,25 +466,26 @@
      "cues": [
       {
        "text": "Cincuenta y cuatro de los sesenta mantienen",
-       "from": 14,
-       "to": 88
+       "from": 16,
+       "to": 84
       },
       {
        "text": "un mismo precio en todos los niveles.",
-       "from": 90,
-       "to": 155
+       "from": 84,
+       "to": 161
       },
       {
        "text": "Cuatro excepciones son niveles Starter más baratos.",
-       "from": 157,
-       "to": 244
+       "from": 170,
+       "to": 308
       },
       {
        "text": "Las otras dos no son precios: son errores de archivo.",
-       "from": 246,
-       "to": 336
+       "from": 319,
+       "to": 432
       }
-     ]
+     ],
+     "audio": "voice/es/film-09.wav"
     }
    },
    {
@@ -486,23 +495,23 @@
     "title": "Two parts cost more",
     "narration": "Matched comparisons show more. Buying a book in two parts costs about fourteen percent more than the complete volume, at every level.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-10.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "Matched comparisons show more.",
       "from": 14,
-      "to": 90
+      "to": 70
      },
      {
       "text": "Buying a book in two parts costs about fourteen percent",
-      "from": 92,
-      "to": 223
+      "from": 79,
+      "to": 161
      },
      {
       "text": "more than the complete volume, at every level.",
-      "from": 224,
-      "to": 336
+      "from": 161,
+      "to": 240
      }
     ],
     "es": {
@@ -512,24 +521,25 @@
       {
        "text": "Las comparaciones emparejadas muestran más:",
        "from": 14,
-       "to": 97
+       "to": 89
       },
       {
        "text": "comprar un libro en dos partes cuesta en torno a un",
-       "from": 99,
-       "to": 197
+       "from": 102,
+       "to": 183
       },
       {
        "text": "catorce por ciento más que el volumen completo,",
-       "from": 198,
-       "to": 289
+       "from": 183,
+       "to": 273
       },
       {
        "text": "en todos los niveles.",
-       "from": 290,
-       "to": 336
+       "from": 273,
+       "to": 326
       }
-     ]
+     ],
+     "audio": "voice/es/film-10.wav"
     }
    },
    {
@@ -539,23 +549,23 @@
     "title": "What the data can't say",
     "narration": "But list prices alone can't show demand, costs or margins. Without sales and discount data, a recommended price would be speculation.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-11.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "But list prices alone can't show demand, costs or margins.",
       "from": 14,
-      "to": 151
+      "to": 141
      },
      {
       "text": "Without sales and discount data,",
-      "from": 153,
-      "to": 234
+      "from": 161,
+      "to": 218
      },
      {
       "text": "a recommended price would be speculation.",
-      "from": 235,
-      "to": 336
+      "from": 218,
+      "to": 296
      }
     ],
     "es": {
@@ -564,25 +574,26 @@
      "cues": [
       {
        "text": "Pero los precios de catálogo no muestran",
-       "from": 14,
-       "to": 104
+       "from": 16,
+       "to": 72
       },
       {
        "text": "demanda, costes ni márgenes.",
-       "from": 106,
-       "to": 172
+       "from": 72,
+       "to": 137
       },
       {
        "text": "Sin datos de ventas y descuentos,",
-       "from": 173,
-       "to": 250
+       "from": 146,
+       "to": 212
       },
       {
        "text": "recomendar un precio sería especular.",
-       "from": 251,
-       "to": 336
+       "from": 214,
+       "to": 304
       }
-     ]
+     ],
+     "audio": "voice/es/film-11.wav"
     }
    },
    {
@@ -592,23 +603,23 @@
     "title": "A chain of decisions",
     "narration": "So the result isn't a dashboard. It's a method: keep the source, recover the structure, compare like with like, and say what you don't know.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-12.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "So the result isn't a dashboard.",
       "from": 14,
-      "to": 91
+      "to": 73
      },
      {
       "text": "It's a method: keep the source, recover the structure,",
-      "from": 92,
-      "to": 216
+      "from": 73,
+      "to": 168
      },
      {
       "text": "compare like with like, and say what you don't know.",
-      "from": 217,
-      "to": 336
+      "from": 168,
+      "to": 255
      }
     ],
     "es": {
@@ -618,19 +629,20 @@
       {
        "text": "Así que el resultado no es un dashboard.",
        "from": 14,
-       "to": 103
+       "to": 82
       },
       {
        "text": "Es un método: conservar el origen, recuperar la estructura,",
-       "from": 104,
-       "to": 231
+       "from": 93,
+       "to": 233
       },
       {
        "text": "comparar lo comparable y decir lo que no sabes.",
-       "from": 233,
-       "to": 336
+       "from": 235,
+       "to": 328
       }
-     ]
+     ],
+     "audio": "voice/es/film-12.wav"
     }
    },
    {
@@ -640,28 +652,28 @@
     "title": "PRICE / SIGNAL",
     "narration": "The interactive case study, the dataset and the Excel workbook are linked below. Everything in it is invented, and all of it is reproducible. Thanks for watching.",
     "frames": 360,
-    "audio": null,
+    "audio": "voice/film-13.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "The interactive case study,",
       "from": 14,
-      "to": 70
+      "to": 58
      },
      {
       "text": "the dataset and the Excel workbook are linked below.",
-      "from": 72,
-      "to": 173
+      "from": 58,
+      "to": 149
      },
      {
       "text": "Everything in it is invented, and all of it is reproducible.",
-      "from": 175,
-      "to": 290
+      "from": 166,
+      "to": 265
      },
      {
       "text": "Thanks for watching.",
-      "from": 291,
-      "to": 336
+      "from": 266,
+      "to": 306
      }
     ],
     "es": {
@@ -671,25 +683,27 @@
       {
        "text": "El caso interactivo,",
        "from": 14,
-       "to": 71
+       "to": 55
       },
       {
        "text": "el dataset y el Excel están enlazados abajo.",
-       "from": 73,
-       "to": 185
+       "from": 55,
+       "to": 156
       },
       {
        "text": "Todo es inventado y todo es reproducible. Gracias por verlo.",
-       "from": 187,
-       "to": 336
+       "from": 165,
+       "to": 299
       }
-     ]
+     ],
+     "audio": "voice/es/film-13.wav"
     }
    }
   ],
-  "frames": 4680,
-  "voicedScenes": 0,
-  "captionsAreApproximate": false
+  "frames": 4858,
+  "voicedScenes": 13,
+  "voicedScenesEs": 13,
+  "captionsAreApproximate": true
  },
  "vertical": {
   "scenes": [
@@ -700,18 +714,18 @@
     "title": "Priced wrong?",
     "narration": "Is this book priced wrong? Or are we comparing it with a completely different product?",
     "frames": 270,
-    "audio": null,
+    "audio": "voice/vertical-01.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "Is this book priced wrong?",
       "from": 14,
-      "to": 89
+      "to": 65
      },
      {
       "text": "Or are we comparing it with a completely different product?",
-      "from": 91,
-      "to": 246
+      "from": 67,
+      "to": 165
      }
     ],
     "es": {
@@ -721,14 +735,15 @@
       {
        "text": "¿Este libro tiene mal el precio?",
        "from": 14,
-       "to": 94
+       "to": 73
       },
       {
        "text": "¿O lo estamos comparando con un producto completamente distinto?",
-       "from": 96,
-       "to": 246
+       "from": 74,
+       "to": 194
       }
-     ]
+     ],
+     "audio": "voice/es/vertical-01.wav"
     }
    },
    {
@@ -738,23 +753,23 @@
     "title": "362 fictional products",
     "narration": "I built a pricing case study on three hundred and sixty-two fictional textbooks. The hard part wasn't the average.",
     "frames": 270,
-    "audio": null,
+    "audio": "voice/vertical-02.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "I built a pricing case study on three hundred",
       "from": 14,
-      "to": 104
+      "to": 80
      },
      {
       "text": "and sixty-two fictional textbooks.",
-      "from": 105,
-      "to": 176
+      "from": 80,
+      "to": 147
      },
      {
       "text": "The hard part wasn't the average.",
-      "from": 177,
-      "to": 246
+      "from": 167,
+      "to": 229
      }
     ],
     "es": {
@@ -763,20 +778,21 @@
      "cues": [
       {
        "text": "Construí un caso de precios con trescientos",
-       "from": 14,
-       "to": 102
+       "from": 16,
+       "to": 92
       },
       {
        "text": "sesenta y dos libros de texto ficticios.",
-       "from": 103,
-       "to": 186
+       "from": 92,
+       "to": 179
       },
       {
        "text": "Lo difícil no era la media.",
-       "from": 187,
-       "to": 246
+       "from": 199,
+       "to": 261
       }
-     ]
+     ],
+     "audio": "voice/es/vertical-02.wav"
     }
    },
    {
@@ -786,18 +802,18 @@
     "title": "Gleebook ≠ eBook",
     "narration": "It was the traps: misfiled series, ambiguous bundles, and a Gleebook that a naive parser reads as an e-book.",
     "frames": 270,
-    "audio": null,
+    "audio": "voice/vertical-03.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "It was the traps: misfiled series, ambiguous bundles,",
       "from": 14,
-      "to": 128
+      "to": 119
      },
      {
       "text": "and a Gleebook that a naive parser reads as an e-book.",
-      "from": 130,
-      "to": 246
+      "from": 119,
+      "to": 227
      }
     ],
     "es": {
@@ -806,20 +822,21 @@
      "cues": [
       {
        "text": "Eran las trampas: series mal archivadas,",
-       "from": 14,
-       "to": 95
+       "from": 16,
+       "to": 104
       },
       {
        "text": "packs ambiguos y un «Gleebook» que un",
-       "from": 97,
-       "to": 173
+       "from": 104,
+       "to": 177
       },
       {
        "text": "parser ingenuo toma por un e-book.",
-       "from": 175,
-       "to": 246
+       "from": 177,
+       "to": 248
       }
-     ]
+     ],
+     "audio": "voice/es/vertical-03.wav"
     }
    },
    {
@@ -828,24 +845,24 @@
     "kicker": "The finding",
     "title": "54 / 60",
     "narration": "Matched like for like, fifty-four of sixty groups hold one price. Two of the six exceptions were filing errors.",
-    "frames": 270,
-    "audio": null,
+    "frames": 305,
+    "audio": "voice/vertical-04.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "Matched like for like,",
       "from": 14,
-      "to": 64
+      "to": 46
      },
      {
       "text": "fifty-four of sixty groups hold one price.",
-      "from": 65,
-      "to": 152
+      "from": 46,
+      "to": 128
      },
      {
       "text": "Two of the six exceptions were filing errors.",
-      "from": 154,
-      "to": 246
+      "from": 135,
+      "to": 223
      }
     ],
     "es": {
@@ -854,20 +871,21 @@
      "cues": [
       {
        "text": "Comparando lo comparable,",
-       "from": 14,
-       "to": 60
+       "from": 16,
+       "to": 72
       },
       {
        "text": "cincuenta y cuatro de sesenta grupos mantienen un precio.",
-       "from": 61,
-       "to": 157
+       "from": 74,
+       "to": 176
       },
       {
        "text": "Dos de las seis excepciones eran errores de archivo.",
-       "from": 158,
-       "to": 246
+       "from": 192,
+       "to": 297
       }
-     ]
+     ],
+     "audio": "voice/es/vertical-04.wav"
     }
    },
    {
@@ -876,24 +894,24 @@
     "kicker": "Explore",
     "title": "PRICE / SIGNAL",
     "narration": "The dataset, method and interactive walkthrough are linked in the post. Everything is invented, and all of it is reproducible.",
-    "frames": 270,
-    "audio": null,
+    "frames": 312,
+    "audio": "voice/vertical-05.wav",
     "audioOffsetFrames": 14,
     "cues": [
      {
       "text": "The dataset, method and interactive",
       "from": 14,
-      "to": 80
+      "to": 75
      },
      {
       "text": "walkthrough are linked in the post.",
-      "from": 81,
-      "to": 147
+      "from": 75,
+      "to": 134
      },
      {
       "text": "Everything is invented, and all of it is reproducible.",
-      "from": 149,
-      "to": 246
+      "from": 140,
+      "to": 234
      }
     ],
     "es": {
@@ -903,24 +921,26 @@
       {
        "text": "El dataset, el método y el recorrido interactivo",
        "from": 14,
-       "to": 102
+       "to": 111
       },
       {
        "text": "están enlazados en la publicación.",
-       "from": 103,
-       "to": 168
+       "from": 115,
+       "to": 188
       },
       {
        "text": "Todo es inventado y todo es reproducible.",
-       "from": 170,
-       "to": 246
+       "from": 194,
+       "to": 300
       }
-     ]
+     ],
+     "audio": "voice/es/vertical-05.wav"
     }
    }
   ],
-  "frames": 1350,
-  "voicedScenes": 0,
-  "captionsAreApproximate": false
+  "frames": 1427,
+  "voicedScenes": 5,
+  "voicedScenesEs": 5,
+  "captionsAreApproximate": true
  }
 }

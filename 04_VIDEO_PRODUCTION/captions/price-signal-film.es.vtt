@@ -1,141 +1,141 @@
 WEBVTT
 
-NOTE Script captions on the planned 12-second grid. Not word-accurate until the narration is recorded.
+NOTE Each cue starts on the word it belongs to (ElevenLabs character alignment, measured against the take).
 
-00:00:00.450 --> 00:00:06.138
+00:00:00.547 --> 00:00:04.238
 ¿Y si el mayor error de precios no fuera una cifra equivocada,
 
-00:00:06.188 --> 00:00:11.200
+00:00:04.262 --> 00:00:07.663
 sino comparar dos cosas que nunca fueron equivalentes?
 
-00:00:12.450 --> 00:00:15.664
+00:00:12.547 --> 00:00:15.856
 Un catálogo editorial parece sencillo: un título,
 
-00:00:15.714 --> 00:00:17.325
+00:00:15.856 --> 00:00:17.457
 una serie y un precio.
 
-00:00:17.375 --> 00:00:21.242
+00:00:17.748 --> 00:00:21.672
 Pero detrás de cada título hay formatos, niveles, ediciones,
 
-00:00:21.292 --> 00:00:23.200
+00:00:21.696 --> 00:00:24.075
 packs y derechos de acceso.
 
-00:00:24.450 --> 00:00:27.169
+00:00:24.914 --> 00:00:27.781
 Para este caso generé un catálogo inventado:
 
-00:00:27.219 --> 00:00:29.495
+00:00:28.072 --> 00:00:30.973
 trescientos sesenta y dos productos,
 
-00:00:29.545 --> 00:00:32.874
+00:00:31.067 --> 00:00:34.654
 doce series y problemas de datos sembrados a propósito.
 
-00:00:32.924 --> 00:00:35.200
+00:00:34.945 --> 00:00:37.835
 Ni editorial real ni precios reales.
 
-00:00:36.450 --> 00:00:40.999
+00:00:38.680 --> 00:00:42.127
 Primero recuperé la estructura de los títulos, sin adivinar.
 
-00:00:41.049 --> 00:00:44.204
+00:00:42.581 --> 00:00:44.334
 Si un título no menciona la duración del
 
-00:00:44.254 --> 00:00:47.200
+00:00:44.334 --> 00:00:47.746
 acceso, es desconocida, no ilimitada.
 
-00:00:48.450 --> 00:00:50.608
+00:00:50.600 --> 00:00:52.782
 El fichero original no se toca.
 
-00:00:50.658 --> 00:00:52.935
+00:00:53.073 --> 00:00:54.710
 Cada corrección vive en una vista
 
-00:00:52.985 --> 00:00:55.262
+00:00:54.710 --> 00:00:56.903
 de reporting aparte y reversible,
 
-00:00:55.312 --> 00:00:59.200
+00:00:57.032 --> 00:01:00.735
 así que cualquier cifra se puede rastrear hasta su registro.
 
-00:01:00.450 --> 00:01:03.115
+00:01:02.600 --> 00:01:04.632
 Dos registros llevan un nombre de serie
 
-00:01:03.165 --> 00:01:05.408
+00:01:04.632 --> 00:01:06.837
 que contradice su propio título.
 
-00:01:05.458 --> 00:01:08.787
+00:01:07.198 --> 00:01:10.308
 Se señalan y se reubican en la vista de reporting,
 
-00:01:08.837 --> 00:01:11.200
+00:01:10.367 --> 00:01:12.874
 nunca se sobrescriben en silencio.
 
-00:01:12.450 --> 00:01:16.671
+00:01:14.680 --> 00:01:18.893
 Un recurso impreso llamado Gleebook contiene las letras «ebook».
 
-00:01:16.721 --> 00:01:20.576
+00:01:19.254 --> 00:01:22.945
 Una regla ingenua por subcadena le concede acceso digital;
 
-00:01:20.626 --> 00:01:23.200
+00:01:23.120 --> 00:01:25.836
 una regla con límites de palabra, no.
 
-00:01:24.450 --> 00:01:27.217
+00:01:26.600 --> 00:01:29.665
 Solo entonces comparé precios: misma
 
-00:01:27.267 --> 00:01:30.035
+00:01:29.665 --> 00:01:33.286
 serie, tipo, pack, edición y acceso.
 
-00:01:30.085 --> 00:01:32.316
+00:01:33.740 --> 00:01:35.457
 Solo puede cambiar el nivel.
 
-00:01:32.366 --> 00:01:35.200
+00:01:35.818 --> 00:01:38.824
 Así salen sesenta grupos comparables.
 
-00:01:36.450 --> 00:01:38.944
+00:01:39.780 --> 00:01:42.044
 Cincuenta y cuatro de los sesenta mantienen
 
-00:01:38.994 --> 00:01:41.177
+00:01:42.044 --> 00:01:44.597
 un mismo precio en todos los niveles.
 
-00:01:41.227 --> 00:01:44.137
+00:01:44.888 --> 00:01:49.508
 Cuatro excepciones son niveles Starter más baratos.
 
-00:01:44.187 --> 00:01:47.200
+00:01:49.869 --> 00:01:53.630
 Las otras dos no son precios: son errores de archivo.
 
-00:01:48.450 --> 00:01:51.245
+00:01:54.400 --> 00:01:56.884
 Las comparaciones emparejadas muestran más:
 
-00:01:51.295 --> 00:01:54.555
+00:01:57.337 --> 00:02:00.031
 comprar un libro en dos partes cuesta en torno a un
 
-00:01:54.605 --> 00:01:57.632
+00:02:00.031 --> 00:02:03.049
 catorce por ciento más que el volumen completo,
 
-00:01:57.682 --> 00:01:59.200
+00:02:03.049 --> 00:02:04.813
 en todos los niveles.
 
-00:02:00.450 --> 00:02:03.467
+00:02:06.480 --> 00:02:08.326
 Pero los precios de catálogo no muestran
 
-00:02:03.517 --> 00:02:05.733
+00:02:08.326 --> 00:02:10.508
 demanda, costes ni márgenes.
 
-00:02:05.783 --> 00:02:08.333
+00:02:10.799 --> 00:02:12.992
 Sin datos de ventas y descuentos,
 
-00:02:08.383 --> 00:02:11.200
+00:02:13.051 --> 00:02:16.057
 recomendar un precio sería especular.
 
-00:02:12.450 --> 00:02:15.429
+00:02:18.400 --> 00:02:20.663
 Así que el resultado no es un dashboard.
 
-00:02:15.479 --> 00:02:19.710
+00:02:21.024 --> 00:02:25.713
 Es un método: conservar el origen, recuperar la estructura,
 
-00:02:19.760 --> 00:02:23.200
+00:02:25.772 --> 00:02:28.860
 comparar lo comparable y decir lo que no sabes.
 
-00:02:24.450 --> 00:02:26.377
+00:02:30.400 --> 00:02:31.770
 El caso interactivo,
 
-00:02:26.427 --> 00:02:30.180
+00:02:31.770 --> 00:02:35.148
 el dataset y el Excel están enlazados abajo.
 
-00:02:30.230 --> 00:02:35.200
+00:02:35.439 --> 00:02:39.884
 Todo es inventado y todo es reproducible. Gracias por verlo.

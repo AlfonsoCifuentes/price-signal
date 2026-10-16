@@ -1,42 +1,42 @@
 WEBVTT
 
-NOTE Script captions on the planned 12-second grid. Not word-accurate until the narration is recorded.
+NOTE Each cue starts on the word it belongs to (ElevenLabs character alignment, measured against the take).
 
-00:00:00.450 --> 00:00:02.973
+00:00:00.467 --> 00:00:02.161
 Is this book priced wrong?
 
-00:00:03.023 --> 00:00:08.200
+00:00:02.220 --> 00:00:05.493
 Or are we comparing it with a completely different product?
 
-00:00:09.450 --> 00:00:12.460
+00:00:09.467 --> 00:00:11.661
 I built a pricing case study on three hundred
 
-00:00:12.510 --> 00:00:14.860
+00:00:11.661 --> 00:00:13.889
 and sixty-two fictional textbooks.
 
-00:00:14.910 --> 00:00:17.200
+00:00:14.552 --> 00:00:16.629
 The hard part wasn't the average.
 
-00:00:18.450 --> 00:00:22.267
+00:00:18.467 --> 00:00:21.973
 It was the traps: misfiled series, ambiguous bundles,
 
-00:00:22.317 --> 00:00:26.200
+00:00:21.973 --> 00:00:25.583
 and a Gleebook that a naive parser reads as an e-book.
 
-00:00:27.450 --> 00:00:29.120
+00:00:27.467 --> 00:00:28.524
 Matched like for like,
 
-00:00:29.170 --> 00:00:32.068
+00:00:28.524 --> 00:00:31.251
 fifty-four of sixty groups hold one price.
 
-00:00:32.118 --> 00:00:35.200
+00:00:31.484 --> 00:00:34.444
 Two of the six exceptions were filing errors.
 
-00:00:36.450 --> 00:00:38.652
+00:00:37.634 --> 00:00:39.666
 The dataset, method and interactive
 
-00:00:38.702 --> 00:00:40.904
+00:00:39.666 --> 00:00:41.650
 walkthrough are linked in the post.
 
-00:00:40.954 --> 00:00:44.200
+00:00:41.825 --> 00:00:44.982
 Everything is invented, and all of it is reproducible.

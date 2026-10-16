@@ -6,7 +6,7 @@ import {VERTICAL_SCENES} from './vertical';
 import timeline from './timeline.json';
 import data from './data.json';
 
-type SceneLocale = {kicker: string; cues: Cue[]};
+type SceneLocale = {kicker: string; cues: Cue[]; audio: string | null};
 type Scene = {id: string; kicker: string; frames: number; audio: string | null; audioOffsetFrames: number; cues: Cue[]; es: SceneLocale & {title: string}};
 type Props = {captions: boolean; voice: boolean; locale: Locale};
 
@@ -39,10 +39,10 @@ const Reel: React.FC<Props & {kind: 'film' | 'vertical'}> = ({kind, captions, vo
           const start = from;
           from += s.frames;
           const {C: Body, dark} = registry[s.id];
-          const text = locale === 'es' ? s.es : {kicker: s.kicker, cues: s.cues};
+          const text = locale === 'es' ? s.es : {kicker: s.kicker, cues: s.cues, audio: s.audio};
           return (
             <Sequence key={s.id} from={start} durationInFrames={s.frames} name={`${i + 1} · ${s.id}`}>
-              <SceneFrame kicker={text.kicker} cues={text.cues} index={i} total={scenes.length} frames={s.frames} audio={s.audio}
+              <SceneFrame kicker={text.kicker} cues={text.cues} index={i} total={scenes.length} frames={s.frames} audio={text.audio}
                 audioOffsetFrames={s.audioOffsetFrames} dark={dark} vertical={kind === 'vertical'} captions={captions} voice={voice}>
                 <Body />
               </SceneFrame>
@@ -109,6 +109,8 @@ export const Root: React.FC = () => {
       <Composition id="FilmEs" component={FilmC} durationInFrames={film} fps={fps} width={1920} height={1080} defaultProps={{captions: false, ...es}} />
       <Composition id="FilmCaptionedEs" component={FilmC} durationInFrames={film} fps={fps} width={1920} height={1080} defaultProps={{captions: true, ...es}} />
       <Composition id="VerticalEs" component={VertC} durationInFrames={vert} fps={fps} width={1080} height={1920} defaultProps={{captions: true, ...es}} />
+      <Composition id="FilmEsVoice" component={FilmC} durationInFrames={film} fps={fps} width={1920} height={1080} defaultProps={{captions: false, locale: 'es', voice: true}} />
+      <Composition id="VerticalEsVoice" component={VertC} durationInFrames={vert} fps={fps} width={1080} height={1920} defaultProps={{captions: true, locale: 'es', voice: true}} />
       <Composition id="Thumbnail" component={() => <Cover w={1280} h={720} locale="en" />} durationInFrames={1} fps={fps} width={1280} height={720} />
       <Composition id="OgCover" component={() => <Cover w={1200} h={630} locale="en" />} durationInFrames={1} fps={fps} width={1200} height={630} />
       <Composition id="Square" component={() => <Cover w={1080} h={1080} locale="en" />} durationInFrames={1} fps={fps} width={1080} height={1080} />
