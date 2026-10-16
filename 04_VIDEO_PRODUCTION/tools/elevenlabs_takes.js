@@ -8,9 +8,14 @@
 const fs = require('fs');
 const path = require('path');
 
-const VOICES = {en: 'XAezqB2SuTKEhjCMe7Oy', es: 'LlZr3QuzbW4WrPjgATHG'};
+const VOICES = {en: 'XAezqB2SuTKEhjCMe7Oy', es: 'uJOittXFsgvpY3q1g8vB'};
 const MODEL = 'eleven_multilingual_v2';
-const [,, script, outRoot] = process.argv;
+// optional filters: --lang en|es and --kind film|vertical (the vertical cut reuses the film takes, so it is rarely needed)
+const argv = process.argv.slice(2);
+const flag = (name) => (argv.includes(name) ? argv[argv.indexOf(name) + 1] : null);
+const [script, outRoot] = argv.filter((a, i) => !a.startsWith('--') && (i === 0 || !argv[i - 1].startsWith('--')));
+const onlyLang = flag('--lang');
+const onlyKind = flag('--kind');
 const key = process.env.EL_KEY;
 if (!script || !outRoot || !key) {
   console.error('usage: EL_KEY=... node tools/elevenlabs_takes.js <script_master.json> <out-dir>');
@@ -20,9 +25,10 @@ if (!script || !outRoot || !key) {
 const master = JSON.parse(fs.readFileSync(script, 'utf8'));
 const jobs = [];
 for (const lang of ['en', 'es']) {
+  if (onlyLang && onlyLang !== lang) continue;
   const text = (s) => (lang === 'en' ? s.narration : s.es.narration);
-  master.film.forEach((s, i) => jobs.push({lang, base: String(i + 1).padStart(2, '0'), text: text(s)}));
-  master.vertical.forEach((s, i) => jobs.push({lang, base: `v${String(i + 1).padStart(2, '0')}`, text: text(s)}));
+  if (!onlyKind || onlyKind === 'film') master.film.forEach((s, i) => jobs.push({lang, base: String(i + 1).padStart(2, '0'), text: text(s)}));
+  if (!onlyKind || onlyKind === 'vertical') master.vertical.forEach((s, i) => jobs.push({lang, base: `v${String(i + 1).padStart(2, '0')}`, text: text(s)}));
 }
 
 (async () => {

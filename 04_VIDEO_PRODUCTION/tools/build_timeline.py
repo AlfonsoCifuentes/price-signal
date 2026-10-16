@@ -102,15 +102,15 @@ def cues_from_words(text, words, offset):
     return out
 
 
-def build(kind, prefix):
+def build(kind, take_prefix, bases=None):
     """Each scene lasts as long as its longest take (EN or ES), so both cuts keep identical frames.
     The first scene opens on music before the voice comes in (INTRO_LEAD); the others use LEAD."""
     scenes, t0, cues, cues_es, voiced, frame, spans_en, spans_es = [], 0.0, [], [], 0, 0, [], []
     as_frames = lambda cs: [{'text': c['text'], 'from': round(c['from'] * FPS), 'to': round(c['to'] * FPS)} for c in cs]
     for n, s in enumerate(master[kind], start=1):
-        take_en = VOICE / f'{prefix}-{n:02d}.wav'
-        take_es = VOICE / 'es' / f'{prefix}-{n:02d}.wav'
-        base = float(s['seconds'])
+        take_en = VOICE / f'{take_prefix}-{n:02d}.wav'
+        take_es = VOICE / 'es' / f'{take_prefix}-{n:02d}.wav'
+        base = float(bases[n - 1]) if bases else float(s['seconds'])
         lead = INTRO_LEAD if n == 1 else LEAD
         durations = {lang: duration(t) for lang, t in (('en', take_en), ('es', take_es)) if t.exists()}
         if durations:
@@ -202,7 +202,9 @@ if problems:
     sys.exit(f'Narration contradicts the analysis: {problems}')
 
 film, film_cues, film_cues_es = build('film', 'film')
-vertical, vertical_cues, vertical_cues_es = build('vertical', 'vertical')
+# the vertical cut tells the same story with the same narration takes, so each scene keeps the film's length
+film_bases = [s['frames'] / FPS for s in film['scenes']]
+vertical, vertical_cues, vertical_cues_es = build('vertical', 'film', film_bases)
 timeline = {'fps': FPS, 'film': film, 'vertical': vertical}
 (REMOTION / 'src' / 'timeline.json').write_text(json.dumps(timeline, ensure_ascii=False, indent=1) + LF, encoding='utf-8', newline=LF)
 word_timed = all((VOICE / f'film-{n:02d}.words.json').exists() and (VOICE / 'es' / f'film-{n:02d}.words.json').exists()
@@ -216,5 +218,5 @@ for lang, fc, vc in (('en', film_cues, vertical_cues), ('es', film_cues_es, vert
 words = sum(len(s['narration'].split()) for s in master['film'])
 print(f"film: {film['frames']} frames ({film['frames'] / FPS:.1f} s), {film['voicedScenes']}/13 scenes voiced, {words} words "
       f"(~{words / (film['frames'] / FPS) * 60:.0f} wpm incl. pauses)")
-print(f"vertical: {vertical['frames']} frames ({vertical['frames'] / FPS:.1f} s), {vertical['voicedScenes']}/5 voiced")
+print(f"vertical: {vertical['frames']} frames ({vertical['frames'] / FPS:.1f} s), {vertical['voicedScenes']}/{len(master['vertical'])} voiced")
 print(f'captions: {len(film_cues)} film / {len(vertical_cues)} vertical cues (en), {len(film_cues_es)} / {len(vertical_cues_es)} (es) -> {CAP.relative_to(HERE)}')

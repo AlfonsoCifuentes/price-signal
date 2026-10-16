@@ -29,7 +29,7 @@ const SceneFrame: React.FC<{kicker: string; cues: Cue[]; index: number; total: n
 
 /* Background score: sits under the narration, dips while a take is speaking and fades in and out.
    Levels are relative to the score's normalised loudness (about -24 LUFS). */
-const MUSIC = {film: 'audio/music-film.mp3', vertical: 'audio/music-vertical.mp3'} as const;
+const MUSIC = {film: 'audio/music-film.mp3', vertical: 'audio/music-film.mp3'} as const; // one 170 s score covers both cuts
 const DUCK_DEPTH = 0.42;   // score level while speech is on (0.42 = about -7.5 dB)
 const DUCK_RAMP = 12;      // frames to move between full and ducked (0.4 s at 30 fps)
 const FADE_IN = 60;        // 2 s

@@ -162,62 +162,158 @@
   "vertical": [
     {
       "id": "v-hook",
-      "seconds": 9,
+      "seconds": 12,
+      "kicker": "The hook",
+      "title": "The price of clarity",
+      "narration": "What if the biggest pricing mistake isn't a wrong number, but comparing two things that were never equivalent in the first place?",
+      "es": {
+        "kicker": "El gancho",
+        "title": "El precio de la claridad",
+        "narration": "¿Y si el mayor error de precios no fuera una cifra equivocada, sino comparar dos cosas que nunca fueron equivalentes?"
+      }
+    },
+    {
+      "id": "v-question",
+      "seconds": 12,
       "kicker": "The question",
-      "title": "Priced wrong?",
-      "narration": "Is this book priced wrong? Or are we comparing it with a completely different product?",
+      "title": "Define the product first",
+      "narration": "A publishing catalogue looks simple: a title, a series and a price. But behind every title sit formats, levels, editions, packs and access rights.",
       "es": {
         "kicker": "La pregunta",
-        "title": "¿Precio mal puesto?",
-        "narration": "¿Este libro tiene mal el precio? ¿O lo estamos comparando con un producto completamente distinto?"
+        "title": "Definir primero el producto",
+        "narration": "Un catálogo editorial parece sencillo: un título, una serie y un precio. Pero detrás de cada título hay formatos, niveles, ediciones, packs y derechos de acceso."
       }
     },
     {
-      "id": "v-scale",
-      "seconds": 9,
-      "kicker": "The work",
-      "title": "362 fictional products",
-      "narration": "I built a pricing case study on three hundred and sixty-two fictional textbooks. The hard part wasn't the average.",
+      "id": "v-source",
+      "seconds": 12,
+      "kicker": "The material",
+      "title": "A fictional catalogue",
+      "narration": "For this case study I generated a fictional catalogue: three hundred and sixty-two products, twelve series, and data problems planted on purpose. No real publisher, no real prices.",
       "es": {
-        "kicker": "El trabajo",
-        "title": "362 productos ficticios",
-        "narration": "Construí un caso de precios con trescientos sesenta y dos libros de texto ficticios. Lo difícil no era la media."
+        "kicker": "El material",
+        "title": "Un catálogo ficticio",
+        "narration": "Para este caso generé un catálogo inventado: trescientos sesenta y dos productos, doce series y problemas de datos sembrados a propósito. Ni editorial real ni precios reales."
       }
     },
     {
-      "id": "v-trap",
-      "seconds": 9,
-      "kicker": "The traps",
-      "title": "Gleebook ≠ eBook",
-      "narration": "It was the traps: misfiled series, ambiguous bundles, and a Gleebook that a naive parser reads as an e-book.",
+      "id": "v-extract",
+      "seconds": 12,
+      "kicker": "Step 1 · Structure",
+      "title": "Five columns in, nineteen out",
+      "narration": "First, I recovered structure from the titles, without guessing. If a title doesn't mention access duration, that's unknown, not unlimited.",
       "es": {
-        "kicker": "Las trampas",
-        "title": "Gleebook ≠ eBook",
-        "narration": "Eran las trampas: series mal archivadas, packs ambiguos y un «Gleebook» que un parser ingenuo toma por un e-book."
+        "kicker": "Paso 1 · Estructura",
+        "title": "Cinco columnas dentro, diecinueve fuera",
+        "narration": "Primero recuperé la estructura de los títulos, sin adivinar. Si un título no menciona la duración del acceso, es desconocida, no ilimitada."
       }
     },
     {
-      "id": "v-finding",
-      "seconds": 9,
-      "kicker": "The finding",
-      "title": "54 / 60",
-      "narration": "Matched like for like, fifty-four of sixty groups hold one price. Two of the six exceptions were filing errors.",
+      "id": "v-provenance",
+      "seconds": 12,
+      "kicker": "Step 2 · Provenance",
+      "title": "Keep the source",
+      "narration": "The raw file stays untouched. Every correction lives in a separate, reversible reporting view, so any number traces back to its source record.",
       "es": {
-        "kicker": "El hallazgo",
-        "title": "54 / 60",
-        "narration": "Comparando lo comparable, cincuenta y cuatro de sesenta grupos mantienen un precio. Dos de las seis excepciones eran errores de archivo."
+        "kicker": "Paso 2 · Procedencia",
+        "title": "Conservar el origen",
+        "narration": "El fichero original no se toca. Cada corrección vive en una vista de reporting aparte y reversible, así que cualquier cifra se puede rastrear hasta su registro."
       }
     },
     {
-      "id": "v-cta",
-      "seconds": 9,
+      "id": "v-misfiled",
+      "seconds": 12,
+      "kicker": "Trap · Series",
+      "title": "Two misfiled records",
+      "narration": "Two records carry a series name that contradicts their own title. They're flagged and re-filed in the reporting view, never silently overwritten.",
+      "es": {
+        "kicker": "Trampa · Serie",
+        "title": "Dos registros mal archivados",
+        "narration": "Dos registros llevan un nombre de serie que contradice su propio título. Se señalan y se reubican en la vista de reporting, nunca se sobrescriben en silencio."
+      }
+    },
+    {
+      "id": "v-ebook",
+      "seconds": 12,
+      "kicker": "Trap · Parsing",
+      "title": "Gleebook is not an eBook",
+      "narration": "A printed resource called Gleebook contains the letters e-book. A naive substring rule grants it digital access. A word-boundary rule doesn't.",
+      "es": {
+        "kicker": "Trampa · Análisis",
+        "title": "Gleebook no es un eBook",
+        "narration": "Un recurso impreso llamado Gleebook contiene las letras «ebook». Una regla ingenua por subcadena le concede acceso digital; una regla con límites de palabra, no."
+      }
+    },
+    {
+      "id": "v-like",
+      "seconds": 12,
+      "kicker": "Step 3 · Comparison",
+      "title": "Like for like",
+      "narration": "Only then did I compare prices: same series, type, pack, edition and access. Only the level is allowed to change. That gives sixty comparable groups.",
+      "es": {
+        "kicker": "Paso 3 · Comparación",
+        "title": "Comparar lo comparable",
+        "narration": "Solo entonces comparé precios: misma serie, tipo, pack, edición y acceso. Solo puede cambiar el nivel. Así salen sesenta grupos comparables."
+      }
+    },
+    {
+      "id": "v-stability",
+      "seconds": 12,
+      "kicker": "Finding",
+      "title": "54 of 60, then 56",
+      "narration": "Fifty-four of the sixty hold one price at every level. Four exceptions are cheaper Starter levels. The other two aren't pricing at all: they're filing errors.",
+      "es": {
+        "kicker": "Hallazgo",
+        "title": "54 de 60, y luego 56",
+        "narration": "Cincuenta y cuatro de los sesenta mantienen un mismo precio en todos los niveles. Cuatro excepciones son niveles Starter más baratos. Las otras dos no son precios: son errores de archivo."
+      }
+    },
+    {
+      "id": "v-split",
+      "seconds": 12,
+      "kicker": "Finding",
+      "title": "Two parts cost more",
+      "narration": "Matched comparisons show more. Buying a book in two parts costs about fourteen percent more than the complete volume, at every level.",
+      "es": {
+        "kicker": "Hallazgo",
+        "title": "Dos partes cuestan más",
+        "narration": "Las comparaciones emparejadas muestran más: comprar un libro en dos partes cuesta en torno a un catorce por ciento más que el volumen completo, en todos los niveles."
+      }
+    },
+    {
+      "id": "v-limits",
+      "seconds": 12,
+      "kicker": "Limits",
+      "title": "What the data can't say",
+      "narration": "But list prices alone can't show demand, costs or margins. Without sales and discount data, a recommended price would be speculation.",
+      "es": {
+        "kicker": "Límites",
+        "title": "Lo que los datos no pueden decir",
+        "narration": "Pero los precios de catálogo no muestran demanda, costes ni márgenes. Sin datos de ventas y descuentos, recomendar un precio sería especular."
+      }
+    },
+    {
+      "id": "v-method",
+      "seconds": 12,
+      "kicker": "The method",
+      "title": "A chain of decisions",
+      "narration": "So the result isn't a dashboard. It's a method: keep the source, recover the structure, compare like with like, and say what you don't know.",
+      "es": {
+        "kicker": "El método",
+        "title": "Una cadena de decisiones",
+        "narration": "Así que el resultado no es un dashboard. Es un método: conservar el origen, recuperar la estructura, comparar lo comparable y decir lo que no sabes."
+      }
+    },
+    {
+      "id": "v-outro",
+      "seconds": 12,
       "kicker": "Explore",
       "title": "PRICE / SIGNAL",
-      "narration": "The dataset, method and interactive walkthrough are linked in the post. Everything is invented, and all of it is reproducible.",
+      "narration": "The interactive case study, the dataset and the Excel workbook are linked below. Everything in it is invented, and all of it is reproducible. Thanks for watching.",
       "es": {
         "kicker": "Explorar",
         "title": "PRICE / SIGNAL",
-        "narration": "El dataset, el método y el recorrido interactivo están enlazados en la publicación. Todo es inventado y todo es reproducible."
+        "narration": "El caso interactivo, el dataset y el Excel están enlazados abajo. Todo es inventado y todo es reproducible. Gracias por verlo."
       }
     }
   ]

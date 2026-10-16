@@ -2,41 +2,134 @@ WEBVTT
 
 NOTE Each cue starts on the word it belongs to (ElevenLabs character alignment, measured against the take).
 
-00:00:01.600 --> 00:00:03.294
-Is this book priced wrong?
+00:00:01.600 --> 00:00:04.352
+What if the biggest pricing mistake isn't a wrong number,
 
-00:00:03.353 --> 00:00:06.626
-Or are we comparing it with a completely different product?
+00:00:04.352 --> 00:00:06.198
+but comparing two things that were never
 
-00:00:09.467 --> 00:00:11.661
-I built a pricing case study on three hundred
+00:00:06.198 --> 00:00:08.112
+equivalent in the first place?
 
-00:00:11.661 --> 00:00:13.889
-and sixty-two fictional textbooks.
+00:00:12.467 --> 00:00:15.300
+A publishing catalogue looks simple: a title,
 
-00:00:14.552 --> 00:00:16.629
-The hard part wasn't the average.
+00:00:15.300 --> 00:00:16.773
+a series and a price.
 
-00:00:18.467 --> 00:00:21.973
-It was the traps: misfiled series, ambiguous bundles,
+00:00:17.227 --> 00:00:20.455
+But behind every title sit formats, levels, editions,
 
-00:00:21.973 --> 00:00:25.583
-and a Gleebook that a naive parser reads as an e-book.
+00:00:20.455 --> 00:00:22.462
+packs and access rights.
 
-00:00:27.467 --> 00:00:28.524
-Matched like for like,
+00:00:24.467 --> 00:00:27.589
+For this case study I generated a fictional catalogue:
 
-00:00:28.524 --> 00:00:31.251
-fifty-four of sixty groups hold one price.
+00:00:27.613 --> 00:00:30.237
+three hundred and sixty-two products, twelve series,
 
-00:00:31.484 --> 00:00:34.444
-Two of the six exceptions were filing errors.
+00:00:30.237 --> 00:00:32.465
+and data problems planted on purpose.
 
-00:00:37.634 --> 00:00:39.666
-The dataset, method and interactive
+00:00:32.826 --> 00:00:35.345
+No real publisher, no real prices.
 
-00:00:39.666 --> 00:00:41.650
-walkthrough are linked in the post.
+00:00:36.467 --> 00:00:39.949
+First, I recovered structure from the titles, without guessing.
 
-00:00:41.825 --> 00:00:44.982
-Everything is invented, and all of it is reproducible.
+00:00:40.612 --> 00:00:43.027
+If a title doesn't mention access duration,
+
+00:00:43.027 --> 00:00:45.069
+that's unknown, not unlimited.
+
+00:00:48.467 --> 00:00:50.556
+The raw file stays untouched.
+
+00:00:50.557 --> 00:00:53.888
+Every correction lives in a separate, reversible reporting view,
+
+00:00:54.063 --> 00:00:56.883
+so any number traces back to its source record.
+
+00:01:00.467 --> 00:01:02.417
+Two records carry a series name that
+
+00:01:02.417 --> 00:01:04.216
+contradicts their own title.
+
+00:01:04.507 --> 00:01:07.339
+They're flagged and re-filed in the reporting view,
+
+00:01:07.363 --> 00:01:09.394
+never silently overwritten.
+
+00:01:12.467 --> 00:01:16.460
+A printed resource called Gleebook contains the letters e-book.
+
+00:01:17.007 --> 00:01:20.140
+A naive substring rule grants it digital access.
+
+00:01:20.687 --> 00:01:22.787
+A word-boundary rule doesn't.
+
+00:01:24.800 --> 00:01:27.726
+Only then did I compare prices: same series,
+
+00:01:27.726 --> 00:01:29.757
+type, pack, edition and access.
+
+00:01:30.303 --> 00:01:32.380
+Only the level is allowed to change.
+
+00:01:32.672 --> 00:01:35.027
+That gives sixty comparable groups.
+
+00:01:36.800 --> 00:01:40.131
+Fifty-four of the sixty hold one price at every level.
+
+00:01:40.492 --> 00:01:43.034
+Four exceptions are cheaper Starter levels.
+
+00:01:43.696 --> 00:01:47.863
+The other two aren't pricing at all: they're filing errors.
+
+00:01:51.767 --> 00:01:53.647
+Matched comparisons show more.
+
+00:01:53.938 --> 00:01:56.666
+Buying a book in two parts costs about fourteen percent
+
+00:01:56.666 --> 00:01:59.301
+more than the complete volume, at every level.
+
+00:02:03.767 --> 00:02:08.015
+But list prices alone can't show demand, costs or margins.
+
+00:02:08.678 --> 00:02:10.559
+Without sales and discount data,
+
+00:02:10.559 --> 00:02:13.159
+a recommended price would be speculation.
+
+00:02:15.767 --> 00:02:17.729
+So the result isn't a dashboard.
+
+00:02:17.729 --> 00:02:20.887
+It's a method: keep the source, recover the structure,
+
+00:02:20.887 --> 00:02:23.812
+compare like with like, and say what you don't know.
+
+00:02:27.767 --> 00:02:29.241
+The interactive case study,
+
+00:02:29.241 --> 00:02:32.271
+the dataset and the Excel workbook are linked below.
+
+00:02:32.817 --> 00:02:36.148
+Everything in it is invented, and all of it is reproducible.
+
+00:02:36.173 --> 00:02:37.484
+Thanks for watching.
